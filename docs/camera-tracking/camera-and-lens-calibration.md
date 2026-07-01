@@ -7,7 +7,7 @@
 > Video/resource: [https://player.vimeo.com/video/727369885](https://player.vimeo.com/video/727369885)
 
 
-!!! danger
+!!! warning
 
     When you are in the Setup menu for Camera Calibration, make sure you measure the Square separately from the Aruco. The square values are on the Left (orange) and the Aruco Size is on the Right (purple).
 
