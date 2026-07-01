@@ -66,15 +66,15 @@ For more information on Web Remote Control, visit the documentation:
 
 
 3. Double-click on the newly created **Remote Control Preset**.   
-   This **opens a new window** and now, an eyeball icon<img src="../assets/image (256).png" alt="" data-size="line"> shows up next to any items that you can remotely control in the outliner.  
+   This **opens a new window** and now, an eyeball icon<img src="../../assets/image (256).png" alt="" data-size="line"> shows up next to any items that you can remotely control in the outliner.  
      
-   :information\_source: A closed eyeball icon <img src="../assets/image (241).png" alt="" data-size="line"> means that this parameter is not exposed in your Web Remote Control.  An open eyeball icon <img src="../assets/image (256).png" alt="" data-size="line"> means that this parameter is exposed, and you can control it.
+   :information\_source: A closed eyeball icon <img src="../../assets/image (241).png" alt="" data-size="line"> means that this parameter is not exposed in your Web Remote Control.  An open eyeball icon <img src="../../assets/image (256).png" alt="" data-size="line"> means that this parameter is exposed, and you can control it.
 
 <figure><img src="https://lh7-us.googleusercontent.com/v_D8b6UZVujzZFBBbfCRoY6RsOjLNyiiNjeR4jQOpqZhUbBWHVG2F9rWMuaUfp2luwQy2AJZ_yvamvGRbjQjdqkZMKW18vGlBQFsmkiXU96-L5wdmATbtcQXWW_oNevMXvg2kPyNA-ACzBbLhk7OAj07BQ=s2048" alt=""><figcaption></figcaption></figure>
 
 4.  The Description name is what is visible, so make sure to rename this to something that will be obvious what it is like "Sun Rotation".<br>
 
-    <figure><img src="../assets/image (445).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (445).png" alt=""><figcaption></figcaption></figure>
 5. Click on an item you want to be able to control to **see what you can control**.  
      
    For this example, let’s click on the **Directional Light**, and turn the Light Color and Intensity eyeballs on.

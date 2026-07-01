@@ -30,12 +30,12 @@ One reason you may need to delay your camera feed is if you are using a Green Sc
 
 1.  Click on your primaries layer at the top left of your screen so that it is the active layer (Orange).<br>
 
-    <figure><img src="../assets/image (238).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (238).png" alt=""><figcaption></figcaption></figure>
 
 
 2.  Under the "**Video Capture**" Menu, you will find the **Delay** as well as the Auto TC Sync button.<br>
 
-    <figure><img src="../assets/image (239).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (239).png" alt=""><figcaption></figcaption></figure>
 
 
 3. **Adjust the Delay** as needed. It can be helpful to **whip pan** your camera quickly to see how much to delay your camera.
@@ -48,7 +48,7 @@ There may be times when you need to delay your camera tracking.
 2. Click on the active camera tracker, in this example, Ncam.
 3.  Increase the delay as needed. <br>
 
-    <figure><img src="../assets/image (240).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (240).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -61,5 +61,5 @@ Oftentimes, lighting data through the sACN protocol will travel faster than the 
 3. Click on the sACN tab.
 4.  Add Signal Delay (in milliseconds).
 
-    <figure><img src="../assets/image (356).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (356).png" alt=""><figcaption></figcaption></figure>
 

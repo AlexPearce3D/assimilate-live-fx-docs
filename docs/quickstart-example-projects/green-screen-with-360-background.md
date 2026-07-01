@@ -12,7 +12,7 @@ Once you enter the project.
 
 Choose "Live Setup" and then choose Green Screen with Background from the dropdown menu which will open the Create Live Composition window.
 
-<figure><img src="../assets/image (270).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (270).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Foreground Camera - Choose the Live Capture source from the capture card that you have already set up in your [Video IO settings](../getting-started/introduction/settings/video-io-settings/README.md). I'm using my Mac's built-in webcam for this example, but normally I'd be using the camera signal coming into my Blackmagic Decklink 8k.
 

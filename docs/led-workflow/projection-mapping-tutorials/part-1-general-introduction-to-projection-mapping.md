@@ -15,11 +15,11 @@ But before we do that, we first want to go over lesson one in LED wall projectio
 
 Now obviously we do not mean that literally that you are not to allowed to ever look at the wall. But you do need to realize that what you see on the wall is not the end-result that we are attempting to create. The result that we are after is the camera recording the scene with the wall as background. Most of the time, you are not in the same physical position as the camera when looking at the wall, nor do you change positions in the same way, so your perspective is different. The projection on the wall is generated so that it is correct from the perspective of the camera. This is both in terms of geometry, e.g. in case of a curved wall, as well as in terms of color. If at any time you are confused on what you are seeing on a wall directly, have a look at what the camera is seeing. In fact, first and always look at what the camera is seeing to check your setup.
 
-<figure><img src="../../assets/Tutorial_Diagrams_01_view.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/Tutorial_Diagrams_01_view.jpg" alt=""><figcaption></figcaption></figure>
 
 Now before we start with setting things up in Live FX Studio, let’s first cover some generic aspects of projection and related terminology. In a typical LED wall projection setup, you have a media server providing the content, in this case Live FX Studio, that feeds into one or more LED wall processors which in turn feeds the image into the actual LED wall. In front of the LED wall, we have a camera recording the scene – that is the actors in the foreground with the LED wall background.
 
-<figure><img src="../../assets/Tutorial_Diagrams_04_setup.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/Tutorial_Diagrams_04_setup.jpg" alt=""><figcaption></figcaption></figure>
 
 To get the best image and smooth playback, all the following elements need to be aligned.
 

@@ -43,7 +43,7 @@ Lastly, the Label option determines the labels on the channel buttons on the fir
 
 Back to the main topic: LED wall projection and how to deal with multiple walls.
 
-<figure><img src="../../assets/Switcher Node.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/Switcher Node.png" alt=""><figcaption></figcaption></figure>
 
 Now that we have seen the Switcher node in action, let’s create a setup with multiple LED walls. Open the Projection setup panel and from there open the Stage Manager. For this tutorial we start with a single wall that is slightly curved, which makes it easier to distinguish from a new wall that we are going to add.
 

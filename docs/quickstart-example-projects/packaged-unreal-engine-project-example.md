@@ -86,7 +86,7 @@ If you are using a Green Screen workflow, go to the construct press the Live Set
 
 Under Unreal Capture, select **Unreal Texture Share.**
 
-<figure><img src="../assets/image (407).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (407).png" alt=""><figcaption></figcaption></figure>
 
 ## 4b. Projection Setup
 
@@ -94,7 +94,7 @@ From the construct select **Projection Setup**, under Project Media, select **Un
 
 Then follow whatever projection mapping methods you normally use.
 
-<figure><img src="../assets/image (408).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (408).png" alt=""><figcaption></figcaption></figure>
 
 ## 4c. Basic Capture
 
@@ -102,13 +102,13 @@ If you want to play the UE project on the wall, but not use the Projection mappi
 
 For this tutorial, I will use this last option, Basic Capture, but the next steps are the same, regardless of your setup.
 
-<figure><img src="../assets/image (409).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (409).png" alt=""><figcaption></figcaption></figure>
 
 ## 5. Set up Unreal Live Link
 
 1.  Click on the **Live FX** menu, then click on the **Live Links** Menu.<br>
 
-    <figure><img src="../assets/image (389).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (389).png" alt=""><figcaption></figcaption></figure>
 2.  Click on **Unreal Live Link.**  
     **Press On.**
 
@@ -124,28 +124,28 @@ For this tutorial, I will use this last option, Basic Capture, but the next step
       
     :bulb:**YOU MUST HAVE AN ACTIVE CAMERA IN YOUR SCENE, MORE ON THIS BELOW**<br>
 
-    <figure><img src="../assets/image (390).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (390).png" alt=""><figcaption></figcaption></figure>
 3.  If using **camera tracking**, make sure your tracking is set up correctly and that you **press “Apply”** so that it applies to your camera.  
     <br>
 
-    <figure><img src="../assets/image (391).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (391).png" alt=""><figcaption></figcaption></figure>
 
 
 4.  If **not** using camera tracking, go to the **Camera tab and press “Active”**
 
     You can manually move the camera in UE, by changing the Tracker / Animation values.<br>
 
-    <figure><img src="../assets/image (392).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (392).png" alt=""><figcaption></figcaption></figure>
 
 We can see from the screenshot below that we’ve set everything up correctly because we see the Watertower demo in the viewport (through the Unreal Texture Share layer), the Live Link has a frame counter, **counting frames** below the Scale in the Unreal Live Link window.
 
-<figure><img src="../assets/image (415).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (415).png" alt=""><figcaption></figcaption></figure>
 
 In the **Camera tab**, the camera is active and if I pan, it moves the Unreal Engine camera. If you have camera tracking enabled, when you move the camera, it should move correctly.   
   
 :bulb:If you are not using projection mapping, you can click on Manual and use the Position to move the Unreal Engine camera around your scene.
 
-<figure><img src="../assets/image (414).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (414).png" alt=""><figcaption></figcaption></figure>
 
 :bulb:If you are using projection mapping, you cannot use the Position to move the camera in the Unreal scene without affecting your projection mapping. You could use Web Remote instead to move your camera in your scene.
 

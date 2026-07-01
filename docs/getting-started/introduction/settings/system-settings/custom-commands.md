@@ -25,7 +25,7 @@ Select the type of Custom Command. Depending on the type additional options are 
 
 ## APPLICATION / SCRIPT
 
-<figure><img src="../../../../assets/image (324).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
 ### **File**
 
@@ -71,7 +71,7 @@ If set, the command button will be greyed out if no shot is selected in the Cons
 
 ## Plugins
 
-<figure><img src="../../../../assets/image (319).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../assets/image (319).png" alt=""><figcaption></figcaption></figure>
 
 ### **Plugin**
 
@@ -91,7 +91,7 @@ With this option enabled Live FX will after creating the plug-in automatically o
 
 ## POST RENDER
 
-<figure><img src="../../../../assets/image (320).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../assets/image (320).png" alt=""><figcaption></figcaption></figure>
 
 The Post Render - custom command type has similar parameters as the Application/Script type. Also, similar to the Application custom command, the Post Render command is passed (as command line parameter) a file reference to an XML file with details on the render. Also, the actual XML is also stored in the temp folder with a project. The structure of the the XML of a render is discussed in detail in Appendix B - Database, XML, XSLT and HTML.
 
@@ -99,7 +99,7 @@ Also note that even though the external script / application has access to the r
 
 ## SYSTEM EVENT
 
-<figure><img src="../../../../assets/image (321).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../assets/image (321).png" alt=""><figcaption></figcaption></figure>
 
 The System Even - custom command type has similar parameters as the Application/Script type. Also, similar to the Application custom command, the System Event command is passed (as command line parameter) a file reference to an XML file with details on the render. Also, the actual XML is also stored in the temp folder with a project. The structure of the the XML of a render is discussed in detail in Appendix B - Database, XML, XSLT and HTML.
 
@@ -114,7 +114,7 @@ There are currently 6 system Events that can be used to trigger an external scri
 
 ## XSL TRANSFORM
 
-<figure><img src="../../../../assets/image (322).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../assets/image (322).png" alt=""><figcaption></figcaption></figure>
 
 ### **File**
 
@@ -126,7 +126,7 @@ The extension for the result file of the XSL Transformation.
 
 ## WEBPAGE
 
-<figure><img src="../../../../assets/image (323).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../assets/image (323).png" alt=""><figcaption></figcaption></figure>
 
 ### **URL**
 

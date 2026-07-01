@@ -4,4 +4,4 @@ If you have a video on a canvas, and you want to re-time it (speed it up or slow
   
 If you footage goes black, you may need to go to the Fill/Matte menu and disable the Alpha channel.
 
-<figure><img src="../../assets/Speed up on canvas.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/Speed up on canvas.jpg" alt=""><figcaption></figcaption></figure>

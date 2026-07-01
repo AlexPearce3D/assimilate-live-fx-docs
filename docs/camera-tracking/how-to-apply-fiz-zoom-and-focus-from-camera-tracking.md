@@ -11,14 +11,14 @@ Let's look at how to enable Focus and Zoom.
 1. First, go to **Animate**.
 2. Click on the **Live Links** Tab.
 
-<figure><img src="../assets/image (228).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (228).png" alt=""><figcaption></figcaption></figure>
 
 3. Click on Focal Length **(Zoom)** and Focus Distance **(Focus)**
 4.  If you have a camera tracker enabled, click on **Live Source** and change it to the appropriate parameter from your tracker.   
       
     &#xNAN;_&#x49;n this screenshot, I do not have any tracker enabled, so I don't have a Live Source to change it to._<br>
 
-    <figure><img src="../assets/image (229).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (229).png" alt=""><figcaption></figcaption></figure>
 
 ## Enable Use Encoder Zoom
 
@@ -29,4 +29,4 @@ If you are using your tracking systems encoder for Zoom, make sure you enable "E
 3. Click on your Camera Tracker
 4. Click on "**Encoder Zoom**"
 
-<figure><img src="../assets/image (227).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (227).png" alt=""><figcaption></figcaption></figure>

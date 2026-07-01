@@ -8,9 +8,9 @@
     When you are in the Setup menu for Camera Calibration, make sure you measure the Square separately from the Aruco. The square values are on the Left (orange) and the Aruco Size is on the Right (purple).
 
 
-<figure><img src="../assets/image (416).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (416).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../assets/image (417).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (417).png" alt=""><figcaption></figcaption></figure>
 
 Currently, Live FX can only work with Prime Lenses or at fixed focal length for calibration.
 
@@ -27,7 +27,7 @@ When you make your calibration, make sure your shot resolution and frame rate ar
 
 Change your focal length to the lens size that you are using on your camera.
 
-<figure><img src="../assets/image (262).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (262).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -52,9 +52,9 @@ What you see in your camera viewfinder should be the same in Live FX with no cro
     At 6k 17:9 the crop factor is 1.42 and the Focal Length is 34mm.
 
 
-<figure><img src="../assets/image (264).png" alt=""><figcaption><p>At 6k 16:9, the crop factor is 1.49x and Focal Length is 35.7mm</p></figcaption></figure>
+<figure><img src="../../assets/image (264).png" alt=""><figcaption><p>At 6k 16:9, the crop factor is 1.49x and Focal Length is 35.7mm</p></figcaption></figure>
 
-<figure><img src="../assets/image (265).png" alt=""><figcaption><p>At 6k 17:9, the crop factor is 1.42x and Focal Length is 34mm</p></figcaption></figure>
+<figure><img src="../../assets/image (265).png" alt=""><figcaption><p>At 6k 17:9, the crop factor is 1.42x and Focal Length is 34mm</p></figcaption></figure>
 
 
 

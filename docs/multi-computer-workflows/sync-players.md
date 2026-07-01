@@ -11,15 +11,15 @@ Sync Players works regardless of whether or not you setup a local shared storage
 1. Make sure the machines are on the same network and can ping each other.
 2.  On the Master machine, enter the shot you want to use and go at the top-right of the viewport. Click on Tools>Sync Players.<br>
 
-    <figure><img src="../assets/image (17).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 
 3.  Click on Start Master Mode and it will turn green. <br>
 
-    <figure><img src="../assets/image (18).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 
 4.  On the Client computer, go to Tools>Sync Players, select the computer that you started the server on and press Start Client Mode.<br>
 
-    <figure><img src="../assets/image (19).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (19).png" alt=""><figcaption></figcaption></figure>
 

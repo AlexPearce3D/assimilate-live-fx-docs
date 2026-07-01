@@ -2,7 +2,7 @@
 
 Here are some of the most useful Command Line arguments that can be passed through the shortcut's target area at the end. it would look something like this:<br>
 
-<figure><img src="../../assets/image (520).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (520).png" alt=""><figcaption></figcaption></figure>
 
 | Command Line Argument                      | Description                                                                                          |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------------- |

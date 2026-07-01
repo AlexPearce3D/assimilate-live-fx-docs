@@ -13,7 +13,7 @@ To install the license, copy the license key you received and paste it into the 
 2. Open Assimilate.
 3.  Open the License tab on the right.<br>
 
-    <figure><img src="../assets/image (214).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (214).png" alt=""><figcaption></figcaption></figure>
 
 
 4.  Paste your license into the **Product Key** area and press **Activate**.   
@@ -22,8 +22,8 @@ To install the license, copy the license key you received and paste it into the 
 
 
 
-    <figure><img src="../assets/image (220).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (220).png" alt=""><figcaption></figcaption></figure>
 5. Restart Assimilate.
 6.  If Live Looks was installed correctly, you will see a new tab on the left of the opening screen that says **Live Looks**. <br>
 
-    <figure><img src="../assets/image (357).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (357).png" alt=""><figcaption></figcaption></figure>

@@ -13,7 +13,7 @@ Now with most other applications, this involves the setup of ndisplay within you
 
 With Live FX Studio this is not necessary, since our workflow does not rely on ndisplay. As we showed in the preceeding parts of this tutorial series, Live FX Studio has its own projection functions, using the stage manager. Generally, our workflow with Unreal looks like this:
 
-<figure><img src="../../assets/Unreal_06.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/Unreal_06.jpg" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -31,7 +31,7 @@ To make managing the Unreal scene easier, there are various additional ways to c
 
 So let’s have a look at the different techniques for getting the image from Unreal into Live FX.
 
-<div><figure><img src="../../assets/SDINDI_06.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../assets/TX_05.jpg" alt=""><figcaption></figcaption></figure></div>
+<div><figure><img src="../../../assets/SDINDI_06.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../assets/TX_05.jpg" alt=""><figcaption></figcaption></figure></div>
 
 
 

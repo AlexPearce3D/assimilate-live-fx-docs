@@ -9,7 +9,7 @@ When you pan the camera and stop suddenly, if the frame of the inner frustum sto
 
 1. Navigate to the **Animate** button and the **Live Links** tab.
 
-<figure><img src="../assets/image (345).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (345).png" alt=""><figcaption></figcaption></figure>
 
 2. Now select X, Y, Z, Pan, Tilt, and Roll.
 3. Click on the Delay of any one of the selected parameters and enter the number of frames you want to delay by.   
@@ -18,4 +18,4 @@ When you pan the camera and stop suddenly, if the frame of the inner frustum sto
      
    Then work your way back until the content inside the frame and the frame move and stop at the same time.
 
-<figure><img src="../assets/image (346).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (346).png" alt=""><figcaption></figcaption></figure>

@@ -8,7 +8,7 @@ There are two main areas to make adjustments.
 
 The Live Links menu. Go to Live FX Menu, then Live Links and pull up the camera tracker you want to adjust, in this example, Ncam.
 
-<figure><img src="../assets/image (232).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (232).png" alt=""><figcaption></figcaption></figure>
 
 Here you adjust a few things mostly related to delaying or smoothing the tracking data coming into your machine.
 
@@ -16,7 +16,7 @@ Here you adjust a few things mostly related to delaying or smoothing the trackin
 
 For more advanced adjustments, you can navigate to the **Animate** button above the Live FX menu and select the **Live Links** tab.
 
-<figure><img src="../assets/image (234).png" alt=""><figcaption><p>The Animate Button, with the Live Links tab selected gives you more options to edit your camera tracking.</p></figcaption></figure>
+<figure><img src="../../assets/image (234).png" alt=""><figcaption><p>The Animate Button, with the Live Links tab selected gives you more options to edit your camera tracking.</p></figcaption></figure>
 
 Then select the parameters you want to adjust and make your adjustments.
 
@@ -36,7 +36,7 @@ Now pan your camera. If it's too slow, go up to .75 and try again.
 
 Keep repeating this process until your pan speed looks correct.
 
-<figure><img src="../assets/image (236).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (236).png" alt=""><figcaption></figcaption></figure>
 
 ### Invert Tilt
 
@@ -45,7 +45,7 @@ In this example, let's say when you tilt up, the virtual camera tilts down. Here
 1. Select the Tilt parameter.
 2. Change Absolute to Invert.
 
-<figure><img src="../assets/image (237).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (237).png" alt=""><figcaption></figcaption></figure>
 
 
 

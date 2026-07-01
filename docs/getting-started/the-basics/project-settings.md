@@ -2,7 +2,7 @@
 
 Selecting the **New** or **Project Settings** buttons from the Startup Screen opens the Project Settings dialog.
 
-<figure><img src="../../assets/image (363).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (363).png" alt=""><figcaption></figcaption></figure>
 
 ![](http://www.assimilatesupport.com/akb/Uploads/Images/Manual/Startup/Project_settings/Project_settings_V08.png)
 

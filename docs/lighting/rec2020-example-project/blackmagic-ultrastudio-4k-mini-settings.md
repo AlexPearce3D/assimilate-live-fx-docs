@@ -17,7 +17,7 @@ During Capture: Video output displays input video
 
 During playback: Keep Default color gamut
 
-<figure><img src="../../assets/image (48).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 ### SDI Output
 
@@ -27,10 +27,10 @@ Color Space: Video is converted to Y, Cb, Cr, 4:2:2
 
 SDI Connector: Single Link
 
-<figure><img src="../../assets/image (49).png" alt=""><figcaption><p>Should actually be Single Link</p></figcaption></figure>
+<figure><img src="../../../assets/image (49).png" alt=""><figcaption><p>Should actually be Single Link</p></figcaption></figure>
 
 ### HDMI Output
 
 Frame Packing
 
-<figure><img src="../../assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (51).png" alt=""><figcaption></figcaption></figure>

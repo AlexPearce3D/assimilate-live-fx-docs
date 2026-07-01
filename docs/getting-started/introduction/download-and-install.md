@@ -27,7 +27,7 @@ For the Windows installer, these are AssimSetup64.msi and ReleaseNotes.txt. The 
 
 Live FX is installed using the .msi file. Double-clicking on this file launches the installer program. When the installer first launches, an initial dialog is shown, indicating that you are about to install Assimilate software on your system.
 
-<figure><img src="../../assets/image (295).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (295).png" alt=""><figcaption></figcaption></figure>
 
 Installing Live FX is a standard Windows install:
 

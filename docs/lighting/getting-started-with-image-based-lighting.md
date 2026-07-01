@@ -6,7 +6,7 @@ From the **Stage Lights** module, you control the lights (fixtures) on set throu
 
 The Stage Lights module is available with a Live FX and Live FX Studio license. With a license, the Stage Lights module shows as one of the **main tabs at the bottom of the screen**.
 
-<figure><img src="../assets/image (344).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (344).png" alt=""><figcaption></figcaption></figure>
 
 A basic understanding of the **DMX** protocol is required to operate the module. This guide assumes that you are familiar with the concepts of DMX universes and channels as well as some basic network terminology.
 

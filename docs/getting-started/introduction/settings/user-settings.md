@@ -2,11 +2,11 @@
 
 To change your user settings, when you first open Assimilate, at the bottom left, click on "User Settings".
 
-<figure><img src="../../../assets/image (313).png" alt="" width="309"><figcaption></figcaption></figure>
+<figure><img src="../../../../assets/image (313).png" alt="" width="309"><figcaption></figcaption></figure>
 
 ***
 
-<figure><img src="../../../assets/image (292).png" alt=""><figcaption><p>User Settings Menu</p></figcaption></figure>
+<figure><img src="../../../../assets/image (292).png" alt=""><figcaption><p>User Settings Menu</p></figcaption></figure>
 
 ## General
 

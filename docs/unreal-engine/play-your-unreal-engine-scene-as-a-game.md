@@ -31,26 +31,26 @@ The first few times you do this process, it will seem confusing, but once you've
       
     Another way to create the shortcut is to go to the Epic Games Launcher, click on the dropdown menu of the version of the engine you want to use, and select **Create Shortcut**, which will place a shortcut on your desktop.
 
-    <figure><img src="../assets/image (512).png" alt=""><figcaption><p><br></p></figcaption></figure>
+    <figure><img src="../../assets/image (512).png" alt=""><figcaption><p><br></p></figcaption></figure>
 
 ## Customize the shortcut
 
 1.  Right-click on the shortcut and select **Properties**. <br>
 
-    <figure><img src="../assets/image (516).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (516).png" alt=""><figcaption></figcaption></figure>
 
     The target field has the path to the Unreal Engine .exe<br>
 
-    <figure><img src="../assets/image (517).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (517).png" alt=""><figcaption></figcaption></figure>
 2.  Find the location of the project you want to open and copy the full path. There are different ways to do it, but one way is to copy the path at the top, then add the full project name including ".uproject".<br>
 
-    <figure><img src="../assets/image (518).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (518).png" alt=""><figcaption></figcaption></figure>
 
 
 3.  In the target field of the shortcut, right after the .exe" add one space, one quotation mark then paste the Project location, followed by another quotation mark. In this example, this is how the full target line would read, with only one space between the engine path and the project path:  
     "C:\Program Files\Epic Games\UE\_5.3\Engine\Binaries\Win64\UnrealEditor.exe" "C:\Users\Demon\Documents\Unreal Projects\PackagingTests\PackagingTests.uproject" <br>
 
-    <figure><img src="../assets/image (519).png" alt=""><figcaption><p>Make sure there is one and only one space between the Engine Path and the Project Path</p></figcaption></figure>
+    <figure><img src="../../assets/image (519).png" alt=""><figcaption><p>Make sure there is one and only one space between the Engine Path and the Project Path</p></figcaption></figure>
 4. After the last quotation marks you can put in whatever [Command Line flags that you'd like.](how-to-package-an-unreal-engine-project-for-live-fx/command-line-arguments.md) You will at the very least need to use the -game and you will likely want to specify the Resolution with the ForceRes flag.<br>
 
 -game -ForceRes -ResX=1920 -ResY=1080 -RCWebControlEnable -RCWebInterfaceEnable -t.maxfps = 23.976 -

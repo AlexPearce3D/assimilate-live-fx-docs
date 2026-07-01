@@ -12,7 +12,7 @@
     You may need to exaggerate the scale and move the layer in Z depth for it to work properly with your camera tracking.
 
 
-<figure><img src="../assets/image (231).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
 It helps to enter **Dual View** (Shortcut D) and enter **Perspective View** (shortcut P) to see what's happening and to adjust.
 
@@ -20,7 +20,7 @@ To navigate around Perspective view, use Left Click + drag to orbit around the s
 
 In the example below, the orange Square shows where it is overlaid in the Perspective View (left) and how it looks in the composite (right)
 
-<figure><img src="../assets/image (230).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (230).png" alt=""><figcaption></figcaption></figure>
 
 
 

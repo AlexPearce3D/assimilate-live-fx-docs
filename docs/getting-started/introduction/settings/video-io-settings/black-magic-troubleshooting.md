@@ -10,7 +10,7 @@ When you've installed your capture card, but it does not show up when you open B
 3. In that folder, launch **DesktopVideoUpdater.exe**
 4.  If it prompts you, update your capture card.<br>
 
-    <figure><img src="../../../../assets/01C797BF-E60F-4D46-94AB-AD853E915007_1_105_c.jpeg" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../../assets/01C797BF-E60F-4D46-94AB-AD853E915007_1_105_c.jpeg" alt=""><figcaption></figcaption></figure>
 
 
 5. Restart your computer for the changes to go into effect.

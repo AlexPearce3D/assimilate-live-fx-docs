@@ -24,7 +24,7 @@ Now let's go to the client machine and create a project with the exact same name
 
 On the client machine(s), you will want to turn off auto-save. You can do this by going to the User Settings and under preferences, change Save to manual.
 
-<figure><img src="../assets/image (547).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (547).png" alt=""><figcaption></figcaption></figure>
 
 ### Shared folder for the Media
 
@@ -34,30 +34,30 @@ On the client machine(s), you will want to turn off auto-save. You can do this b
     For now, I will do this in the same location as my project, but this can be anywhere you want to store the media. I will name this folder "Media".   
     \*it should be a fast nvme or ssd drive if you plan to playback high-resolution media.<br>
 
-    <figure><img src="../assets/image (22).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (22).png" alt=""><figcaption></figcaption></figure>
 3.   From the Live FX start menu, go to your project settings,
 
-    <figure><img src="../assets/image (20).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
     Now change your Media Path to be the new folder you created. <br>
 
-    <figure><img src="../assets/image (23).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (23).png" alt=""><figcaption></figcaption></figure>
 4.  In File Explorer, navigate to the Media folder, right-click the folder, go to Properties, then go to the Sharing Tab and click on "Share".  
       
     \*You must be the admin of both machines and you may need both machines to have the same Username and login credentials.<br>
 
-    <figure><img src="../assets/image (24).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 
 5.  If you don't already have an "Everyone" under the name, click on the dropdown and select "Everyone".<br>
 
-    <figure><img src="../assets/image (25).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 
 6. With Everyone selected, click on share.
 7.  Find the path to this folder by right-clicking on the folder and going to properties, then the share tab again. Here it will say Network Path: and give you the path. Notice that "Media" is left out, you will have to add "\Media" to the end of this path. <br>
 
-    <figure><img src="../assets/image (28).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 
 8. Now let's find the IP Address of the client computer. You can do that by pressing the windows key and searching for "Command Prompt".   
@@ -68,12 +68,12 @@ On the client machine(s), you will want to turn off auto-save. You can do this b
 9.  Now on the Master Computer, from File Explorer, right-click on the "This PC" icon and press "Map Network Drive"  
     <br>
 
-    <figure><img src="../assets/image (27).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 
 10. Select an unused Drive Letter, like M.<br>
 
-    <figure><img src="../assets/image (29).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 
 11. Under the folder, type in \\\ + the ip address of the client compuer + the path (minus the computer name).   
@@ -104,14 +104,14 @@ Let's also change the Sync Settings so that it only Mirrors from the Master to t
   
 We can do that by clicking on the area next to the green settings cog, and changing it to Mirror.
 
-<figure><img src="../assets/image (548).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (548).png" alt=""><figcaption></figcaption></figure>
 
 Now let's save this configuration by going to the save or save as option on the left.
 
-<figure><img src="../assets/image (549).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (549).png" alt=""><figcaption></figcaption></figure>
 
 To check for changes, press the compare button. To push these changes, press the Synchronize button.  
 \*If pushing project changes, you may need to close Assimilate on one or both machines, but Media you should be able to push at any time.
 
-<figure><img src="../assets/image (550).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (550).png" alt=""><figcaption></figcaption></figure>
 

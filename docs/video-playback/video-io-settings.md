@@ -2,7 +2,7 @@
 
 The iron rule of thumb is that all YUV (or YCbCr) signals shall be legal range (and vice versa, RGB signals shall be full range ;-). So selecting a YUV output signal, but then choosing an RGB matrix cannot possibly work. selecting a YUV matrix gets you there halfway, but as you will find out, will clip certain parts of the signal at top and bottom (the green bars & green patch).
 
-<figure><img src="../assets/Screenshot 2024-06-18 at 12.17.37 PM.png" alt=""><figcaption><p>Video-IO menu: The format an default YUV Matrix are chosen in the upper right corner of the menu. In the lower half, the Matrix can be overridden for any of the input / output channels.</p></figcaption></figure>
+<figure><img src="../../assets/Screenshot 2024-06-18 at 12.17.37 PM.png" alt=""><figcaption><p>Video-IO menu: The format an default YUV Matrix are chosen in the upper right corner of the menu. In the lower half, the Matrix can be overridden for any of the input / output channels.</p></figcaption></figure>
 
 To elaborate a bit more: Live FX internally works in full range RGB (as any respectable finishing tool / live compositor would). So when setting your output to YUV, Live FX has to apply a matrix to go from RGB to YUV. And that matrix also contains a conversion from full to video range. This is what you select in the second dropdown (below the "Format" one in the upper right corner of the menu). And obviously, if you chose to output a YUV signal, you should then choose the corresponding YUV matrix (and in video range, please) along with it. In your case, that would be Rec2020 Video.
 

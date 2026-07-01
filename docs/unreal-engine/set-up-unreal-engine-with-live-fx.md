@@ -100,7 +100,7 @@ Search for Live Link Preset, select the “Default Live Link Preset”, and sele
 
 Now let's set up the Camera in Unreal Engine.
 
-1. Go to the Add Menu <img src="../assets/image (254).png" alt="" data-size="line">
+1. Go to the Add Menu <img src="../../assets/image (254).png" alt="" data-size="line">
 2. Add a **`Basic>Actor`**
 3. Rename this actor to something like  
    “00\_CamOffset”.
@@ -112,7 +112,7 @@ Now let's set up the Camera in Unreal Engine.
 
 <figure><img src="https://lh7-us.googleusercontent.com/jZ18zHi06nWPIKLtHx1jwhwO7NJ6NtMkmJr6bFFyZpL_VrSoW4FFR1mRDkLmAwlCdLnSs7a7kygFAtjDKFz6eb_wrjtOaxdgfZ6wfbTmX28WX-2ghHttwY0DQes0FmhtVXRdflrXyLozpRCfWuTS7aiYCg=s2048" alt=""><figcaption></figcaption></figure>
 
-4. Go to the Add Menu <img src="../assets/image (255).png" alt="" data-size="line">
+4. Go to the Add Menu <img src="../../assets/image (255).png" alt="" data-size="line">
 5. Add a **`Cinematic>Cine Camera Actor`**.
 6. Give it a name, like “00\_LiveFXCam”
 
@@ -155,7 +155,7 @@ Optionally, instead of adding the "LiveFX\_RuntimeCamera as a component to the c
 
 You would set your blueprint up like this, drag your camera from the outliner into the level blueprint to get a reference of it, and replace the "0\_Zeiss\_CineCameraActor" reference with your camera:<br>
 
-<figure><img src="../assets/image (81).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (81).png" alt=""><figcaption></figcaption></figure>
 
 A copy of this blueprint is provided here:
 
@@ -167,7 +167,7 @@ There are a few ways to work with the **Texture Share** image that comes from Un
 
 If you are using a Camera Projection method with an **Inner Frustum**, you can choose the **Projection Setup** and then under Project Media, choose **`Live Capture > Unreal Texture Share,`** then you can follow your normal workflow.
 
-<figure><img src="../assets/image (246).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/image (246).png" alt=""><figcaption></figcaption></figure>
 
 For small walls, sometimes this is not necessary and it's preferred to not have an inner frustum at all. Here is one method to achieve that. 
 
@@ -175,12 +175,12 @@ For small walls, sometimes this is not necessary and it's preferred to not have 
 
     In the construct, go to the **Filler dropdown** and add black or whichever you want.<br>
 
-    <figure><img src="../assets/image (247).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (247).png" alt=""><figcaption></figcaption></figure>
 2.  With the new Layer selected, on the bottom left, go to **“Plug-Ins”.**<br>
 
 
 
-    <figure><img src="../assets/image (248).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (248).png" alt=""><figcaption></figcaption></figure>
 
 
 3.  Select **“Unreal Texture Share”** and **Apply on Layer.**<br>
@@ -191,7 +191,7 @@ For small walls, sometimes this is not necessary and it's preferred to not have 
 
 1.  Click on the **Live FX** menu, then click on the **Live Links** Menu.<br>
 
-    <figure><img src="../assets/image (249).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (249).png" alt=""><figcaption></figcaption></figure>
 
 
 2.  Click on **Unreal Live Link.**  
@@ -201,21 +201,21 @@ For small walls, sometimes this is not necessary and it's preferred to not have 
 
     **Click Connect.**<br>
 
-    <figure><img src="../assets/image (250).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (250).png" alt=""><figcaption></figcaption></figure>
 
     \*IP can be 127.0.0.1 if using the local machine
 
     \*\*If you see numbers moving at the bottom, this is set up correctly.
 3.  If using **camera tracking**, make sure your tracking is set up correctly and that you **press “Apply”** so that it applies to your camera.<br>
 
-    <figure><img src="../assets/image (251).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (251).png" alt=""><figcaption></figcaption></figure>
 
 
 4.  If **not** using camera tracking, go to the **Camera tab and press “Active”**
 
     You can manually move the camera in UE, by changing the values.<br>
 
-    <figure><img src="../assets/image (252).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (252).png" alt=""><figcaption></figcaption></figure>
 
 ## 9. Press Play in Unreal Engine
 
@@ -225,7 +225,7 @@ For small walls, sometimes this is not necessary and it's preferred to not have 
       
     :information\_source: The size of the New Editor Window will be the resolution in Live FX, so if it is not maximized, it will be smaller than your monitor. For example, if you resize the window so that it is the left half of your 1920x1080 screen, the resolution would be 960x1080 (960=1920/2). <br>
 
-    <figure><img src="../assets/image (253).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../assets/image (253).png" alt=""><figcaption></figcaption></figure>
 
 
 3.  Go back to Live FX (The keyboard shortcut is **Alt+Tab**).   

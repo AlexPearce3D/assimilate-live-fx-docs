@@ -2,7 +2,7 @@
 
 In this last part of the tutorial, we discuss how to create a set-extension and record the scene. A set-extension is mostly used to previsualize a scene that shoots at a wider angle than the led wall size allows. After recording the scene, you re-create the scene in the post-production phase, possibly using the recorded metadata of the camera and wall positions.
 
-<figure><img src="../../assets/Tutorial_Diagrams_05_set-extensions.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/Tutorial_Diagrams_05_set-extensions.jpg" alt=""><figcaption></figcaption></figure>
 
 You can also use this technique in a live broadcast setting. This requires an even a more strict preparation to ensure that all settings are correct as there is no fixing in post.
 

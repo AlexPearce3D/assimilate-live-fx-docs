@@ -4,10 +4,10 @@ On Windows, if you have a second monitor (or LED Processor) hooked up, sometimes
 
 1.  Go to the **Task Manager**, either by pressing Control+Alt+Delete or by searching the Windows menu for Task Manager.
 
-    <figure><img src="../../assets/image (336).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../assets/image (336).png" alt=""><figcaption></figcaption></figure>
 2.  Look for any processes with "**Nahimic**" in the name and **End Task** for all of them.
 
-    <figure><img src="../../assets/image (338).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../assets/image (338).png" alt=""><figcaption></figcaption></figure>
 3. If Assimilate is still stalling, you may need to **End Task for Assimilate** as well.
 4. **Restart Assimilate**.
 

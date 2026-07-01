@@ -6,4 +6,4 @@ Go in a shot, go to Settings, and click on the Monitors menu on the left.
 2. For the UltraStudio Monitor, that goes to the LED Processor, set this to Rec2020, Gamma 2.4
 3. (Optional) Set the Split view to match your interface settings.
 
-<figure><img src="../../assets/image (539).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (539).png" alt=""><figcaption></figcaption></figure>

@@ -12,9 +12,9 @@ Once Flair is open, navigate to:
 
 Setups / External Devices
 
-<figure><img src="../assets/Screenshot 2024-08-29 at 5.37.38 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/Screenshot 2024-08-29 at 5.37.38 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../assets/Screenshot 2024-08-29 at 5.36.00 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/Screenshot 2024-08-29 at 5.36.00 PM.png" alt=""><figcaption></figcaption></figure>
 
 External Devices Setup
 
@@ -22,7 +22,7 @@ Set Data Output to [Free D](../camera-tracking/camera-trackers/free-d.md), UDP a
 
 In Live FX, navigate to the Live Links menu.
 
-<figure><img src="../assets/Screenshot 2024-08-29 at 7.16.09 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../assets/Screenshot 2024-08-29 at 7.16.09 PM.png" alt=""><figcaption></figcaption></figure>
 
 Activate Free D.
 

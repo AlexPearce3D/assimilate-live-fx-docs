@@ -4,7 +4,7 @@
 
 The shortcut to toggle HDR on and off is Windows+Shift+B.
 
-<figure><img src="../../assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -20,24 +20,24 @@ The shortcut to toggle HDR on and off is Windows+Shift+B.
    **Output Color Depth: At least 10 bpc**  
    **Output Dynamic Range: Full**<br>
 
-<figure><img src="../../assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 \*If you cannot change these settings, or you get weird artifacts when trying to change, your cables or HDMI adapters may not be good enough to do proper HDR 10 bit.
 
 
 
-<figure><img src="../../assets/IMG_3010.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/IMG_3010.jpeg" alt=""><figcaption></figcaption></figure>
 
 Notice above that the Sun disk is not visible and the highlights are blown out, this is with SDR(64-Bit)
 
-<figure><img src="../../assets/HDR(64bit) (2).jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/HDR(64bit) (2).jpeg" alt=""><figcaption></figcaption></figure>
 
 Now with the same settings everywhere else, by changing the settings to HDR(64-Bit), we can see the Sun and make out a lot more detail in the highlights.   
 <br>
 
 3. Make sure your media is flagged correctly, if using an HDRi, sRGB Scene Linear for example
 
-<figure><img src="../../assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 
 
