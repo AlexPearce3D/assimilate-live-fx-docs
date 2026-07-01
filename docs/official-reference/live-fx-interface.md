@@ -51,9 +51,9 @@
 <h5 id="live-links">Live Links</h5>
 <p>Live Links opens the live links panel to manage Live Link sources that captures and sends out camera tracking and other dynamic metadata, which can be used in your composition setup. Live Links are discussed in more detail later.</p>
 <h5 id="stage-manager">Stage Manager</h5>
-<div>
+
 <p>Open the Stage Manager panel where you manage the LED wall setup. The Stage Manager is discussed in more detail later. </p>
-</div>
+
 <h5 id="calibration">Calibration</h5>
 <p>Open the Camera Calibration panel. This panel can also be opened from the Camera menu and in discussed in more detail in the section about the (virtual) camera.</p>
 <h5 id="scene-take">Scene-Take</h5>

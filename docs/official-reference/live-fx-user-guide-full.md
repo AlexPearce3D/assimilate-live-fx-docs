@@ -55,9 +55,9 @@
 <h5 id="live-links">Live Links</h5>
 <p>Live Links opens the live links panel to manage Live Link sources that captures and sends out camera tracking and other dynamic metadata, which can be used in your composition setup. Live Links are discussed in more detail later.</p>
 <h5 id="stage-manager">Stage Manager</h5>
-<div>
+
 <p>Open the Stage Manager panel where you manage the LED wall setup. The Stage Manager is discussed in more detail later. </p>
-</div>
+
 <h5 id="calibration">Calibration</h5>
 <p>Open the Camera Calibration panel. This panel can also be opened from the Camera menu and in discussed in more detail in the section about the (virtual) camera.</p>
 <h5 id="scene-take">Scene-Take</h5>
@@ -151,7 +151,7 @@
     <li>Some tracker are automatically detect on the network whereas other you need to specify them (IP/Port) to connect.</li>
     <li>Some trackers are only available with a Live FX Studio license.</li>
 </ul>
-<div>
+
 <table style="width: 75%;" class="BorderTable">
     <thead>
     </thead>
@@ -435,7 +435,7 @@
     </tbody>
 </table>
 <br />
-</div>
+
 <h5 id="antilatency">Antilatency</h5>
 <p>Select one of the available placements – which determines the sensor layout that is being used. Please, see the Antilatency documentation for information on creating a placement.</p>
 <h5 id="freed">FreeD</h5>
@@ -468,13 +468,11 @@
     <li>(re)Start Unreal, activate the new plug-in and add a new Live Link Source. Make sure the Unreal Live Link has the same Port number set as the live link inside Live FX.</li>
     <li>Tie the Live Link to the camera in the UE scene. If you have the Unreal Take recorder active, the scene metadata can automatically be synced with Live FX.</li>
 </ul>
-<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_UnrealPlugin_v02.png" /><br />
-</div>
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_UnrealPlugin_v02.png" /><br />
+
 <p>There are many different use models for Live FX with Unreal Engine. The Unreal Live Link can forward live camera tracking data or forward an animated camera position. Live FX can capture the image output from Unreal to composite this into a live camera feed. </p>
-<p></p>
 <p>Live FX can capture the Unreal output through SDI or NDI. In general this will cause some latency issues as the Unreal signal takes more time than the live camera image. For that the live capture node in Live FX has a delay option. By delaying the live camera capture you can sync it perfectly with the Unreal output.</p>
 <p>Alternatively, Live FX provides a so called Spout plug-in, which allows for direct image sharing between UE and Live FX on the GPU. This only works if both applications run on the same machine but since the image is shared directly on the graphics card, there is no latency. The Spout plug-in is discussed in more detail later.</p>
-<p></p>
 <h4 id="live-links-other">Live Links – Other</h4>
 <h5 id="osc-sender">OSC Sender</h5>
 <p>The OSC Sender Live Link can send metadata to other systems using the OSC protocol. Enter the IP Address and (UDP) port number of the system to send the data to. Optionally add a custom tag for the OSC message. Click Connect to start the sending of live link data.</p>
@@ -501,7 +499,6 @@
 <h2 id="live-animation">Live Animation</h2>
 <p>Live Link metadata can be used in the grade and composite elements of shot through the Live Animation module. Live Animations are an extension to the standard animation module in the Assimilate Product Suite. In the standard animation module, you can create and apply an animation curve to a grade / composite parameter. Through the Live Animation extension, you link a Live Link to a grade / composite parameter and optionally apply a transform to the metadata to fit the parameter range. Before you can link a parameter to a Live Link you first switch on the Live-option for an animation channel.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Anim_Live_v01.png" /></p>
-<p></p>
 <p>The <strong>Live</strong> option applies to all parameters in the animation channel. When the Live option is enabled, the Link option becomes available which opens the Animation Editor for the animation channels shown in the current menu.</p>
 <p>The <strong>Link</strong> button opens the Animation Editor for the current selected animation channel, where you manage live links.</p>
 <h3 id="live-animation-editor">Live Animation Editor</h3>
@@ -521,7 +518,7 @@
     <li><strong>Range</strong>. Scale the Live Link value to a predefined range. Enter the minimum and maximum values that the Live Link can produce as well as the minimum and maximum range the scaling should produce.</li>
 </ul>
 <h2 id="virtual-camera">Virtual Camera</h2>
-<div>
+
 <p>Each shot has its own virtual camera for rendering a scene that includes layers. In such a scene, the primary image (of the clip or live capture) forms the back-plate that is tied to the camera and layers exist in a 3D context. You manage the (virtual) camera settings primarily from the Camera menu.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_T1_Menu_v02.png" /></p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_T2_Menu_v02.png" /></p>
@@ -545,19 +542,15 @@
 </ul>
 <h3 id="camera-menu">Camera Menu</h3>
 <h4 id="general-2">General</h4>
-<div>
+
 <h5 id="activate">Activate</h5>
-</div>
-</div>
-<div>
-<div>
+
+
 <p>When you add one or more layers on a shot, a camera is created and used to render the layer(s) on top of the primary image. Note though that even though the camera is used for rendering, by default it is not marked as Active. If you want to change the default camera settings then you first have to explicitly activate it by using the <strong>Activate</strong> button. If you activate a camera while the shot does not have any layers, a single layer is created by default.</p>
 <p>Certain nodes - such as e.g. the projection plug-in or the USD reader - have an option to use the shot camera data for rendering. When that option is set, the node will use the first active camera that is available upstream in the node composition tree. So you can have multiple USD nodes in layers on top of a Capture node, with all the USD nodes using the camera data of the parent Capture node. Each USD node can still have layers of its own. The layers are rendered with the local default camera, while the primary image is rendered based on the parent camera. This allows you to create a Global camera object for you entire composition.</p>
 <h5 id="profile">Profile</h5>
-</div>
-</div>
-<div>
-<div>
+
+
 <p>The settings of a camera can be stored in a profile and easily be applied on a the camera of a new shot. When you click the <strong>Profile</strong> button, the Profile popup opens. </p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_Profile_Popup_v01.png" /></p>
 <p>At the top of the Profile popup is a list of previously created profiles. Profiles are stored in the project database, so the list is not automatically available in a new project.</p>
@@ -565,18 +558,18 @@
 <p>To save a profile, type in a profile name in the textbox at the bottom of the popup panel and then click the <strong>Save</strong> button. If you enter an already existing profile name, the profile will be updated. Select the <strong>Focal </strong>and/or <strong>Distort </strong>options to include the specific data in the profile. You can only save lens distortion data, if there is a <span class="Highlight">Lens (un)Distort</span> plug-in active on a layer on the current shot.</p>
 <p>Use the <strong>Delete </strong>option to remove the selected profile.</p>
 <h5 id="calibrate">Calibrate</h5>
-</div>
-<div>
+
+
 <p>The camera <strong>Calibrate </strong>functions are discussed in the next paragraph.</p>
 <h5 id="bypass">Bypass</h5>
-</div>
-<div>
+
+
 <p>The <strong>By-pass</strong> option in the Camera menu allows you to ignore the camera position and rotation for rendering of the scene while maintaining a link with an external tracker through a Live Link.</p>
 <p>The By-Pass option is useful, if you need to adjust certain settings in your composite and need the image to be temporarily free from any motion. Also, if you are linking to an external tracker / Live Link and forwarding this tracker information to another system but do not require the motion in the local composite.</p>
-</div>
-<div>
+
+
 <h5 id="reset-2">Reset</h5>
-</div>
+
 <p>Reset all camera settings to their default values.</p>
 <h4 id="lens-and-sensor">Lens and Sensor</h4>
 <p>The virtual camera <strong>Focal Length</strong>, <strong>Sensor</strong> size and <strong>Crop</strong> value together determine the camera's field of view (FoV). </p>
@@ -593,31 +586,26 @@
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_WDist_v01.png" /></p>
 <p>It is important to not change the Pixel Scale after you positioned the camera and / or layers based on a meter position.</p>
 <p>The Animation Offset parameters are intended to be animated or live linked. When using the automatic live link tracker Apply option, these are the parameters that are live linked.</p>
-<p></p>
-<p></p>
 <h4 id="config-tab">Config tab</h4>
 <h5 id="far-plane">Far Plane</h5>
 <p>By default, the <strong>Far Plane</strong> setting is dynamic. Its value is based on the image resolution and the camera's field of view. However, when you enter a specific value for the Far Plane, is will remain fixed on that value and no longer automatically update when the camera's focal length or sensor properties are altered. To revert back to the dynamic value, you reset the value by clicking the control and using the Reset option in the Calculator control.</p>
 <p>All other camera controls are explained in the general user guide.</p>
-<p></p>
 <h3 id="calibrate-2">Calibrate</h3>
-<div>
+
 <p>All calibration functions require you to capture live camera images. Make sure you open the calibration panel while in the player with a live capture node, preferably without any grade or scaling applied. The Camera Calibration panel can be started from the Live FX menu or from the Camera menu. The panel contains 4 tabs for various calibration tasks.</p>
-</div>
+
 <ul>
     <li>Setup - enter the values to be used with the various calibration tasks.</li>
     <li>Lens - determine the lens focal length and lens distortion values.</li>
     <li>Nodal - determine the distance between the tracker and the camera nodal point.</li>
     <li>Position - determine the tracker transformation matrix from the scene origin.</li>
 </ul>
-</div>
-<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Calibration_v01.png" /></div>
-<div><br />
-</div>
-<div>
+
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Calibration_v01.png" />
+<br />
+
+
 <p>Depending on the camera tracking system you use, some or all of the calibrations are done in the external tracker system and all you have to do is live link to the tacker focal length, position and rotation data. Even in that case you should still try the Virtual Ground and or / Scene layer functions from the last tab to check if the data coming in is correct.</p>
-<p>
-</p>
 <h4 id="calibration-setup">Calibration Setup</h4>
 <h5 id="board">Board</h5>
 <p>
@@ -659,7 +647,6 @@ Use the Apply button to update the active shot camera. Use the FL and DS buttons
 <h5 id="auto-capture">Auto Capture</h5>
 <p>
 Alternatively, to the Manual Capture, you can also enable the Auto Capture. Once enabled, this function will try to capture the board every 2 seconds automatically without the need to explicitly press a button. Another way to make the manual calibration process easier is to use the remote control (web) application that comes with the Assimilate Product Suite. The Remote Control can be started from the Tools menu in the Player. This opens the http server panel with a QR code that you can scan with a phone or tablet to open the application. The application has the standard remote control playback controls but also a series of function controls (F1 – F5). These can be assigned a function in the server panel. One of those functions can be to do a Capture Board for the calibration process.</p>
-<p></p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_RemoteCtrl_Server_v01.png" /><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_RemoteCtrl_Client_v01.png" /></p>
 <p>This way you can move the checkerboard to a new position and hit the function key on your mobile phone instead of having to go back to the Live FX computer to click the button in the interface.
 </p>
@@ -704,15 +691,12 @@ The Virtual Ground function creates a layer at the scene’s (virtual) origin (0
 <h5 id="scene-layer">Scene Layer</h5>
 <p>
 This function scans for an Aruco marker that is placed anywhere in the scene and then creates a virtual layer in the scene at the same position and angle. With this you can easily place virtual objects in your scene – by adding the image of the virtual object as fill onto the created layer. In fact, if you have a node attached to the pen when clicking the Scene Layer button, that node is automatically used as fill for the new layer.</p>
-<p>
-</p>
 <h2 id="led-wall-projection">LED Wall Projection</h2>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
+
 <h3 id="overview">Overview</h3>
 <p>Using an LED wall as background for recording a scene takes more than just playing back media on the wall. The media should be projected correctly where the projection considers both the position and size/resolution of the wall as well as the position/rotation of the camera that is recording the stage. If the projection does not take these aspects into account, the background in the recorded image might look distorted and wrongly scaled. </p>
-<p></p>
 <p>Live FX can be used to easily and correctly project media on LED wall(s). Live FX uses several elements for this which are displayed in the schematic below. The schematic gives an overview and briefly explained in this paragraph to introduce you to the various concepts involved. Each element has been or will be described in detail in this manual and separately as some elements also have their function in other contexts than projection. After discussing the elements in detail, setting up an actual projection is discussed. By then, it is easy to understand what is happening under the hood and how to manage the projection.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_ProjectionDiagram_v01.png" /></p>
 <ul>
@@ -730,21 +714,13 @@ This function scans for an Aruco marker that is placed anywhere in the scene and
     <li>One or more Projection nodes (in case of multiple walls) feed into a single Switcher node. A Switcher node can playback multiple streams at the same time to specific displays.</li>
     <li>The Switcher node takes in the mapping information of the Stage Manager to generate a mosaic image and/or to output each wall projection to the correct display.</li>
 </ul>
-<p></p>
-</div>
-<div>
-<p></p>
-<p></p>
-<p></p>
-</div>
-<div>
+
+
 <h2 id="stage-manager-2">Stage Manager</h2>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
-</div>
-<div>
-<div>
+
+
 <p>At the heart of LED wall projection in Live FX is the stage manager. The Stage Manager is where you create a model of your stage with the position and shape of the LED wall(s). This information is used, together with the camera position, to determine the correct image to be send to each wall. In the Stage Manager you also determine how display outputs are mapped on each of the LED walls. The Stage Manager can be opened from the Projection Setup panel in the Construct (see below) or from the Live FX menu in the Player.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_StageManager_v01.png" /></p>
 <p>The left side of the panel contains all controls to manage multiple stages and walls. The right side of the panel show the stage model. Through the Mapper tab in the right side of the panel you link the physical display outputs to the LED walls.</p>
@@ -789,17 +765,12 @@ This function scans for an Aruco marker that is placed anywhere in the scene and
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_WallPreview_v01.png" /></p>
 <p>When the Preview is invoked from the Construct, the test pattern is automatically opened in the player. When already in the player, the test pattern replaces the active node. Clicking the <strong>Reset </strong>button takes back to the Construct or prior node.</p>
 <h3 id="mapper-examples">Mapper Examples</h3>
-</div>
-<div>
+
+
 <p>To make the concept of mapping Walls and Displays in the Stage Manager more clear and concrete, here are two example mappings. The first very basic, the second using the Mosaic option.</p>
-<p>
-</p>
-</div>
-<div>
-<p>
-</p>
+
+
 <h4 id="stage-a">Stage A </h4>
-<p></p>
 <ul>
     <li>Single square wall – 6 x 6 tiles, each with 200x200 resolution. So total resolution of 1200 x 1200). </li>
     <li>Output over 4k Video IO SDI to (also 4k) LED wall processor. </li>
@@ -812,10 +783,7 @@ Next:</p>
     <li>Since the resolution of the wall is smaller than the actual output resolution, you might have to offset the image to ensure the image is covering the wall. This depends on how / if the LED wall processor places the incoming image on the wall. An easy way to determine the correct offset is to use the Preview option. This will send out a test pattern of 6x6 tiles which should exactly cover the wall.</li>
     <li>The test pattern is shown through a Switcher node. On the Display tab of the Channel Controller of the Switcher node, ensure that the VideoIO channel is tied to the first channel of the Switcher node. Normally this is done automatically when using activating the Preview option.</li>
 </ul>
-<p>
-</p>
 <h4 id="stage-b">Stage B</h4>
-<p></p>
 <ul>
     <li>Main wall with resolution of 4928 x 1936, driven by 2 x LED wall processors with 4k input (3840 x 2160). Square side wall of 1056 x 1056 pixels, driven by a LED wall processor with an HD input (1920 x 1080). </li>
     <li>HDMI output directly from the graphics card.</li>
@@ -840,32 +808,10 @@ Once you have created the NVIDIA mosaic display, start Live FX and enable the Du
     </li>
 </ul>
 <p>Note that the Preview option can also help to offsets the mappings accurately.</p>
-</div>
-<div>
-<p></p>
-</div>
-</div>
-<div>
-<p>
-</p>
-<p>
-</p>
-</div>
-<div>
-<p>
-</p>
-<p>
-</p>
-</div>
-<div>
-<p>
-</p>
-<p>
-</p>
-</div>
-<div>
+
+
 <h2 id="live-fx-nodes">Live FX Nodes</h2>
-<div>
+
 <p>Live FX contains all the available file-reader and effect plug-in nodes in the Assimilate Product Suite. There are however a number of nodes only for available in Live FX. These nodes are discussed in the part of the manual. Also, some nodes that are available in the regular Product Suite but do have extra meaning in a live context are included here .</p>
 <h3 id="video-capture-node">Video Capture Node</h3>
 <p>At the heart of Live FX is the Video Capture node which captures a live feed through the Video IO interface. The Video IO interface supports SDI, NDI, certain USB cameras and Spout/Syphon GPU sharing with other applications. For the Video Capture node to be able to use any of these interfaces, you need to first enable and configure the interface through the Video IO Configuration panel which can be opened from the startup screen or from within the Player - Settings menu.</p>
@@ -883,20 +829,17 @@ Once you have created the NVIDIA mosaic display, start Live FX and enable the Du
 <p>On Video Capture node, you can select the feed form the list of active <strong>Devices</strong> and from the list of active input <strong>Channels </strong>with that device. If the input is an SDI channel and the input is coming from a camera in the <strong>Camera</strong> dropdown list, then select that camera so the node can properly interpret the metadata that is send with the SDI stream.</p>
 <p>The <strong>Auto TC Sync</strong> option allows you to synchronize multiple captured feeds based on their timecodes by buffering frames until all feeds produced the frame with the same timecode. Note that the setting is linked to the selected capture channel, not to the capture node (you can have multiple capture nodes that all link to the same channel). Also note that if you enable auto-sync on multiple channels and one channel fails to produce real-time frames, this will stall the other channels. If the timecodes of the various feeds differ too much, auto sync is ignored.</p>
 <p>Alternatively, to the Auto-Sync you can also set a manual delay with an individual feed, in milliseconds. This is useful when you capture multiple feeds from different sources which do not have (similar) timecodes.</p>
-<p>
-</p>
 <h4 id="full-vs-video-range">Full vs Video Range</h4>
 In the Video IO panel, you set which YUV -&gt; RGB matrix to use for an SDI device: either a video- or full range matrix. Different cameras require different settings when outputting a log-signal that is captured in Live FX. For most common cameras this is the matrix that should be used:
-<p></p>
 <ul>
     <li>Video range (rec709): ARRI, Canon, RED</li>
     <li>Full range (rec709): Sony, Panasonic</li>
 </ul>
 <p>If you have a different camera then check the documentation with that camera to make sure what matrix to use when capturing the signal. Note that when capturing a linear signal (rec709) from a camera you should always use a video-range matrix.</p>
 <h3 id="projection-node">Projection Node</h3>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
+
 <p>A Projection node creates a projection image from its media input based LED Wall shape and position coming from the Stage Manager and the camera position. There are two types of projection nodes: 2D-&gt;wall and Eq-&gt;Wall. As the name already suggests each, depending on the type of media (2D or Equirectangular 360 media) that you want to project onto a LED wall, use one or the other.</p>
 <h4 id="2d-wall">2D-&gt;Wall</h4>
 <p> <img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Node2D2wall_v01.png" /></p>
@@ -924,11 +867,10 @@ In the Video IO panel, you set which YUV -&gt; RGB matrix to use for an SDI devi
 For the <strong>Dome </strong>projection there are additional settings to consider. Use the <strong>XYZ </strong>controls to set the position of the center to the dome. The <strong>Radius </strong>sets the size of the dome. This size is an estimate of the actual size of the image scene. The radius is used to determine what a meter position change of the camera means inside the dome. Use the <strong>Floor </strong>setting to adjust the position where the sphere is split. </p>
 <p>
 The <strong>Pan</strong>, <strong>Tilt </strong>and <strong>Roll </strong>controls are used to rotate the full scene. Note that these parameters can also be controlled from the (parent) <strong>Switcher </strong>node (if present), which then controls all underlying projection nodes for each wall in the stage.</p>
-<p></p>
 <h3 id="switcher-node">Switcher Node
 </h3>
-</div>
-<div>
+
+
 <p>The Switcher node comes in two flavors. A basic Switcher node that can have multiple has multiple inputs and can play those back simultaneous to different displays and/or create a video wall of the inputs and play that back on any one of the display. The Projection Switcher node is a derivative of that, which in addition has a series of controls to manage underlying Projection nodes: e.g. to rotate the view of an equirectangular clip at once so that you do not have to go through each of the Projection nodes separately to update the settings.</p>
 <p>From the Switcher node controls you can start the Channel Controller panel. From that panel Switcher node configuration is done. The configuration applies to all Switcher nodes, not just the active one.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_ChannelController_V01.png" />&nbsp;</p>
@@ -939,32 +881,30 @@ The <strong>Pan</strong>, <strong>Tilt </strong>and <strong>Roll </strong>contro
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_SwitcherProjection_v01.png" /></p>
 <p>When you use the Create Projection Setup panel (discussed later) and you have multiple LED walls in your stage - a projection node&nbsp; is created per wall and all of those nodes are combined in a Projection Switcher node. To make it easier to control the settings of multiple Projection nodes, the projection settings are also available from the Switcher node. Adjusting the controls will affect all underlying Projection nodes. Note that you can still adjust the Projection nodes individually if needed.</p>
 <h3 id="stage-matte">Stage Matte</h3>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
-<div>
+
+
 <p>The Stage Matte node uses the active stage in the Stage Manager and the (virtual) camera position to generate an alpha-matte. Since the node knows if an LED wall is (partly) within view of the camera, the resulting alpha-matte can be used for creating a set-extension: extend the image on the LED wall where the LED wall stop using the live camera capture.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_NodeStageMatte_v01.png" /></p>
 <p>You can enhance this matte with the <strong>Expand</strong>, <strong>Feather </strong>and <strong>Blend </strong>controls to get the desired edges. The node can take in two inputs and then uses the matte to combine the images: in case of a set-extension the inputs are the live camera capture and the clip that is projected on the LED walls.&nbsp;</p>
-</div>
+
 <h3 id="matte-wrap">Matte Wrap</h3>
-<div>
+
 <p>The Matte Wrap node can be used in combination with a keyer to create a Light Wrap effect. </p>
-</div>
-<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_NodeMatteWrap_v01.png" /></div>
-<div><br />
-</div>
-<div>
+
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_NodeMatteWrap_v01.png" />
+<br />
+
+
 <p>The Matte Wrap plug-in detects the edges of the (keyer) alpha can expand it (outward or inward with a negative Size) as well as adjusting the intensity of it by using the Gain. In the example below, the first image shows the alpha from the keyer, the second image shows the alpha that the Matte Wrap generates from that, and the this image show the combined alpha.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_MatteWrap_Example_v1.png" /></p>
 <p>You use the Matte Warp in a separate layer after the keyer and (obviously) in the Matte of the layer. You can use the Fill of that layer to explicitly load the background image again, which then can have its own grading to even more accentuate the light wrap effect. </p>
-</div>
+
 <h3 id="live-tracker">Live Tracker</h3>
 <p>The Live Tracker plug-in node can track a specific objects/sections in an image and make the tracker data available as live link, which in turn can be used elsewhere in your composition shot such as positioning another layer. </p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveTracker_v01.png" /><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveTracker_Overlay_v01.png" /></p>
 <p>It allows you to create any number of point trackers to track a specific object in the image. The XY coordinates of each of the trackers are available as live links in your composite. The data of multiple point trackers is combined to calculate scaling and rotational data, which is then also exposed as live link.</p>
-<p>
-</p>
 <h5 id="add-point-tracker">Add Point Tracker</h5>
 <p>
 Add a new point tracker – the overlay of the tracker becomes visible in the image. Drag the tracker to the object that you want to track. The outer box of the tracker represents the search area. The inner box represents the object to search for. You can adjust the sizes of the boxes by dragging the outer borders. Note that the smaller the boxes the more efficient the tracker works, but the chance of the tracker ‘losing’ the object increases.
@@ -993,7 +933,6 @@ If more than 4 trackers are active, this option tries to calculate a 3 dimension
 <p>
 With this option enabled you indicate that the tracked region contains a so called ArUco marker. In that case, the Live Tracker will not just track the xy position of the search region within the image but also try and calculate the angle of the marker. Although theoretically it can determine the rotation of the marker over 3 different axis, currently only the roll-angle of the marker is passed as live link.
 </p>
-<p></p>
 <h3 id="lens-un-distort-node">Lens (Un)distort Node</h3>
 <p>The Lens (Un)distort plug-in node can be used to distort or undistort an image based on lens distortion parameters or by using a UV-map. </p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_NodeLensDistort_v02.png" /></p>
@@ -1005,11 +944,11 @@ With this option enabled you indicate that the tracked region contains a so call
 </ul>
 <p>Use the <strong>Crop</strong> option to scale the image to remove any black borders that are created by the (un)distort. The <strong>Crop </strong>only works with the distortion parameters, not with an external UV or ST map.</p>
 <p>The <strong>Save XML</strong> and <strong>Load XML</strong> buttons store or load the distortion parameters to / from an external file on disk.</p>
-</div>
-<div>
+
+
 <p>Alternatively to using the distortion parameters, you can also use a <strong>UV map</strong> or an <strong>ST map</strong>. Use either the <strong>Load </strong>option to select a map image from disk or drag drop an already loaded map shot to the input of the Lens (Un)distort node in the Inputs menu. </p>
-</div>
-<div>
+
+
 <p>If you loaded a Map through the <strong>Load </strong>button, you can clear it by using the <strong>Remove </strong>button.</p>
 <h3 id="spout-syphon-gpu-share-and-sender">Spout/Syphon GPU Share &amp; Sender</h3>
 <p>Spout (windows) and Syphon (mac) are protocols to share GPU textures (images) between applications. Sharing images directly on the GPU limits latency to its minimum. Do note however that Spout/Syphon do not have any sync mechanism: an application always just takes the 'latest' image shared. An receiver application might already have advanced to a next frame, while the sender application has not - or vice verse. In general, when both application both run in real time (and at the same frame rate) the latency should be a maximum of 1 frame.</p>
@@ -1020,7 +959,6 @@ With this option enabled you indicate that the tracked region contains a so call
 <p>The Intel RealSense depth camera uses Lidar to generate a depth image. The RealSense depth plug-in captures this image and can generate a matte from it, which can be combined with an RGB camera image. </p>
 <p>Note that the RealSense depth camera is only available for Windows. Further note this node was implemented as an experiment but that in the end the resolution of the camera, as well as the accuracy of the depth information and in dealing with the reflection of certain surfaces proved to be limited. Nevertheless – the plug-in offers a way to start using new technology in a creative way. The aim of the implementation was to use it as an overlay on the actual camera image and as such to create a dynamic mask based on the depth information which potentially could replace green screen keying. Without newer and better versions of the depth camera, further development was stopped.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Plugin_Realsense_depth_v01.png" /></p>
-<p></p>
 <h5 id="mode">Mode</h5>
 <ul>
     <li>    Alpha Mask. Use the Threshold distance to generate a matte with everything further away than the threshold being fully opaque.</li>
@@ -1045,9 +983,9 @@ With this option enabled you indicate that the tracked region contains a so call
 <p>The camera rotation and field of view can also be <strong>linked to the shot camera</strong>, which in turn can be linked to a camera tracker. Optionally you can also move the inside the equirectangular sphere by adjusting the <strong>XYZ position</strong>. Note though that since this is primarily used with pre-recorded plates, adjusting in xyz too much might lead to a distorted image. </p>
 <p>To also link the XYZ position to the shot camera, enable the <strong>Incl. Position</strong> option. Since inside a sphere the standard radius is 1, you can adjust the Scale to use a more proper range for XYZ adjustments in meters.</p>
 <h3 id="usd-nodes">USD Nodes</h3>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
+
 <p>USD (Universal Scene Description) is a format for 3D elements and scenes. The USD node load these elements / scene and uses the Pixar Hydra rendered, that is included with the installation, to render a 2D image based on the camera and object position and a range of render and lighting options. This allows you to include 3D virtual elements into your (live) composition. </p>
 <p>Although the USD node has its own camera position controls, you can also link to the active shot camera as to fully integrate it with your composition. When you add an USD node on a layer to your composition, ensure that the layer is set to <strong>Relative</strong>, so that it 'sticks' to the camera: the USD node makes sure that at any one time the correct perspective of the 3D item is rendered to a 2D image.</p>
 <p>Note that USD elements / scenes can be loaded directly from file just like any other media format.</p>
@@ -1083,41 +1021,29 @@ With this option enabled you indicate that the tracked region contains a so call
 <h4 id="lights">Lights</h4>
 <p>The effect of the <strong>Ambient</strong>, <strong>Specular</strong>, <strong>Shininess </strong>color as well as the <strong>Dome Light</strong> toggle depend on the setup of the USD scene. Toggle the <strong>Auto-Position</strong> off to be able to adjust the direction of the light in the scene manually by using the <strong>XYZ</strong> controls.</p>
 <h3 id="notch-blocks">NOTCH Blocks</h3>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
+
 <p>Notch Builder (<a href="https://www.notch.one/" class="ApplyClass" target="_blank">https://www.notch.one/</a>) allows you to create 3D elements or completes scenes which can be exported as Notch Blocks. Live FX can load such a Notch Block as part of a (live) composition shot, where the various parameters of the notch block can be set, animated or linked to a live source and as such be combined with a live camera feed.</p>
 <p>A Notch Block can be loaded directly from disk or by first selecting a Notch Block plug-in node through the plug-in browser in the player. When loaded through the plug-in browser, you are asked to select a specific Notch Block *.dfxdll file from disk. To be able to render the content of a Notch Block you need the Notch render engine installed as well as a Notch license. Certain Notch Blocks can take some time to load, the first time you open them. Loading a project with the Notch Blocks nodes in it, does not take that much extra time. However, the first time a Notch Block needs to render an image in the player it might take longer.</p>
 <p>Each Notch Block has its own set of parameters / controls to. However, all Notch blocks have the same 3 general controls: Height and Width, which determine the size of the output of the Notch Block. Note that by default the size if the same as the size of the Live FX node but can be adjusted to e.g. a smaller size to speed up rendering (while you can then upscale the node to the composition resolution). The third general control with each Notch Block is the Layer selection. A Notch Block can contain one or more different layers of which only one can be selected at any one time. Note however that you could instantiate multiple Notch nodes in a single composition, each with a different layer selected.</p>
 <p>Certain Notch Blocks can contain properties that are exposed as Live Links (similar to the output of the Live Tracker). These Live Links can in turn be used to control and steer other aspects of the composition. Check the Live Animation editor for available Notch Block parameters.</p>
 <h3 id="notchlc">NotchLC</h3>
 <p>Next to rendering Notch Blocks, Live FX also supports playback of (QuickTime) media encoded with the <span class="Highlight">NotchLC codec</span>. The NotchLC codec is used to ensure real-time playback due to its GPU optimized encoding model. There is also a NotchLC encoder available for SCRATCH to transcode any media into this format. Contact support on the known email address for more information </p>
-<p></p>
-</div>
-<div></div>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
+
+
 <h2 id="live-composition-setup">Live Composition Setup</h2>
-<div>
+
 <p>Many of the individual compositing elements and function available in Live FX come together in the Live Composite Setup panel. This Wizard type of function is available from the Construct main menu and helps you to setup complex live (green-screen) compositions with just a few clicks.</p>
-</div>
+
 <img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveCompSetup_v01.png" /><br />
-<div>
+
 <p>Start by selecting type of composition you want from the Model dropdown. The various options are self-explanatory. </p>
 <p>Next, set the <strong>Name</strong> for the composition as well as the <strong>Camera-id</strong> and <strong>Scene </strong>designation. </p>
 <p>Select the camera that you want to capture from the dropdown that lists all available <strong>VideoIO </strong>inputs. Note that it is possible to select a different capture channel or even add multiple live capture nodes into your composite at a later stage. </p>
 <p>In the <strong>Format </strong>options you specify the resolution and framerate of your composite. The framerate should be the same as the live capture. A live composition can be <strong>Continuous</strong> (no ending) or have a specific <strong>Length</strong>. Note that even if you specify a specific duration, playback of the composite is always looped, and any recording will continue until explicitly stopped.</p>
-</div>
-<div>
+
+
 <p>Select the background for your (green screen) live composition. There are different options:</p>
 <ul>
     <li>The background can be an existing clip. Use the Browse option to load it directly from file or drag-drop the clip from the Construct into the proxy area. </li>
@@ -1130,72 +1056,44 @@ With this option enabled you indicate that the tracked region contains a so call
 <p>For most live compositions to work correct, a calibrated (virtual) camera is needed. Make sure you create a camera profile after a calibration. Selecting an existing <strong>Camera Profile</strong> with the live composition setup will speed things up enormously.</p>
 <p>Once you hit <strong>Create</strong>, a composition node is created, which is placed in the first empty slot in the construct and then opened for playback and further setup in the Live FX Tab. As mentioned, all options that have been set in the <strong>Create Live Composition</strong> panel can be modified in the Player. </p>
 <p>For some compositions additional steps are required. E.g. when using an Unreal Engine background, you need to make sure Unreal is running the correct project and the project contains the Live Link plug-in so the Live FX can sync the images of unreal with the live camera images that are being captured. Various tutorial videos are available from the Live FX support website that show the possible workflows.</p>
-</div>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
+
+
 <h2 id="live-projection-setup">Live Projection Setup</h2>
-<div>
+
 <p>Similar to the Live Composition panel there is also Live Projection Setup panel to help you setup relatively complex projection composition shots with just a few clicks. This function is also available from the Construct main menu bar.</p>
-</div>
-<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveProjectionSetup_v01.png" /></div>
+
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveProjectionSetup_v01.png" />
 <h3 id="steps">Steps</h3>
-<div>
+
 <p>The first step in creating a projection setup is select a stage-configuration from the Stage Manager. If there are not stages available yet, then you can open the Stage Manager to create one. The selected stage-configuration will automatically become, if not already, the active one. Note that you can create a projection setup without the Stage Manager but then you will have to manually enter all LED wall specifications in the projection node.</p>
-</div>
-<div>
+
+
 <p>Next, set the <strong>Name </strong>for the composition as well as the <strong>Camera-id</strong> and <strong>Scene </strong>designation. </p>
-</div>
-<div>
+
+
 <p>The clip that is to be projected on the LED wall can be:</p>
-</div>
+
 <ul>
     <li>A pre-recorded plate of any of the supported file formats, any resolution and framerate. Use the Browse option to select a file from disk or drag/drop an already loaded clip in the proxy area.</li>
     <li>A Live captured image from other software such as a game render engine like Unreal or Unity. Select the desired from the VideoIO capture list. </li>
     <li>A 3D scene rendered by a USD of Notch block node. Use the Browse or drag/drop option.</li>
     <li>If the image that is to be projected is an equirectangular image, then make sure it is marked as such if not already by default.</li>
 </ul>
-<div>
+
 <p>It is recommended to do a camera calibration and store a <strong>Camera Profile</strong> for the camera that is used to record the projection. Select the profile from the dropdown rather than having to enter all data after creating a projection setup, will save a lot of time.</p>
 <p>The <strong>Camera Tracker</strong> dropdown lists all supported trackers (live links), whether they are already active or not. If a tracker live link is not yet active is be activated automatically. The first available tracker in the selected category is used to live link to the virtual shot camera. </p>
-<p>
-</p>
-</div>
-<div>
-<p>
-</p>
-<p>
-</p>
-</div>
-<div>
-<p>
-</p>
-<p>
-</p>
-</div>
-<div>
+
+
 <p>When enabling the <strong>Frustum Highlight</strong> toggle, the active camera frustum will be displayed in the projection. This is done by slightly dimming the outer frustum. The display of the main image in the inner frustum is not adjusted.</p>
 <p>When projecting an 360 image (pre-recorded plate), you have the option to us <strong>Spherical</strong> or <strong>Dome </strong>projection (see for more information the description of the Projection node).</p>
-<p>
-</p>
 <h3 id="capture-scene">Capture scene</h3>
 <p>
 To live review the result of the scene, you can capture the image of the physical camera. Select the correct channel from the <strong>Live Capture</strong> dropdown list. This will create an additional channel in the resulting Projection Switcher node. Potentially you can also use this for recording. Note though that you do not want to get in the way of regular playback in case the resources of the system are limited and the media + grades become extensive and complex.</p>
-<p></p>
 <p>Enable the <strong>Set-extension</strong> option to add a Stage-matte node with the live capture so the projected image is (virtually) extended if the camera frustum does not fully overlap the LED wall. Note that usually a camera capture introduces a few frames delay. That means that the set-extension clip should take this into account. Set the <strong>Frame-delay</strong> so that the correct back plate frame is combined with the correct captured frame. You can adjust this at any point in the player – in the Fill/Matte menu of the Set-extension layer.
 </p>
 <h3 id="projection-composition">Projection Composition</h3>
 <p>
 Click the Create button to create the projection setup. This composition is placed in the first empty slot on the construct and the nod is opened in the player. The exact layout of the Projection composition depends on your LED wall configuration in the Stage Manager and the if you added a live capture / set-extension. </p>
-<p></p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_ProjectionCompTree_v01.png" /></p>
 <p>The Projection composition node will likely contain the following elements:</p>
 <ul>
@@ -1204,10 +1102,9 @@ Click the Create button to create the projection setup. This composition is plac
     <li>In case of frustum highlighting. The Projection node has a layer with a 2D-&gt;Wall matte plug-in that dims the outside of the camera frustum.</li>
     <li>In case of a Live capture, an extra input/channel is added to the Switcher node. If no set-extension is used, the capture node is used as the channel input. For a set-extension, the Stage-Matte is used as input, which in turn takes the live capture node and the source clip as input. It uses the Stage Manager and Switcher node camera settings to render its output.</li>
 </ul>
-<p></p>
 <p>When only dealing with a single LED wall and no live capture then the composition the Switcher node is not included, and the channel projection node becomes the root.</p>
-</div>
-<div>
+
+
 <h2 id="composition-assemble">Composition Assemble</h2>
 <p>(Live FX Studio)</p>
 <p>In the paragraph about the recording options in the Live FX menu in the Player, the option to record the clean sources (rather than the full graded composition) was briefly discussed. In this paragraph the workflow to start with a live composition, create and tweak an offline composition and ultimately create the final online composition is discussed. The workflow is displayed in the diagram below.</p>
@@ -1231,30 +1128,11 @@ Click the Create button to create the projection setup. This composition is plac
 </ul>
 <p>Note that you can use <strong>Create All Takes</strong> in one go when going directly from a Live Composition to an Online Composition. However, you do need to make sure that the Online media has to correct cam-id and scene-number metadata to match with the Live Compositions as a timecode match will not work.</p>
 <p>In the right part of the Composition Assembler you can see the matched Online shots  that were found with the Live or Offline Composition. If for some reason you find there is a wrong match then either use the <strong>Remove </strong>button to remove the individual shot or use the <strong>Clear Matches</strong> button to clear all matches with all nodes in the list to start a clean new match round.</p>
-</div>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
+
+
 <h2 id="dmx-2">DMX</h2>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
+
+
 <p>With the DMX module in Live FX you can control on-set lights, based on the media that is played back on the LED wall, the background used with a green-screen setup or tied to any other media upon which the lighting should act. You start the DMX module from the Live FX menu in the player or from the Tools dropdown menu in the player top menu bar. Some know how about DMX is required to operate this module. Although any low-level hardware aspects might not be needed, a basic understanding of the concepts of DMX channels, -universes, -controllers and -devices is needed to operate the module. On the web are various starter tutorial sites and videos available.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_Main_v03.png" /></p>
 <p>Configuring and using the DMX functions involves 3 steps:</p>
@@ -1311,20 +1189,20 @@ Click the Create button to create the projection setup. This composition is plac
     <li>With the<strong> Repeat the Universe</strong> setting you can duplicate the specified universe. To follow the above example. If you would have a total of 16 of the light-beams (mounted together), then you do not have to specify them each separately, but can just set the Repeat the Universe to 16. If the first beam was set to Universe 24, the next 15 beams would use universe 24 - 40. This functionality is particularly useful with the sACN protocol that multi-casts the dmx data based on universe number.</li>
 </ul>
 <h5 id="color-sampling">Color Sampling</h5>
-<div>
+
 <p>The <strong>Distribute</strong>, <strong>Segments</strong>, <strong>Order </strong>and <strong>Inverse </strong>controls in the Universe tab are used to determine how the color for the fixtures is sampled from the active clip that is playing. Each fixture is can be tied to a specific section (rectangle) of the image playing. In the case that a fixture is made up from multiple lights and/or you have been using the Repeat options, then you also need to specify how the color sampling maps to the various lights.</p>
 <p>The first option is the either <strong>Duplicate </strong>the color sampling and use the same average color for all repeated lights or to <strong>Distribute </strong>the color sampling area into multiple smaller areas where each light have its own section: by default the rectangular area is split up in a single row of smaller areas. In the figure below you can see how to adjust the sample mapping.</p>
-</div>
-<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_Distribute_v01.png" /><br />
-</div>
-<div>
+
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_Distribute_v01.png" /><br />
+
+
 <p>Figure a) displays shows the default distribution of the sample area when using a repetition of 10. By using the <strong>Segments </strong>control you can adjust the number of rows that are using in the sampling area. In figure b) <strong>Segments </strong>is set to 3 and generate a pattern of 3 rows and 4 columns - leaving 2 samples not-used. </p>
 <p>In some fixtures the repeated lights are not following a row-after-row pattern (figure c) but the lights are ordered per column (figure D). In that case you can use the <strong>Order</strong> dropdown to specify an <span class="Highlight">column-order</span> rather than a <span class="Highlight">row-order</span>. This also works if the fixture contains more than 2 rows of lights.</p>
 <p>Finally you can <strong>Invert</strong> the order of sampling - figure e) by using the corresponding option.</p>
-</div>
+
 <h5 id="channels">Channels</h5>
-</div>
-<div>
+
+
 <p>Each property of a fixture is controlled through one or more DMX channels. In the Channels tab you can specify which value to use for each DMX channel. This can be a dynamic value based on active color sampling or it can be a static value. The Channels lists the channels that you specified in the Universe tab. The first column specifies the channel index. If a channel is a Global channel then it is marked as such in this column. The second column specifies the dynamic value to be used for the channel. In the third column you can set a static value that is to be used for the channel. This can be any value between 0 - 255. The documentation of the fixture will specify which values can be used and their meaning. Finally, in the last column you can (optionally) enter a label that clarifies the function of the channel. The possible types of dynamic channel value are:</p>
 <ul>
     <li>None. The channel value is not dynamic, the (static) value used is specified in the value column. If no explicit value is set, then 0 is used.</li>
@@ -1360,11 +1238,8 @@ Click the Create button to create the projection setup. This composition is plac
 <p>(Temporarily) switch off drawing the area select overlays in the View Port.</p>
 <h5 id="import-export">Import / Export</h5>
 <p>DMX settings are stored in the project database. Use the Export / Import options to save the DMX settings to an external file and load them into another project. Use the <strong>All</strong> option to export the settings of all fixtures or only the current selected. This then also determines the extension of the file: ‘*.fdmx’ for a single fixture vs. ‘*.admx’ for all fixtures.</p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
+
+
 <h2 id="led-wall-control">LED Wall Control</h2>
 <p>In most cases when outputting to an LED wall, the grade and look is all done from withing Live FX. However, it can be very useful to have control over the overall brightness and color temperature of the LED wall. The LED Wall Control utility in Live FX, which is available from the Tools menu in the Player top menu bar - can interface with the Tessera LED Wall Processors from Brompton Ltd.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LED_Ctrl_v01.png" /></p>
@@ -1386,5 +1261,4 @@ Wall 1, 10.10.10.1, 10.10.10.2, 10.10.10.3</span></p>
 <h3 id="alpha-output-over-sdi-dual-head">Alpha output over SDI / Dual head</h3>
 <p>Live FX offers the option to output the alpha channel of a (live capture) shot as a black and white image through an SDI output or through the dual head GPU output. This offers an opportunity to use the qualifier / keyer function of Live FX – including all layering and garbage mask functions, plug-ins and compositing options – for other systems downstream in the pipeline. The SDI output can be gen-locked and contains the active timecode of the shot / live captured input. To output the black/white matte just select the option with the Display settings in the Player – Settings – Monitors menu.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_VideoIO_Keyer_v01.png" /></p>
-</div>
-<p></p>
+

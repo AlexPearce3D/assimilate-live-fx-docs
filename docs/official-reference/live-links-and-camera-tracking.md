@@ -41,7 +41,7 @@
     <li>Some tracker are automatically detect on the network whereas other you need to specify them (IP/Port) to connect.</li>
     <li>Some trackers are only available with a Live FX Studio license.</li>
 </ul>
-<div>
+
 <table style="width: 75%;" class="BorderTable">
     <thead>
     </thead>
@@ -325,7 +325,7 @@
     </tbody>
 </table>
 <br />
-</div>
+
 <h5 id="antilatency">Antilatency</h5>
 <p>Select one of the available placements – which determines the sensor layout that is being used. Please, see the Antilatency documentation for information on creating a placement.</p>
 <h5 id="freed">FreeD</h5>
@@ -358,13 +358,11 @@
     <li>(re)Start Unreal, activate the new plug-in and add a new Live Link Source. Make sure the Unreal Live Link has the same Port number set as the live link inside Live FX.</li>
     <li>Tie the Live Link to the camera in the UE scene. If you have the Unreal Take recorder active, the scene metadata can automatically be synced with Live FX.</li>
 </ul>
-<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_UnrealPlugin_v02.png" /><br />
-</div>
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_UnrealPlugin_v02.png" /><br />
+
 <p>There are many different use models for Live FX with Unreal Engine. The Unreal Live Link can forward live camera tracking data or forward an animated camera position. Live FX can capture the image output from Unreal to composite this into a live camera feed. </p>
-<p></p>
 <p>Live FX can capture the Unreal output through SDI or NDI. In general this will cause some latency issues as the Unreal signal takes more time than the live camera image. For that the live capture node in Live FX has a delay option. By delaying the live camera capture you can sync it perfectly with the Unreal output.</p>
 <p>Alternatively, Live FX provides a so called Spout plug-in, which allows for direct image sharing between UE and Live FX on the GPU. This only works if both applications run on the same machine but since the image is shared directly on the graphics card, there is no latency. The Spout plug-in is discussed in more detail later.</p>
-<p></p>
 <h4 id="live-links-other">Live Links – Other</h4>
 <h5 id="osc-sender">OSC Sender</h5>
 <p>The OSC Sender Live Link can send metadata to other systems using the OSC protocol. Enter the IP Address and (UDP) port number of the system to send the data to. Optionally add a custom tag for the OSC message. Click Connect to start the sending of live link data.</p>
@@ -391,7 +389,6 @@
 <h2 id="live-animation">Live Animation</h2>
 <p>Live Link metadata can be used in the grade and composite elements of shot through the Live Animation module. Live Animations are an extension to the standard animation module in the Assimilate Product Suite. In the standard animation module, you can create and apply an animation curve to a grade / composite parameter. Through the Live Animation extension, you link a Live Link to a grade / composite parameter and optionally apply a transform to the metadata to fit the parameter range. Before you can link a parameter to a Live Link you first switch on the Live-option for an animation channel.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Anim_Live_v01.png" /></p>
-<p></p>
 <p>The <strong>Live</strong> option applies to all parameters in the animation channel. When the Live option is enabled, the Link option becomes available which opens the Animation Editor for the animation channels shown in the current menu.</p>
 <p>The <strong>Link</strong> button opens the Animation Editor for the current selected animation channel, where you manage live links.</p>
 <h3 id="live-animation-editor">Live Animation Editor</h3>

@@ -1,17 +1,8 @@
 # DMX, Lighting, and LED Wall Control
 
 <h2 id="dmx-2">DMX</h2>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
+
+
 <p>With the DMX module in Live FX you can control on-set lights, based on the media that is played back on the LED wall, the background used with a green-screen setup or tied to any other media upon which the lighting should act. You start the DMX module from the Live FX menu in the player or from the Tools dropdown menu in the player top menu bar. Some know how about DMX is required to operate this module. Although any low-level hardware aspects might not be needed, a basic understanding of the concepts of DMX channels, -universes, -controllers and -devices is needed to operate the module. On the web are various starter tutorial sites and videos available.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_Main_v03.png" /></p>
 <p>Configuring and using the DMX functions involves 3 steps:</p>
@@ -68,20 +59,20 @@
     <li>With the<strong> Repeat the Universe</strong> setting you can duplicate the specified universe. To follow the above example. If you would have a total of 16 of the light-beams (mounted together), then you do not have to specify them each separately, but can just set the Repeat the Universe to 16. If the first beam was set to Universe 24, the next 15 beams would use universe 24 - 40. This functionality is particularly useful with the sACN protocol that multi-casts the dmx data based on universe number.</li>
 </ul>
 <h5 id="color-sampling">Color Sampling</h5>
-<div>
+
 <p>The <strong>Distribute</strong>, <strong>Segments</strong>, <strong>Order </strong>and <strong>Inverse </strong>controls in the Universe tab are used to determine how the color for the fixtures is sampled from the active clip that is playing. Each fixture is can be tied to a specific section (rectangle) of the image playing. In the case that a fixture is made up from multiple lights and/or you have been using the Repeat options, then you also need to specify how the color sampling maps to the various lights.</p>
 <p>The first option is the either <strong>Duplicate </strong>the color sampling and use the same average color for all repeated lights or to <strong>Distribute </strong>the color sampling area into multiple smaller areas where each light have its own section: by default the rectangular area is split up in a single row of smaller areas. In the figure below you can see how to adjust the sample mapping.</p>
-</div>
-<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_Distribute_v01.png" /><br />
-</div>
-<div>
+
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_Distribute_v01.png" /><br />
+
+
 <p>Figure a) displays shows the default distribution of the sample area when using a repetition of 10. By using the <strong>Segments </strong>control you can adjust the number of rows that are using in the sampling area. In figure b) <strong>Segments </strong>is set to 3 and generate a pattern of 3 rows and 4 columns - leaving 2 samples not-used. </p>
 <p>In some fixtures the repeated lights are not following a row-after-row pattern (figure c) but the lights are ordered per column (figure D). In that case you can use the <strong>Order</strong> dropdown to specify an <span class="Highlight">column-order</span> rather than a <span class="Highlight">row-order</span>. This also works if the fixture contains more than 2 rows of lights.</p>
 <p>Finally you can <strong>Invert</strong> the order of sampling - figure e) by using the corresponding option.</p>
-</div>
+
 <h5 id="channels">Channels</h5>
-</div>
-<div>
+
+
 <p>Each property of a fixture is controlled through one or more DMX channels. In the Channels tab you can specify which value to use for each DMX channel. This can be a dynamic value based on active color sampling or it can be a static value. The Channels lists the channels that you specified in the Universe tab. The first column specifies the channel index. If a channel is a Global channel then it is marked as such in this column. The second column specifies the dynamic value to be used for the channel. In the third column you can set a static value that is to be used for the channel. This can be any value between 0 - 255. The documentation of the fixture will specify which values can be used and their meaning. Finally, in the last column you can (optionally) enter a label that clarifies the function of the channel. The possible types of dynamic channel value are:</p>
 <ul>
     <li>None. The channel value is not dynamic, the (static) value used is specified in the value column. If no explicit value is set, then 0 is used.</li>
@@ -117,11 +108,8 @@
 <p>(Temporarily) switch off drawing the area select overlays in the View Port.</p>
 <h5 id="import-export">Import / Export</h5>
 <p>DMX settings are stored in the project database. Use the Export / Import options to save the DMX settings to an external file and load them into another project. Use the <strong>All</strong> option to export the settings of all fixtures or only the current selected. This then also determines the extension of the file: ‘*.fdmx’ for a single fixture vs. ‘*.admx’ for all fixtures.</p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
+
+
 <h2 id="led-wall-control">LED Wall Control</h2>
 <p>In most cases when outputting to an LED wall, the grade and look is all done from withing Live FX. However, it can be very useful to have control over the overall brightness and color temperature of the LED wall. The LED Wall Control utility in Live FX, which is available from the Tools menu in the Player top menu bar - can interface with the Tessera LED Wall Processors from Brompton Ltd.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LED_Ctrl_v01.png" /></p>

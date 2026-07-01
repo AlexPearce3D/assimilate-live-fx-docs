@@ -1,12 +1,11 @@
 # LED Wall Projection and Stage Manager
 
 <h2 id="led-wall-projection">LED Wall Projection</h2>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
+
 <h3 id="overview">Overview</h3>
 <p>Using an LED wall as background for recording a scene takes more than just playing back media on the wall. The media should be projected correctly where the projection considers both the position and size/resolution of the wall as well as the position/rotation of the camera that is recording the stage. If the projection does not take these aspects into account, the background in the recorded image might look distorted and wrongly scaled. </p>
-<p></p>
 <p>Live FX can be used to easily and correctly project media on LED wall(s). Live FX uses several elements for this which are displayed in the schematic below. The schematic gives an overview and briefly explained in this paragraph to introduce you to the various concepts involved. Each element has been or will be described in detail in this manual and separately as some elements also have their function in other contexts than projection. After discussing the elements in detail, setting up an actual projection is discussed. By then, it is easy to understand what is happening under the hood and how to manage the projection.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_ProjectionDiagram_v01.png" /></p>
 <ul>
@@ -24,21 +23,13 @@
     <li>One or more Projection nodes (in case of multiple walls) feed into a single Switcher node. A Switcher node can playback multiple streams at the same time to specific displays.</li>
     <li>The Switcher node takes in the mapping information of the Stage Manager to generate a mosaic image and/or to output each wall projection to the correct display.</li>
 </ul>
-<p></p>
-</div>
-<div>
-<p></p>
-<p></p>
-<p></p>
-</div>
-<div>
+
+
 <h2 id="stage-manager-2">Stage Manager</h2>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
-</div>
-<div>
-<div>
+
+
 <p>At the heart of LED wall projection in Live FX is the stage manager. The Stage Manager is where you create a model of your stage with the position and shape of the LED wall(s). This information is used, together with the camera position, to determine the correct image to be send to each wall. In the Stage Manager you also determine how display outputs are mapped on each of the LED walls. The Stage Manager can be opened from the Projection Setup panel in the Construct (see below) or from the Live FX menu in the Player.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_StageManager_v01.png" /></p>
 <p>The left side of the panel contains all controls to manage multiple stages and walls. The right side of the panel show the stage model. Through the Mapper tab in the right side of the panel you link the physical display outputs to the LED walls.</p>
@@ -83,17 +74,12 @@
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_WallPreview_v01.png" /></p>
 <p>When the Preview is invoked from the Construct, the test pattern is automatically opened in the player. When already in the player, the test pattern replaces the active node. Clicking the <strong>Reset </strong>button takes back to the Construct or prior node.</p>
 <h3 id="mapper-examples">Mapper Examples</h3>
-</div>
-<div>
+
+
 <p>To make the concept of mapping Walls and Displays in the Stage Manager more clear and concrete, here are two example mappings. The first very basic, the second using the Mosaic option.</p>
-<p>
-</p>
-</div>
-<div>
-<p>
-</p>
+
+
 <h4 id="stage-a">Stage A </h4>
-<p></p>
 <ul>
     <li>Single square wall – 6 x 6 tiles, each with 200x200 resolution. So total resolution of 1200 x 1200). </li>
     <li>Output over 4k Video IO SDI to (also 4k) LED wall processor. </li>
@@ -106,10 +92,7 @@ Next:</p>
     <li>Since the resolution of the wall is smaller than the actual output resolution, you might have to offset the image to ensure the image is covering the wall. This depends on how / if the LED wall processor places the incoming image on the wall. An easy way to determine the correct offset is to use the Preview option. This will send out a test pattern of 6x6 tiles which should exactly cover the wall.</li>
     <li>The test pattern is shown through a Switcher node. On the Display tab of the Channel Controller of the Switcher node, ensure that the VideoIO channel is tied to the first channel of the Switcher node. Normally this is done automatically when using activating the Preview option.</li>
 </ul>
-<p>
-</p>
 <h4 id="stage-b">Stage B</h4>
-<p></p>
 <ul>
     <li>Main wall with resolution of 4928 x 1936, driven by 2 x LED wall processors with 4k input (3840 x 2160). Square side wall of 1056 x 1056 pixels, driven by a LED wall processor with an HD input (1920 x 1080). </li>
     <li>HDMI output directly from the graphics card.</li>
@@ -134,27 +117,5 @@ Once you have created the NVIDIA mosaic display, start Live FX and enable the Du
     </li>
 </ul>
 <p>Note that the Preview option can also help to offsets the mappings accurately.</p>
-</div>
-<div>
-<p></p>
-</div>
-</div>
-<div>
-<p>
-</p>
-<p>
-</p>
-</div>
-<div>
-<p>
-</p>
-<p>
-</p>
-</div>
-<div>
-<p>
-</p>
-<p>
-</p>
-</div>
-<div>
+
+

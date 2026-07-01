@@ -12,5 +12,4 @@
 <h3 id="alpha-output-over-sdi-dual-head">Alpha output over SDI / Dual head</h3>
 <p>Live FX offers the option to output the alpha channel of a (live capture) shot as a black and white image through an SDI output or through the dual head GPU output. This offers an opportunity to use the qualifier / keyer function of Live FX – including all layering and garbage mask functions, plug-ins and compositing options – for other systems downstream in the pipeline. The SDI output can be gen-locked and contains the active timecode of the shot / live captured input. To output the black/white matte just select the option with the Display settings in the Player – Settings – Monitors menu.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_VideoIO_Keyer_v01.png" /></p>
-</div>
-<p></p>
+

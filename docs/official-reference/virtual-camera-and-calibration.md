@@ -1,7 +1,7 @@
 # Virtual Camera and Calibration
 
 <h2 id="virtual-camera">Virtual Camera</h2>
-<div>
+
 <p>Each shot has its own virtual camera for rendering a scene that includes layers. In such a scene, the primary image (of the clip or live capture) forms the back-plate that is tied to the camera and layers exist in a 3D context. You manage the (virtual) camera settings primarily from the Camera menu.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_T1_Menu_v02.png" /></p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_T2_Menu_v02.png" /></p>
@@ -25,19 +25,15 @@
 </ul>
 <h3 id="camera-menu">Camera Menu</h3>
 <h4 id="general-2">General</h4>
-<div>
+
 <h5 id="activate">Activate</h5>
-</div>
-</div>
-<div>
-<div>
+
+
 <p>When you add one or more layers on a shot, a camera is created and used to render the layer(s) on top of the primary image. Note though that even though the camera is used for rendering, by default it is not marked as Active. If you want to change the default camera settings then you first have to explicitly activate it by using the <strong>Activate</strong> button. If you activate a camera while the shot does not have any layers, a single layer is created by default.</p>
 <p>Certain nodes - such as e.g. the projection plug-in or the USD reader - have an option to use the shot camera data for rendering. When that option is set, the node will use the first active camera that is available upstream in the node composition tree. So you can have multiple USD nodes in layers on top of a Capture node, with all the USD nodes using the camera data of the parent Capture node. Each USD node can still have layers of its own. The layers are rendered with the local default camera, while the primary image is rendered based on the parent camera. This allows you to create a Global camera object for you entire composition.</p>
 <h5 id="profile">Profile</h5>
-</div>
-</div>
-<div>
-<div>
+
+
 <p>The settings of a camera can be stored in a profile and easily be applied on a the camera of a new shot. When you click the <strong>Profile</strong> button, the Profile popup opens. </p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_Profile_Popup_v01.png" /></p>
 <p>At the top of the Profile popup is a list of previously created profiles. Profiles are stored in the project database, so the list is not automatically available in a new project.</p>
@@ -45,18 +41,18 @@
 <p>To save a profile, type in a profile name in the textbox at the bottom of the popup panel and then click the <strong>Save</strong> button. If you enter an already existing profile name, the profile will be updated. Select the <strong>Focal </strong>and/or <strong>Distort </strong>options to include the specific data in the profile. You can only save lens distortion data, if there is a <span class="Highlight">Lens (un)Distort</span> plug-in active on a layer on the current shot.</p>
 <p>Use the <strong>Delete </strong>option to remove the selected profile.</p>
 <h5 id="calibrate">Calibrate</h5>
-</div>
-<div>
+
+
 <p>The camera <strong>Calibrate </strong>functions are discussed in the next paragraph.</p>
 <h5 id="bypass">Bypass</h5>
-</div>
-<div>
+
+
 <p>The <strong>By-pass</strong> option in the Camera menu allows you to ignore the camera position and rotation for rendering of the scene while maintaining a link with an external tracker through a Live Link.</p>
 <p>The By-Pass option is useful, if you need to adjust certain settings in your composite and need the image to be temporarily free from any motion. Also, if you are linking to an external tracker / Live Link and forwarding this tracker information to another system but do not require the motion in the local composite.</p>
-</div>
-<div>
+
+
 <h5 id="reset-2">Reset</h5>
-</div>
+
 <p>Reset all camera settings to their default values.</p>
 <h4 id="lens-and-sensor">Lens and Sensor</h4>
 <p>The virtual camera <strong>Focal Length</strong>, <strong>Sensor</strong> size and <strong>Crop</strong> value together determine the camera's field of view (FoV). </p>
@@ -73,31 +69,26 @@
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_WDist_v01.png" /></p>
 <p>It is important to not change the Pixel Scale after you positioned the camera and / or layers based on a meter position.</p>
 <p>The Animation Offset parameters are intended to be animated or live linked. When using the automatic live link tracker Apply option, these are the parameters that are live linked.</p>
-<p></p>
-<p></p>
 <h4 id="config-tab">Config tab</h4>
 <h5 id="far-plane">Far Plane</h5>
 <p>By default, the <strong>Far Plane</strong> setting is dynamic. Its value is based on the image resolution and the camera's field of view. However, when you enter a specific value for the Far Plane, is will remain fixed on that value and no longer automatically update when the camera's focal length or sensor properties are altered. To revert back to the dynamic value, you reset the value by clicking the control and using the Reset option in the Calculator control.</p>
 <p>All other camera controls are explained in the general user guide.</p>
-<p></p>
 <h3 id="calibrate-2">Calibrate</h3>
-<div>
+
 <p>All calibration functions require you to capture live camera images. Make sure you open the calibration panel while in the player with a live capture node, preferably without any grade or scaling applied. The Camera Calibration panel can be started from the Live FX menu or from the Camera menu. The panel contains 4 tabs for various calibration tasks.</p>
-</div>
+
 <ul>
     <li>Setup - enter the values to be used with the various calibration tasks.</li>
     <li>Lens - determine the lens focal length and lens distortion values.</li>
     <li>Nodal - determine the distance between the tracker and the camera nodal point.</li>
     <li>Position - determine the tracker transformation matrix from the scene origin.</li>
 </ul>
-</div>
-<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Calibration_v01.png" /></div>
-<div><br />
-</div>
-<div>
+
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Calibration_v01.png" />
+<br />
+
+
 <p>Depending on the camera tracking system you use, some or all of the calibrations are done in the external tracker system and all you have to do is live link to the tacker focal length, position and rotation data. Even in that case you should still try the Virtual Ground and or / Scene layer functions from the last tab to check if the data coming in is correct.</p>
-<p>
-</p>
 <h4 id="calibration-setup">Calibration Setup</h4>
 <h5 id="board">Board</h5>
 <p>
@@ -139,7 +130,6 @@ Use the Apply button to update the active shot camera. Use the FL and DS buttons
 <h5 id="auto-capture">Auto Capture</h5>
 <p>
 Alternatively, to the Manual Capture, you can also enable the Auto Capture. Once enabled, this function will try to capture the board every 2 seconds automatically without the need to explicitly press a button. Another way to make the manual calibration process easier is to use the remote control (web) application that comes with the Assimilate Product Suite. The Remote Control can be started from the Tools menu in the Player. This opens the http server panel with a QR code that you can scan with a phone or tablet to open the application. The application has the standard remote control playback controls but also a series of function controls (F1 – F5). These can be assigned a function in the server panel. One of those functions can be to do a Capture Board for the calibration process.</p>
-<p></p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_RemoteCtrl_Server_v01.png" /><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_RemoteCtrl_Client_v01.png" /></p>
 <p>This way you can move the checkerboard to a new position and hit the function key on your mobile phone instead of having to go back to the Live FX computer to click the button in the interface.
 </p>
@@ -184,5 +174,3 @@ The Virtual Ground function creates a layer at the scene’s (virtual) origin (0
 <h5 id="scene-layer">Scene Layer</h5>
 <p>
 This function scans for an Aruco marker that is placed anywhere in the scene and then creates a virtual layer in the scene at the same position and angle. With this you can easily place virtual objects in your scene – by adding the image of the virtual object as fill onto the created layer. In fact, if you have a node attached to the pen when clicking the Scene Layer button, that node is automatically used as fill for the new layer.</p>
-<p>
-</p>

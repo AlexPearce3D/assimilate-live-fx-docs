@@ -1,6 +1,6 @@
 # Live FX Nodes
 
-<div>
+
 <p>Live FX contains all the available file-reader and effect plug-in nodes in the Assimilate Product Suite. There are however a number of nodes only for available in Live FX. These nodes are discussed in the part of the manual. Also, some nodes that are available in the regular Product Suite but do have extra meaning in a live context are included here .</p>
 <h3 id="video-capture-node">Video Capture Node</h3>
 <p>At the heart of Live FX is the Video Capture node which captures a live feed through the Video IO interface. The Video IO interface supports SDI, NDI, certain USB cameras and Spout/Syphon GPU sharing with other applications. For the Video Capture node to be able to use any of these interfaces, you need to first enable and configure the interface through the Video IO Configuration panel which can be opened from the startup screen or from within the Player - Settings menu.</p>
@@ -18,20 +18,17 @@
 <p>On Video Capture node, you can select the feed form the list of active <strong>Devices</strong> and from the list of active input <strong>Channels </strong>with that device. If the input is an SDI channel and the input is coming from a camera in the <strong>Camera</strong> dropdown list, then select that camera so the node can properly interpret the metadata that is send with the SDI stream.</p>
 <p>The <strong>Auto TC Sync</strong> option allows you to synchronize multiple captured feeds based on their timecodes by buffering frames until all feeds produced the frame with the same timecode. Note that the setting is linked to the selected capture channel, not to the capture node (you can have multiple capture nodes that all link to the same channel). Also note that if you enable auto-sync on multiple channels and one channel fails to produce real-time frames, this will stall the other channels. If the timecodes of the various feeds differ too much, auto sync is ignored.</p>
 <p>Alternatively, to the Auto-Sync you can also set a manual delay with an individual feed, in milliseconds. This is useful when you capture multiple feeds from different sources which do not have (similar) timecodes.</p>
-<p>
-</p>
 <h4 id="full-vs-video-range">Full vs Video Range</h4>
 In the Video IO panel, you set which YUV -&gt; RGB matrix to use for an SDI device: either a video- or full range matrix. Different cameras require different settings when outputting a log-signal that is captured in Live FX. For most common cameras this is the matrix that should be used:
-<p></p>
 <ul>
     <li>Video range (rec709): ARRI, Canon, RED</li>
     <li>Full range (rec709): Sony, Panasonic</li>
 </ul>
 <p>If you have a different camera then check the documentation with that camera to make sure what matrix to use when capturing the signal. Note that when capturing a linear signal (rec709) from a camera you should always use a video-range matrix.</p>
 <h3 id="projection-node">Projection Node</h3>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
+
 <p>A Projection node creates a projection image from its media input based LED Wall shape and position coming from the Stage Manager and the camera position. There are two types of projection nodes: 2D-&gt;wall and Eq-&gt;Wall. As the name already suggests each, depending on the type of media (2D or Equirectangular 360 media) that you want to project onto a LED wall, use one or the other.</p>
 <h4 id="2d-wall">2D-&gt;Wall</h4>
 <p> <img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Node2D2wall_v01.png" /></p>
@@ -59,11 +56,10 @@ In the Video IO panel, you set which YUV -&gt; RGB matrix to use for an SDI devi
 For the <strong>Dome </strong>projection there are additional settings to consider. Use the <strong>XYZ </strong>controls to set the position of the center to the dome. The <strong>Radius </strong>sets the size of the dome. This size is an estimate of the actual size of the image scene. The radius is used to determine what a meter position change of the camera means inside the dome. Use the <strong>Floor </strong>setting to adjust the position where the sphere is split. </p>
 <p>
 The <strong>Pan</strong>, <strong>Tilt </strong>and <strong>Roll </strong>controls are used to rotate the full scene. Note that these parameters can also be controlled from the (parent) <strong>Switcher </strong>node (if present), which then controls all underlying projection nodes for each wall in the stage.</p>
-<p></p>
 <h3 id="switcher-node">Switcher Node
 </h3>
-</div>
-<div>
+
+
 <p>The Switcher node comes in two flavors. A basic Switcher node that can have multiple has multiple inputs and can play those back simultaneous to different displays and/or create a video wall of the inputs and play that back on any one of the display. The Projection Switcher node is a derivative of that, which in addition has a series of controls to manage underlying Projection nodes: e.g. to rotate the view of an equirectangular clip at once so that you do not have to go through each of the Projection nodes separately to update the settings.</p>
 <p>From the Switcher node controls you can start the Channel Controller panel. From that panel Switcher node configuration is done. The configuration applies to all Switcher nodes, not just the active one.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_ChannelController_V01.png" />&nbsp;</p>
@@ -74,32 +70,30 @@ The <strong>Pan</strong>, <strong>Tilt </strong>and <strong>Roll </strong>contro
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_SwitcherProjection_v01.png" /></p>
 <p>When you use the Create Projection Setup panel (discussed later) and you have multiple LED walls in your stage - a projection node&nbsp; is created per wall and all of those nodes are combined in a Projection Switcher node. To make it easier to control the settings of multiple Projection nodes, the projection settings are also available from the Switcher node. Adjusting the controls will affect all underlying Projection nodes. Note that you can still adjust the Projection nodes individually if needed.</p>
 <h3 id="stage-matte">Stage Matte</h3>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
-<div>
+
+
 <p>The Stage Matte node uses the active stage in the Stage Manager and the (virtual) camera position to generate an alpha-matte. Since the node knows if an LED wall is (partly) within view of the camera, the resulting alpha-matte can be used for creating a set-extension: extend the image on the LED wall where the LED wall stop using the live camera capture.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_NodeStageMatte_v01.png" /></p>
 <p>You can enhance this matte with the <strong>Expand</strong>, <strong>Feather </strong>and <strong>Blend </strong>controls to get the desired edges. The node can take in two inputs and then uses the matte to combine the images: in case of a set-extension the inputs are the live camera capture and the clip that is projected on the LED walls.&nbsp;</p>
-</div>
+
 <h3 id="matte-wrap">Matte Wrap</h3>
-<div>
+
 <p>The Matte Wrap node can be used in combination with a keyer to create a Light Wrap effect. </p>
-</div>
-<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_NodeMatteWrap_v01.png" /></div>
-<div><br />
-</div>
-<div>
+
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_NodeMatteWrap_v01.png" />
+<br />
+
+
 <p>The Matte Wrap plug-in detects the edges of the (keyer) alpha can expand it (outward or inward with a negative Size) as well as adjusting the intensity of it by using the Gain. In the example below, the first image shows the alpha from the keyer, the second image shows the alpha that the Matte Wrap generates from that, and the this image show the combined alpha.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_MatteWrap_Example_v1.png" /></p>
 <p>You use the Matte Warp in a separate layer after the keyer and (obviously) in the Matte of the layer. You can use the Fill of that layer to explicitly load the background image again, which then can have its own grading to even more accentuate the light wrap effect. </p>
-</div>
+
 <h3 id="live-tracker">Live Tracker</h3>
 <p>The Live Tracker plug-in node can track a specific objects/sections in an image and make the tracker data available as live link, which in turn can be used elsewhere in your composition shot such as positioning another layer. </p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveTracker_v01.png" /><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveTracker_Overlay_v01.png" /></p>
 <p>It allows you to create any number of point trackers to track a specific object in the image. The XY coordinates of each of the trackers are available as live links in your composite. The data of multiple point trackers is combined to calculate scaling and rotational data, which is then also exposed as live link.</p>
-<p>
-</p>
 <h5 id="add-point-tracker">Add Point Tracker</h5>
 <p>
 Add a new point tracker – the overlay of the tracker becomes visible in the image. Drag the tracker to the object that you want to track. The outer box of the tracker represents the search area. The inner box represents the object to search for. You can adjust the sizes of the boxes by dragging the outer borders. Note that the smaller the boxes the more efficient the tracker works, but the chance of the tracker ‘losing’ the object increases.
@@ -128,7 +122,6 @@ If more than 4 trackers are active, this option tries to calculate a 3 dimension
 <p>
 With this option enabled you indicate that the tracked region contains a so called ArUco marker. In that case, the Live Tracker will not just track the xy position of the search region within the image but also try and calculate the angle of the marker. Although theoretically it can determine the rotation of the marker over 3 different axis, currently only the roll-angle of the marker is passed as live link.
 </p>
-<p></p>
 <h3 id="lens-un-distort-node">Lens (Un)distort Node</h3>
 <p>The Lens (Un)distort plug-in node can be used to distort or undistort an image based on lens distortion parameters or by using a UV-map. </p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_NodeLensDistort_v02.png" /></p>
@@ -140,11 +133,11 @@ With this option enabled you indicate that the tracked region contains a so call
 </ul>
 <p>Use the <strong>Crop</strong> option to scale the image to remove any black borders that are created by the (un)distort. The <strong>Crop </strong>only works with the distortion parameters, not with an external UV or ST map.</p>
 <p>The <strong>Save XML</strong> and <strong>Load XML</strong> buttons store or load the distortion parameters to / from an external file on disk.</p>
-</div>
-<div>
+
+
 <p>Alternatively to using the distortion parameters, you can also use a <strong>UV map</strong> or an <strong>ST map</strong>. Use either the <strong>Load </strong>option to select a map image from disk or drag drop an already loaded map shot to the input of the Lens (Un)distort node in the Inputs menu. </p>
-</div>
-<div>
+
+
 <p>If you loaded a Map through the <strong>Load </strong>button, you can clear it by using the <strong>Remove </strong>button.</p>
 <h3 id="spout-syphon-gpu-share-and-sender">Spout/Syphon GPU Share &amp; Sender</h3>
 <p>Spout (windows) and Syphon (mac) are protocols to share GPU textures (images) between applications. Sharing images directly on the GPU limits latency to its minimum. Do note however that Spout/Syphon do not have any sync mechanism: an application always just takes the 'latest' image shared. An receiver application might already have advanced to a next frame, while the sender application has not - or vice verse. In general, when both application both run in real time (and at the same frame rate) the latency should be a maximum of 1 frame.</p>
@@ -155,7 +148,6 @@ With this option enabled you indicate that the tracked region contains a so call
 <p>The Intel RealSense depth camera uses Lidar to generate a depth image. The RealSense depth plug-in captures this image and can generate a matte from it, which can be combined with an RGB camera image. </p>
 <p>Note that the RealSense depth camera is only available for Windows. Further note this node was implemented as an experiment but that in the end the resolution of the camera, as well as the accuracy of the depth information and in dealing with the reflection of certain surfaces proved to be limited. Nevertheless – the plug-in offers a way to start using new technology in a creative way. The aim of the implementation was to use it as an overlay on the actual camera image and as such to create a dynamic mask based on the depth information which potentially could replace green screen keying. Without newer and better versions of the depth camera, further development was stopped.</p>
 <p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Plugin_Realsense_depth_v01.png" /></p>
-<p></p>
 <h5 id="mode">Mode</h5>
 <ul>
     <li>    Alpha Mask. Use the Threshold distance to generate a matte with everything further away than the threshold being fully opaque.</li>
@@ -180,9 +172,9 @@ With this option enabled you indicate that the tracked region contains a so call
 <p>The camera rotation and field of view can also be <strong>linked to the shot camera</strong>, which in turn can be linked to a camera tracker. Optionally you can also move the inside the equirectangular sphere by adjusting the <strong>XYZ position</strong>. Note though that since this is primarily used with pre-recorded plates, adjusting in xyz too much might lead to a distorted image. </p>
 <p>To also link the XYZ position to the shot camera, enable the <strong>Incl. Position</strong> option. Since inside a sphere the standard radius is 1, you can adjust the Scale to use a more proper range for XYZ adjustments in meters.</p>
 <h3 id="usd-nodes">USD Nodes</h3>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
+
 <p>USD (Universal Scene Description) is a format for 3D elements and scenes. The USD node load these elements / scene and uses the Pixar Hydra rendered, that is included with the installation, to render a 2D image based on the camera and object position and a range of render and lighting options. This allows you to include 3D virtual elements into your (live) composition. </p>
 <p>Although the USD node has its own camera position controls, you can also link to the active shot camera as to fully integrate it with your composition. When you add an USD node on a layer to your composition, ensure that the layer is set to <strong>Relative</strong>, so that it 'sticks' to the camera: the USD node makes sure that at any one time the correct perspective of the 3D item is rendered to a 2D image.</p>
 <p>Note that USD elements / scenes can be loaded directly from file just like any other media format.</p>
@@ -218,26 +210,14 @@ With this option enabled you indicate that the tracked region contains a so call
 <h4 id="lights">Lights</h4>
 <p>The effect of the <strong>Ambient</strong>, <strong>Specular</strong>, <strong>Shininess </strong>color as well as the <strong>Dome Light</strong> toggle depend on the setup of the USD scene. Toggle the <strong>Auto-Position</strong> off to be able to adjust the direction of the light in the scene manually by using the <strong>XYZ</strong> controls.</p>
 <h3 id="notch-blocks">NOTCH Blocks</h3>
-<div>
+
 <p>(Live FX Studio)</p>
-</div>
+
 <p>Notch Builder (<a href="https://www.notch.one/" class="ApplyClass" target="_blank">https://www.notch.one/</a>) allows you to create 3D elements or completes scenes which can be exported as Notch Blocks. Live FX can load such a Notch Block as part of a (live) composition shot, where the various parameters of the notch block can be set, animated or linked to a live source and as such be combined with a live camera feed.</p>
 <p>A Notch Block can be loaded directly from disk or by first selecting a Notch Block plug-in node through the plug-in browser in the player. When loaded through the plug-in browser, you are asked to select a specific Notch Block *.dfxdll file from disk. To be able to render the content of a Notch Block you need the Notch render engine installed as well as a Notch license. Certain Notch Blocks can take some time to load, the first time you open them. Loading a project with the Notch Blocks nodes in it, does not take that much extra time. However, the first time a Notch Block needs to render an image in the player it might take longer.</p>
 <p>Each Notch Block has its own set of parameters / controls to. However, all Notch blocks have the same 3 general controls: Height and Width, which determine the size of the output of the Notch Block. Note that by default the size if the same as the size of the Live FX node but can be adjusted to e.g. a smaller size to speed up rendering (while you can then upscale the node to the composition resolution). The third general control with each Notch Block is the Layer selection. A Notch Block can contain one or more different layers of which only one can be selected at any one time. Note however that you could instantiate multiple Notch nodes in a single composition, each with a different layer selected.</p>
 <p>Certain Notch Blocks can contain properties that are exposed as Live Links (similar to the output of the Live Tracker). These Live Links can in turn be used to control and steer other aspects of the composition. Check the Live Animation editor for available Notch Block parameters.</p>
 <h3 id="notchlc">NotchLC</h3>
 <p>Next to rendering Notch Blocks, Live FX also supports playback of (QuickTime) media encoded with the <span class="Highlight">NotchLC codec</span>. The NotchLC codec is used to ensure real-time playback due to its GPU optimized encoding model. There is also a NotchLC encoder available for SCRATCH to transcode any media into this format. Contact support on the known email address for more information </p>
-<p></p>
-</div>
-<div></div>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
-<p></p>
-</div>
-<div>
+
+
