@@ -8,7 +8,7 @@
 <p>Using an LED wall as background for recording a scene takes more than just playing back media on the wall. The media should be projected correctly where the projection considers both the position and size/resolution of the wall as well as the position/rotation of the camera that is recording the stage. If the projection does not take these aspects into account, the background in the recorded image might look distorted and wrongly scaled. </p>
 <p></p>
 <p>Live FX can be used to easily and correctly project media on LED wall(s). Live FX uses several elements for this which are displayed in the schematic below. The schematic gives an overview and briefly explained in this paragraph to introduce you to the various concepts involved. Each element has been or will be described in detail in this manual and separately as some elements also have their function in other contexts than projection. After discussing the elements in detail, setting up an actual projection is discussed. By then, it is easy to understand what is happening under the hood and how to manage the projection.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_ProjectionDiagram_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_ProjectionDiagram_v01.png" /></p>
 <ul>
     <li>The Stage Manager is where you manage the configuration of the LED wall(s): shape, size, resolution, and position of a wall. This creates a model of your stage.</li>
     <li>In the Stage Manager you also map the LED wall (models) to physical output displays (dual head and/or VideoIO).</li>
@@ -40,7 +40,7 @@
 <div>
 <div>
 <p>At the heart of LED wall projection in Live FX is the stage manager. The Stage Manager is where you create a model of your stage with the position and shape of the LED wall(s). This information is used, together with the camera position, to determine the correct image to be send to each wall. In the Stage Manager you also determine how display outputs are mapped on each of the LED walls. The Stage Manager can be opened from the Projection Setup panel in the Construct (see below) or from the Live FX menu in the Player.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_StageManager_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_StageManager_v01.png" /></p>
 <p>The left side of the panel contains all controls to manage multiple stages and walls. The right side of the panel show the stage model. Through the Mapper tab in the right side of the panel you link the physical display outputs to the LED walls.</p>
 <h3 id="stage-management">Stage Management</h3>
 <p>You can maintain multiple stage configurations. Use the <strong>Add</strong> button to create a new configuration or use the <strong>Duplicate </strong>option to make a copy of the selected configuration to create a variation. The <strong>Delete </strong>option will permanently remove the configuration, there is no undo option for it. </p>
@@ -48,7 +48,7 @@
 <p>Although you can maintain multiple stage configurations, there is only one active at any one time. The title bar of the Stage Manager panel states which stage is active. Select the <strong>Active</strong> button to make the current stage active. The button will light up green.</p>
 <h3 id="wall-specifications">Wall Specifications</h3>
 <p>Each stage contains one or more LED wall definitions / models. To input the shape and size of a LED Wall, you use an <span class="Highlight">.obj file</span>. You can create and save 3D models in an .obj file in a variety of other software and use the Load option in the Stage Manager to load it in. Alternatively, use the <strong>Create </strong>button to open the Led Wall Model Creator panel.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_WallCreator_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_WallCreator_v01.png" /></p>
 <p>In this panel you can define the size and shape of a panel, save an .obj file to the selected output folder and add it to the stage configuration directly.</p>
 <p>The specifications of the LED wall are defined by entering the number of LED tiles used and the size and resolution of an individual tile. Optionally you can set a curvature for the wall in degrees. Note that if you enter the curvature, the label at the bottom will show the ‘<span class="Highlight">depth</span>’ of the wall, which is the distance from sides of the wall to the centre-back. Use this if the curvature in degrees is not known and you are able to measure the distance. </p>
 <p>There are three types of walls you can create: a standard vertical wall or a floor- or roof wall. The floor and roof walls are rotated and respond to the curvature setting by removing whole tiles from their back side to generate a saw-tooth shape.</p>
@@ -80,7 +80,7 @@
 <p>In general, Dual Head output has less latency than VideoIO output. If the clip to project has little action or the scene does not involve camera motion then this might not matter. If it does, then Dual Head might be the preferred way. A combination of Dual Head and VideoIO outputs is possible. The latency difference will in general only be a few frames. If the LED walls are not joined or not captured by the camera at the same time, this should not be a problem. </p>
 <h5 id="preview">Preview</h5>
 <p>The <strong>Preview </strong>option in the Mapper tab, creates a Switcher node with underlying a node that generates a test pattern: a rectangle for each LED wall tile with the row/col number. The preview meant to make sure all pixels are included in the (mosaic) output and not left out because an offset was just too high/low. </p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_WallPreview_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_WallPreview_v01.png" /></p>
 <p>When the Preview is invoked from the Construct, the test pattern is automatically opened in the player. When already in the player, the test pattern replaces the active node. Clicking the <strong>Reset </strong>button takes back to the Construct or prior node.</p>
 <h3 id="mapper-examples">Mapper Examples</h3>
 </div>
@@ -116,7 +116,7 @@ Next:</p>
 </ul>
 <p>To control 3 LED wall processors from the graphics card (next to the main UI display), we first need to create one virtual display which we can use as second output / dual head in Live FX - using the NVIDIA Mosaic functions (<a href="https://www.nvidia.com/en-us/design-visualization/solutions/nvidia-mosaic-technology/" target="_blank" class="ApplyClass">Mosaic Technology for Multiple Displays | NVIDIA</a>). </p>
 <p>Rather than creating a virtual display with 3 physical outputs, we can also create a mosaic that requires only 2 physical outputs and then we duplicate the first output to be send to two LED wall processors. This saves on resources as splitting an HDMI output does not take any overhead. So, the setup that we are after looks like the image below.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Mapping_Example_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Mapping_Example_v01.png" /></p>
 <p>The resolution of this virtual display is 3840 + 3840 = 7680 width and 2160 in height (two 4k displays next to each other). The image of the small wall is added to the first display, which is then duplicated and send to 2 processors. Note that the default settings of the LED wall processor might have to be adjusted to show the correct part on of the image on the wall. <br />
 Once you have created the NVIDIA mosaic display, start Live FX and enable the Dual Head option in the System Settings panel which can be opened from the start-up screen.</p>
 <p>Next:</p>

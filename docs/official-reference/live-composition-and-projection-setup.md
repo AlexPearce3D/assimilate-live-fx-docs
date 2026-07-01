@@ -4,7 +4,7 @@
 <div>
 <p>Many of the individual compositing elements and function available in Live FX come together in the Live Composite Setup panel. This Wizard type of function is available from the Construct main menu and helps you to setup complex live (green-screen) compositions with just a few clicks.</p>
 </div>
-<img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_LiveCompSetup_v01.png" /><br />
+<img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveCompSetup_v01.png" /><br />
 <div>
 <p>Start by selecting type of composition you want from the Model dropdown. The various options are self-explanatory. </p>
 <p>Next, set the <strong>Name</strong> for the composition as well as the <strong>Camera-id</strong> and <strong>Scene </strong>designation. </p>
@@ -40,7 +40,7 @@
 <div>
 <p>Similar to the Live Composition panel there is also Live Projection Setup panel to help you setup relatively complex projection composition shots with just a few clicks. This function is also available from the Construct main menu bar.</p>
 </div>
-<div><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_LiveProjectionSetup_v01.png" /></div>
+<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveProjectionSetup_v01.png" /></div>
 <h3 id="steps">Steps</h3>
 <div>
 <p>The first step in creating a projection setup is select a stage-configuration from the Stage Manager. If there are not stages available yet, then you can open the Stage Manager to create one. The selected stage-configuration will automatically become, if not already, the active one. Note that you can create a projection setup without the Stage Manager but then you will have to manually enter all LED wall specifications in the projection node.</p>
@@ -90,7 +90,7 @@ To live review the result of the scene, you can capture the image of the physica
 <p>
 Click the Create button to create the projection setup. This composition is placed in the first empty slot on the construct and the nod is opened in the player. The exact layout of the Projection composition depends on your LED wall configuration in the Stage Manager and the if you added a live capture / set-extension. </p>
 <p></p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_ProjectionCompTree_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_ProjectionCompTree_v01.png" /></p>
 <p>The Projection composition node will likely contain the following elements:</p>
 <ul>
     <li>Switcher node at the root, with for each LED wall output a channel + optionally a channel for live capture. The Switcher node is tied to the camera tracking.</li>
@@ -105,7 +105,7 @@ Click the Create button to create the projection setup. This composition is plac
 <h2 id="composition-assemble">Composition Assemble</h2>
 <p>(Live FX Studio)</p>
 <p>In the paragraph about the recording options in the Live FX menu in the Player, the option to record the clean sources (rather than the full graded composition) was briefly discussed. In this paragraph the workflow to start with a live composition, create and tweak an offline composition and ultimately create the final online composition is discussed. The workflow is displayed in the diagram below.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Assemble_Diagram_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Assemble_Diagram_v01.png" /></p>
 <p>With the <span class="Highlight">Record: Source Capture </span>option,  the <span class="Highlight">Auto Load Clip</span> and the <span class="Highlight">Write Metadata Sidecar</span> options enabled in the Live FX menu, every recording of a live composition shot is automatically transformed into an offline composition shot, where:</p>
 <ul>
     <li>A full copy of the original (composition) shot is made.</li>
@@ -114,7 +114,7 @@ Click the Create button to create the projection setup. This composition is plac
     <li>    The shot is tagged as an offline composite.</li>
 </ul>
 <p>An Offline Composition can be worked on as any normal composition: e.g. smooth animations or adjust grades. Once the high resolution camera media has been offloaded from the camera and loaded into your project, you can create the Online Composition. To transform an Offline Composition into an Online Composition (or directly a Live Composition into the Online Composition), you use the Online Composition Assembler which is available from the Online Compositions button in the Construct menu.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Assemble_Panel_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Assemble_Panel_v01.png" /></p>
 <p>The panel lists all Live and Offline composition shots in the current timeline. If a shot is selected int he timeline it is enabled in the list, otherwise it is disabled. This way you can quickly transform just a single node. Click the button in the first column in the list or use the <strong>Select </strong>option below the list to alter the selection. The next step is to point the Assemble function where to look for the Online media: either select a specific group of timeline in the project or use the <strong>Media </strong>drop down to select a specific folder on disk. Then make sure that you point the Assemble function to the correct folder with the sidecar files with (animation) metadata. The function will match the correct files with the correct composition.</p>
 <p>After pointing the function to the correct locations for media and metadata, start the matching function and tell it where to put the results by using the Target drop down. The Assemble button will start the actual creation of the Online Composition:</p>
 <ul>

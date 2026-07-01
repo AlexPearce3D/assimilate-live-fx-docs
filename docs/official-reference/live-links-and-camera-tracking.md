@@ -9,7 +9,7 @@
     <li>Sources linked to a specific node. Examples are metadata produced by a Live Tracker plug-in node that is placed on a (live capture) clip to track a specific element, or the Focal Length dynamic metadata that comes with a live SDI capture of a camera. In these cases, the live link data is only available in the composite, at every (sub) node that is on the same level or downstream from the live link source.</li>
 </ul>
 <h3 id="live-links-manager">Live Links Manager</h3>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_LiveLinks_v03.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LiveLinks_v03.png" /></p>
 <p>The left of the Live Links panel lists all available live links and their state: active / inactive. To activate or to deactivate a Live Link, select it in the list and click the <strong>On/Off</strong> button with the Live Link.</p>
 <p>All incoming Live Link data is tied to a timecode. Normally that is the timecode of the current (composition) shot that is playing. But just like you could set an alternative <strong>Timecode Provider</strong> for a composition shot (see earlier in the manual), you can also set an alternative timecode source for live link data. In some case you might use a shot that uses more than one live capture, but you need camera tracking data be tied to a specific capture. Note that this is a global setting. If you set a timecode provider then this is also used by default with any next composition that you open. Of course, you can change the setting at any time.</p>
 <h3 id="live-links-camera-trackers">Live Links – Camera Trackers</h3>
@@ -358,7 +358,7 @@
     <li>(re)Start Unreal, activate the new plug-in and add a new Live Link Source. Make sure the Unreal Live Link has the same Port number set as the live link inside Live FX.</li>
     <li>Tie the Live Link to the camera in the UE scene. If you have the Unreal Take recorder active, the scene metadata can automatically be synced with Live FX.</li>
 </ul>
-<div><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_UnrealPlugin_v02.png" /><br />
+<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_UnrealPlugin_v02.png" /><br />
 </div>
 <p>There are many different use models for Live FX with Unreal Engine. The Unreal Live Link can forward live camera tracking data or forward an animated camera position. Live FX can capture the image output from Unreal to composite this into a live camera feed. </p>
 <p></p>
@@ -390,13 +390,13 @@
 </ul>
 <h2 id="live-animation">Live Animation</h2>
 <p>Live Link metadata can be used in the grade and composite elements of shot through the Live Animation module. Live Animations are an extension to the standard animation module in the Assimilate Product Suite. In the standard animation module, you can create and apply an animation curve to a grade / composite parameter. Through the Live Animation extension, you link a Live Link to a grade / composite parameter and optionally apply a transform to the metadata to fit the parameter range. Before you can link a parameter to a Live Link you first switch on the Live-option for an animation channel.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Anim_Live_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Anim_Live_v01.png" /></p>
 <p></p>
 <p>The <strong>Live</strong> option applies to all parameters in the animation channel. When the Live option is enabled, the Link option becomes available which opens the Animation Editor for the animation channels shown in the current menu.</p>
 <p>The <strong>Link</strong> button opens the Animation Editor for the current selected animation channel, where you manage live links.</p>
 <h3 id="live-animation-editor">Live Animation Editor</h3>
 <p>The Live Animation Editor behaves similar to the standard Animation Editor, where in the tree view on the left side you select the channels, you want to edit / link.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Anim_Editor_v02.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Anim_Editor_v02.png" /></p>
 <p>In the right panel of the editor, you link the selected animation channel to a live source by selecting a Live Link from the corresponding <strong>Live Sources</strong> dropdown.</p>
 <p>Optionally you can set the live link to use a <strong>Delay</strong> with retrieving the value. This is similar to setting a delay with a camera tracker, which was discussed earlier. Only in this case you would delay the data for a specific parameter, rather than delaying the entire tracker data stream. This can be useful e.g. in a case where you need to project an image onto a LED wall based on the more recent camera position but at the same time render a set-extension image from a camera input - which is delayed - and need the same tracker data but of a few frames earlier.</p>
 <p>The delay with the Live Link is set in a number of frames, not in milliseconds. Also note that when you set a delay for a channel, that delay is also set for all other selected channels. That way you do not have enter the delay multiple times.</p>

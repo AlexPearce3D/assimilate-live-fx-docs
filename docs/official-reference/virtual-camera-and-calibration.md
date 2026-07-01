@@ -3,10 +3,10 @@
 <h2 id="virtual-camera">Virtual Camera</h2>
 <div>
 <p>Each shot has its own virtual camera for rendering a scene that includes layers. In such a scene, the primary image (of the clip or live capture) forms the back-plate that is tied to the camera and layers exist in a 3D context. You manage the (virtual) camera settings primarily from the Camera menu.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Camera_T1_Menu_v02.png" /></p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Camera_T2_Menu_v02.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_T1_Menu_v02.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_T2_Menu_v02.png" /></p>
 <p>The PanZoom panel (started from the top menu bar) shows a schematic view of the virtual camera. From the PanZoom tool you can also open a more detailed representation of the virtual camera and layer-setup in 3D space by either selecting the Left-, Top-, Front- or full Perspective view. This opens the detailed view in the View port, replacing the main image view. Use various quick keys to adjust the view: Ctrl+drag or the mouse-wheel to zoom in/out of the view (note that Alt+drag zooms the viewport itself, not the perspective view camera), space+drag or the middle mouse button to pan the view (note that the middle button also works for the regular image view but only on Windows). The camera view in the PanZoom tool also uses Ctrl + drag to zoom.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_CAM_MODEL_OVERVIEW_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_CAM_MODEL_OVERVIEW_v01.png" /></p>
 <p>The (virtual) camera in Live FX works similar as you might be familiar with in other 3D render software. There are however also differences.</p>
 <ul>
     <li>Each shot is rendered with its own (virtual) camera. Even a shot that is used inside a composition shot has its own virtual camera. </li>
@@ -39,7 +39,7 @@
 <div>
 <div>
 <p>The settings of a camera can be stored in a profile and easily be applied on a the camera of a new shot. When you click the <strong>Profile</strong> button, the Profile popup opens. </p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Camera_Profile_Popup_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_Profile_Popup_v01.png" /></p>
 <p>At the top of the Profile popup is a list of previously created profiles. Profiles are stored in the project database, so the list is not automatically available in a new project.</p>
 <p>After selecting a profile, use the <strong>Apply </strong>button to update the camera of the current shot with the profile settings. If the <strong>Focal </strong>option is set, the camera lens and sensor settings are updated. If the <strong>Distort </strong>option is set, a layer with a <span class="Highlight">Lens (un)Distort</span> plug-in is added to the current shot with the lens-distortion settings from the profile. </p>
 <p>To save a profile, type in a profile name in the textbox at the bottom of the popup panel and then click the <strong>Save</strong> button. If you enter an already existing profile name, the profile will be updated. Select the <strong>Focal </strong>and/or <strong>Distort </strong>options to include the specific data in the profile. You can only save lens distortion data, if there is a <span class="Highlight">Lens (un)Distort</span> plug-in active on a layer on the current shot.</p>
@@ -70,7 +70,7 @@
 <p>Z Distance = [Image Height] * 0.5 / tan(FoV * 0. 5)</p>
 <p>However, you can also switch the positioning to <strong>Manual</strong>. In that case, the Z position is no longer automatically adjusted when the Focal Length is changed. </p>
 <p>By default the (origin) position of the camera is, just like the position of layers in the Canvas menu, specified in pixels. However, most camera trackers pass the data to the offset animation position in meters. To combine the two, you need to specify a <strong>Pixel Scale</strong>. The pixel scale sets how many pixels go into a meter. This is an arbitrary scale - but for display of the camera / layer model it is important that it is not set too small or too high. As a rule of thump you can use the width of the base image. Once you set the <strong>Manual</strong> option and set a <strong>Pixel Scale</strong>, the position and of Layers in the Canvas menu is also displayed in meters.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Camera_WDist_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Camera_WDist_v01.png" /></p>
 <p>It is important to not change the Pixel Scale after you positioned the camera and / or layers based on a meter position.</p>
 <p>The Animation Offset parameters are intended to be animated or live linked. When using the automatic live link tracker Apply option, these are the parameters that are live linked.</p>
 <p></p>
@@ -91,7 +91,7 @@
     <li>Position - determine the tracker transformation matrix from the scene origin.</li>
 </ul>
 </div>
-<div><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_Calibration_v01.png" /></div>
+<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_Calibration_v01.png" /></div>
 <div><br />
 </div>
 <div>
@@ -140,7 +140,7 @@ Use the Apply button to update the active shot camera. Use the FL and DS buttons
 <p>
 Alternatively, to the Manual Capture, you can also enable the Auto Capture. Once enabled, this function will try to capture the board every 2 seconds automatically without the need to explicitly press a button. Another way to make the manual calibration process easier is to use the remote control (web) application that comes with the Assimilate Product Suite. The Remote Control can be started from the Tools menu in the Player. This opens the http server panel with a QR code that you can scan with a phone or tablet to open the application. The application has the standard remote control playback controls but also a series of function controls (F1 – F5). These can be assigned a function in the server panel. One of those functions can be to do a Capture Board for the calibration process.</p>
 <p></p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_RemoteCtrl_Server_v01.png" /><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_RemoteCtrl_Client_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_RemoteCtrl_Server_v01.png" /><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_RemoteCtrl_Client_v01.png" /></p>
 <p>This way you can move the checkerboard to a new position and hit the function key on your mobile phone instead of having to go back to the Live FX computer to click the button in the interface.
 </p>
 <h4 id="nodal-point-calibration">

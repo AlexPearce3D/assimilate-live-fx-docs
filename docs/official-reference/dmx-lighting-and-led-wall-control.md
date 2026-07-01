@@ -13,7 +13,7 @@
 </div>
 <div>
 <p>With the DMX module in Live FX you can control on-set lights, based on the media that is played back on the LED wall, the background used with a green-screen setup or tied to any other media upon which the lighting should act. You start the DMX module from the Live FX menu in the player or from the Tools dropdown menu in the player top menu bar. Some know how about DMX is required to operate this module. Although any low-level hardware aspects might not be needed, a basic understanding of the concepts of DMX channels, -universes, -controllers and -devices is needed to operate the module. On the web are various starter tutorial sites and videos available.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_DMX_Main_v03.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_Main_v03.png" /></p>
 <p>Configuring and using the DMX functions involves 3 steps:</p>
 <ul>
     <li>Connecting to DMX controller(s) / device(s).</li>
@@ -47,7 +47,7 @@
 <p>The first tab on the DMX Controller lists all the available fixtures / lights. The second set of tabs (Fixture, Universe, Channels) contains the settings of the selected fixture.</p>
 <h5 id="add">Add</h5>
 <p>This opens a new panel with a list of predefined fixtures. The first time you open this list, it will show empty, but a download will automatically start to retrieve a list of existing fixtures. When the list is populated, select a manufacturer, the fixture and then the mode it should operate in. This will then determine the DMX channel layout for the fixture. Click OK to add the selected fixture to your setup.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_DMX_AddNew_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_AddNew_v01.png" /></p>
 <h5 id="new">New</h5>
 <p>Click New to create a new ‘empty’ fixture for which you will enter the DMX channel layout yourself.</p>
 <h5 id="dupl">Dupl</h5>
@@ -72,7 +72,7 @@
 <p>The <strong>Distribute</strong>, <strong>Segments</strong>, <strong>Order </strong>and <strong>Inverse </strong>controls in the Universe tab are used to determine how the color for the fixtures is sampled from the active clip that is playing. Each fixture is can be tied to a specific section (rectangle) of the image playing. In the case that a fixture is made up from multiple lights and/or you have been using the Repeat options, then you also need to specify how the color sampling maps to the various lights.</p>
 <p>The first option is the either <strong>Duplicate </strong>the color sampling and use the same average color for all repeated lights or to <strong>Distribute </strong>the color sampling area into multiple smaller areas where each light have its own section: by default the rectangular area is split up in a single row of smaller areas. In the figure below you can see how to adjust the sample mapping.</p>
 </div>
-<div><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_DMX_Distribute_v01.png" /><br />
+<div><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_Distribute_v01.png" /><br />
 </div>
 <div>
 <p>Figure a) displays shows the default distribution of the sample area when using a repetition of 10. By using the <strong>Segments </strong>control you can adjust the number of rows that are using in the sampling area. In figure b) <strong>Segments </strong>is set to 3 and generate a pattern of 3 rows and 4 columns - leaving 2 samples not-used. </p>
@@ -102,7 +102,7 @@
 <p>Adjust the brightness of the selected fixture. This only works if the fixture has channels that are linked with a dimmer function.</p>
 <h5 id="image-area-select-color-sampling">Image Area Select - Color Sampling</h5>
 <p>Each fixture (unless it is set to have a fixed color) is tied to a specific section in the image of the active node in the player. In the Viewport an overlay is displayed that marks this section. This section of the image is used to sample the color for the fixture: the average color of all pixels in the image section. You can adjust the size of the image section of the position by either adjusting the numeric control on the Fixture tab or by dragging the overlay in the Viewport. </p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_DMX_Overlay_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_DMX_Overlay_v01.png" /></p>
 <p>Note that in some cases you need to specify which input of a composition node to use to sample from. E.g. when using a Switcher node, you want to tie the color sampling for a fixture to a specific channel in the Switcher node. Use the <strong>Input </strong>control to specify which channel / input to use. The value 0 indicates to use the main / root node.</p>
 <h5 id="color-scale-constant">Color Scale / Constant</h5>
 <p>Use the <strong>Min</strong>/<strong>Max </strong>color controls to set a minimum / maximum color that a fixture should receive. When the min/max color is set, then the calculated average color of the image area is scaled within these minimum and maximum colors.</p>
@@ -124,7 +124,7 @@
 <div>
 <h2 id="led-wall-control">LED Wall Control</h2>
 <p>In most cases when outputting to an LED wall, the grade and look is all done from withing Live FX. However, it can be very useful to have control over the overall brightness and color temperature of the LED wall. The LED Wall Control utility in Live FX, which is available from the Tools menu in the Player top menu bar - can interface with the Tessera LED Wall Processors from Brompton Ltd.</p>
-<p><img alt="" src="../assets/official-reference/live-fx-user-guide/LFX_LED_Ctrl_v01.png" /></p>
+<p><img alt="" src="../../assets/official-reference/live-fx-user-guide/LFX_LED_Ctrl_v01.png" /></p>
 <p>From the control panel you can adjust the overall brightness of an LED Wall as well as the Intensity Gain and Temperature settings. With the Config option you can define multiple walls, each referencing one or more processors by just adding lines to configuration file. Start each line with a name / wall identifier and add one or more IP-addresses of the processors associated with the wall - separated by a comma.</p>
 <p><span class="ProportionalGrey"><br />
 Wall 1, 10.10.10.1, 10.10.10.2, 10.10.10.3</span></p>
