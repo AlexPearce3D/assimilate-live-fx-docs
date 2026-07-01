@@ -1,6 +1,6 @@
 # Blackmagic UltraStudio 4k Mini Settings
 
-!!! danger
+!!! warning
 
     We have seen a bug with the UltraStudio 4k mini, that would cause color shifting in the Kino Flo Mimik.   
 

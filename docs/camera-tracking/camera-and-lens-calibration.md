@@ -46,7 +46,7 @@ What you see in your camera viewfinder should be the same in Live FX with no cro
     For example, if your lens is 24mm on your camera, the calculated Focal length in Live FX should be close to 24mm so that it will forward 24mm to Unreal Engine.
 
 
-!!! danger
+!!! warning
 
     If entering in sensor size, **make sure to get the correct sensor size and crop** factor from your camera manufacturer, and make sure you calculate it based on the **Resolution Setting** and **Aspect Ratio** you are using.
 

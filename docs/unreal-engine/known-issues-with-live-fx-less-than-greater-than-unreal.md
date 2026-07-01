@@ -1,11 +1,11 @@
 # Known Issues with Live FX <> Unreal
 
-!!! danger
+!!! warning
 
     **Live FX cannot be used with AR or XR workflows currently. There is no known way to get an object with a clean alpha channel from Unreal Engine Texture share or otherwise. You can likely develop your own pipeline using 3rd party plug-ins to make this work, but we currently do not have a documented way forward.**
 
 
-!!! danger
+!!! warning
 
     **Live FX cannot be used with Unreal Engine and Green Screen to record the composite or the source capture without serious consequences in post-production. If you want to use Live FX and Unreal with Green Screen, you should plan to use Take Recorder in Unreal Engine to record the tracking data, so that you can re-render and get desired results directly from Unreal Engine.**
 

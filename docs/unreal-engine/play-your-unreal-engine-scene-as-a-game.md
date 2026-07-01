@@ -8,7 +8,7 @@ The main reason you need to do this is so that you can render the viewport offsc
 
 Rendering offscreen has some performance benefits but even if your computer can handle the scene without rendering offscreen, other artifacts can show up on LED walls or second monitors by rendering the viewport twice, and if you didn't set your project settings to not "Use less CPU when in background", it may also go very slow.
 
-!!! danger
+!!! warning
 
     The path to your Unreal Engine project should be short, if not you may run into issues where you cannot put in all the command line variables you need to. Keeping folder and file names short or moving your project somewhere with a short path is the best practice.
 

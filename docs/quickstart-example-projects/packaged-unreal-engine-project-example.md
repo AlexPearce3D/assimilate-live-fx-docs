@@ -67,7 +67,7 @@ I’ve renamed the shortcut to “**OnScreen1920x1080**”
    Whatever frame rate you are shooting in, your timeline should match and you should set that in your console variables, for example if you are shooting in 59.94, you would use:  
    -t.MaxFPS = 59.94
 
-!!! danger
+!!! warning
 
     IF YOU ARE RENDERING OFFSCREEN, YOU WILL NOT SEE THE EXPERIENCE LAUNCH, PRESS **CONTROL+ALT+DELETE** TO SEE IT AND TO CLOSE IT.
 

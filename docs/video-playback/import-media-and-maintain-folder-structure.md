@@ -5,7 +5,7 @@ There are many ways to import media files and you may want to maintain your fold
 > Video/resource: [https://youtu.be/87fHxVKVr0I](https://youtu.be/87fHxVKVr0I)
 
 
-!!! danger
+!!! warning
 
     If you are using[ h.264 media, make sure to set up Assimilate to decode it properly!!](playback-h.264-files.md)
 

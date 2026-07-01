@@ -25,7 +25,7 @@ For more information on Web Remote Control, visit the documentation:
 
 
 
-!!! danger
+!!! warning
 
     If WebRemote by any chance doesn't start, if UE says "Failed to build WebApp" error, this is what steps you need to do:<br>
 
@@ -43,7 +43,7 @@ For more information on Web Remote Control, visit the documentation:
 3. Enable the plugin, **Remote Control Web Interface** (built-in).
 4. **Restart** Unreal Engine.
 
-!!! danger
+!!! warning
 
     You must enable both plugins for it to work properly!
 

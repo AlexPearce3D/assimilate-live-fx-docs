@@ -29,7 +29,7 @@ NVIDIA DLSS 3.5 is a suite of AI rendering technologies powered by Tensor Cores 
 
 ## Setup your PC
 
-!!! danger
+!!! warning
 
     You must go to Settings, Graphics Settings, and Turn on Hardware-Accelerated GPU Scheduling to see any difference in performance from DLSS!
 
