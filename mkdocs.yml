@@ -1,0 +1,243 @@
+site_name: Live FX Documentation
+site_description: Live FX documentation for virtual production workflows.
+site_url: https://alexpearce3d.github.io/assimilate-live-fx-docs/
+repo_url: https://github.com/AlexPearce3D/assimilate-live-fx-docs
+repo_name: AlexPearce3D/assimilate-live-fx-docs
+
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+exclude_docs: |
+  SUMMARY.md
+
+theme:
+  name: material
+  logo: assets/LFX Banner.png
+  favicon: assets/LFX Banner.png
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: black
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+nav:
+  - "📚 Getting Started":
+    - "Overview": "README.md"
+    - "Introduction":
+      - "Overview": "getting-started/introduction/README.md"
+      - "Feature Comparison": "getting-started/introduction/feature-comparison.md"
+      - "Download & Install": "getting-started/introduction/download-and-install.md"
+      - "Settings":
+        - "Overview": "getting-started/introduction/settings/README.md"
+        - "System Settings":
+          - "Overview": "getting-started/introduction/settings/system-settings/README.md"
+          - "Custom Commands": "getting-started/introduction/settings/system-settings/custom-commands.md"
+          - "Advanced": "getting-started/introduction/settings/system-settings/advanced.md"
+        - "User Settings": "getting-started/introduction/settings/user-settings.md"
+        - "Video IO Settings":
+          - "Overview": "getting-started/introduction/settings/video-io-settings/README.md"
+          - "Black Magic Troubleshooting": "getting-started/introduction/settings/video-io-settings/black-magic-troubleshooting.md"
+      - "Helpful Shortcuts":
+        - "Overview": "getting-started/introduction/helpful-shortcuts/README.md"
+        - "Construct Shortcuts": "getting-started/introduction/helpful-shortcuts/construct-shortcuts.md"
+        - "Player Shortcuts": "getting-started/introduction/helpful-shortcuts/player-shortcuts.md"
+        - "Viewport Shortcuts": "getting-started/introduction/helpful-shortcuts/viewport-shortcuts.md"
+        - "ColorFX Shortcuts": "getting-started/introduction/helpful-shortcuts/colorfx-shortcuts.md"
+        - "Stage Lights Shortcuts": "getting-started/introduction/helpful-shortcuts/stage-lights-shortcuts.md"
+    - "The Basics":
+      - "Overview": "getting-started/the-basics/README.md"
+      - "Project Settings": "getting-started/the-basics/project-settings.md"
+      - "Change Shot Framerate and Resolution": "getting-started/the-basics/change-shot-framerate-and-resolution.md"
+      - "Change the Shot Length": "getting-started/the-basics/change-the-shot-length.md"
+      - "Timecode": "getting-started/the-basics/timecode.md"
+      - "Working with Layers": "getting-started/the-basics/working-with-layers.md"
+      - "General Tips": "getting-started/the-basics/general-tips.md"
+    - "Helpful Links": "getting-started/helpful-links.md"
+    - "First Time Start-Up": "getting-started/first-time-start-up.md"
+    - "User Interface": "getting-started/user-interface.md"
+  - "⚡ Quickstart Example Projects":
+    - "Overview": "quickstart-example-projects/README.md"
+    - "Simple Video Playback": "quickstart-example-projects/simple-video-playback.md"
+    - "Green Screen with 360 Background": "quickstart-example-projects/green-screen-with-360-background.md"
+    - "LED Wall - Projection Mapping": "quickstart-example-projects/led-wall-projection-mapping.md"
+    - "LED Wall - Without Projection Mapping": "quickstart-example-projects/led-wall-without-projection-mapping.md"
+    - "Packaged Unreal Engine project Example": "quickstart-example-projects/packaged-unreal-engine-project-example.md"
+  - "📼 Video Playback":
+    - "Overview": "video-playback/README.md"
+    - "Video-IO Settings": "video-playback/video-io-settings.md"
+    - "Playback h.264 files": "video-playback/playback-h.264-files.md"
+    - "Import Media and Maintain Folder Structure": "video-playback/import-media-and-maintain-folder-structure.md"
+    - "Speed up and Slow Down Footage":
+      - "Overview": "video-playback/speed-up-and-slow-down-footage/README.md"
+      - "Re-Time footage with Projection Mapping": "video-playback/speed-up-and-slow-down-footage/re-time-footage-with-projection-mapping.md"
+      - "Re-Time Footage on a Canvas": "video-playback/speed-up-and-slow-down-footage/re-time-footage-on-a-canvas.md"
+      - "Re-Time Footage on a File": "video-playback/speed-up-and-slow-down-footage/re-time-footage-on-a-file.md"
+    - "HDR":
+      - "Overview": "video-playback/hdr/README.md"
+      - "HDR with Windows Consumer Monitor in 9.8": "video-playback/hdr/hdr-with-windows-consumer-monitor-in-9.8.md"
+      - "HDR with Windows Consumer Monitor in 9.9": "video-playback/hdr/hdr-with-windows-consumer-monitor-in-9.9.md"
+      - "HDR with LED Processors": "video-playback/hdr/hdr-with-led-processors.md"
+      - "HDR with Apple Displays": "video-playback/hdr/hdr-with-apple-displays.md"
+      - "Windows Consumer Monitor Force HDR Hack": "video-playback/hdr/windows-consumer-monitor-force-hdr-hack.md"
+      - "HDR via SDI": "video-playback/hdr/hdr-via-sdi.md"
+  - "🎥 Camera Tracking":
+    - "Overview": "camera-tracking/README.md"
+    - "Camera and Lens Calibration": "camera-tracking/camera-and-lens-calibration.md"
+    - "Camera Trackers":
+      - "Overview": "camera-tracking/camera-trackers/README.md"
+      - "REtracker Bliss": "camera-tracking/camera-trackers/retracker-bliss.md"
+      - "ZEISS CinCraft Scenario": "camera-tracking/camera-trackers/zeiss-cincraft-scenario.md"
+      - "MoSys": "camera-tracking/camera-trackers/mosys.md"
+      - "Stype": "camera-tracking/camera-trackers/stype.md"
+      - "OptiTrack": "camera-tracking/camera-trackers/optitrack.md"
+      - "HTC Mars Camtrack": "camera-tracking/camera-trackers/htc-mars-camtrack.md"
+      - "Free D": "camera-tracking/camera-trackers/free-d.md"
+      - "iPhone Apps": "camera-tracking/camera-trackers/iphone-apps.md"
+    - "How to apply camera tracking to a layer, image, or mask": "camera-tracking/how-to-apply-camera-tracking-to-a-layer-image-or-mask.md"
+    - "How to manually adjust camera tracking speed and delay": "camera-tracking/how-to-manually-adjust-camera-tracking-speed-and-delay.md"
+    - "How to delay the Inner Frustum": "camera-tracking/how-to-delay-the-inner-frustum.md"
+    - "How to apply FIZ (Zoom and Focus) from Camera Tracking": "camera-tracking/how-to-apply-fiz-zoom-and-focus-from-camera-tracking.md"
+  - "Motion Control":
+    - "Overview": "motion-control/README.md"
+    - "Mark Roberts Motion Control (MRMC)": "motion-control/mark-roberts-motion-control-mrmc.md"
+    - "Motorized Precision": "motion-control/motorized-precision.md"
+    - "eMotimo": "motion-control/emotimo.md"
+    - "SISU": "motion-control/sisu.md"
+  - "🟩 Green Screen Workflow":
+    - "Overview": "green-screen-workflow/README.md"
+    - "Qualifiers": "green-screen-workflow/qualifiers.md"
+    - "Green Screen with Set Extension Workflow": "green-screen-workflow/green-screen-with-set-extension-workflow.md"
+    - "Working with Ultimatte": "green-screen-workflow/working-with-ultimatte.md"
+  - "📺 LED Workflow":
+    - "Overview": "led-workflow/README.md"
+    - "Setting up an LED Wall":
+      - "Overview": "led-workflow/setting-up-an-led-wall/README.md"
+      - "Set Up Nvidia Mosaic": "led-workflow/setting-up-an-led-wall/set-up-nvidia-mosaic.md"
+      - "Nvidia Multi-GPU Configuration": "led-workflow/setting-up-an-led-wall/nvidia-multi-gpu-configuration.md"
+    - "Stage Manager": "led-workflow/stage-manager.md"
+    - "How to make the inner frustum green": "led-workflow/how-to-make-the-inner-frustum-green.md"
+    - "Switcher Node": "led-workflow/switcher-node.md"
+    - "Tips when using Projection Mapping": "led-workflow/tips-when-using-projection-mapping.md"
+    - "Projection Mapping Tutorials":
+      - "Overview": "led-workflow/projection-mapping-tutorials/README.md"
+      - "Part 1: General Introduction to Projection Mapping": "led-workflow/projection-mapping-tutorials/part-1-general-introduction-to-projection-mapping.md"
+      - "Part 2: : Projection Mapping - Media Types & Projection Models": "led-workflow/projection-mapping-tutorials/part-2-projection-mapping-media-types-and-projection-models.md"
+      - "Part 3: Projection Mapping on multiple walls": "led-workflow/projection-mapping-tutorials/part-3-projection-mapping-on-multiple-walls.md"
+      - "Part 4: Projection Mapping with Unreal Engine": "led-workflow/projection-mapping-tutorials/part-4-projection-mapping-with-unreal-engine.md"
+      - "Part 5: Set Extensions": "led-workflow/projection-mapping-tutorials/part-5-set-extensions.md"
+  - "💡 Lighting":
+    - "Overview": "lighting/README.md"
+    - "Getting started with Image Based Lighting": "lighting/getting-started-with-image-based-lighting.md"
+    - "Lighting Brands":
+      - "Overview": "lighting/lighting-brands/README.md"
+      - "Aputure": "lighting/lighting-brands/aputure.md"
+      - "Creamsource": "lighting/lighting-brands/creamsource.md"
+      - "Kino Flo":
+        - "Overview": "lighting/lighting-brands/kino-flo/README.md"
+        - "Mimik 120": "lighting/lighting-brands/kino-flo/mimik-120.md"
+        - "Freestyle": "lighting/lighting-brands/kino-flo/freestyle.md"
+      - "Prolycht": "lighting/lighting-brands/prolycht.md"
+      - "Quasar Science": "lighting/lighting-brands/quasar-science.md"
+    - "How to Sample Multiple Video Sources through Videowall": "lighting/how-to-sample-multiple-video-sources-through-videowall.md"
+    - "Rec2020 Example Project":
+      - "Overview": "lighting/rec2020-example-project/README.md"
+      - "Megapixel HELIOS settings for Mimik": "lighting/rec2020-example-project/megapixel-helios-settings-for-mimik.md"
+      - "Blackmagic UltraStudio 4k Mini Settings": "lighting/rec2020-example-project/blackmagic-ultrastudio-4k-mini-settings.md"
+      - "Setup Display Colorspace": "lighting/rec2020-example-project/setup-display-colorspace.md"
+      - "Video IO Settings": "lighting/rec2020-example-project/video-io-settings.md"
+      - "Create and Set up your Project": "lighting/rec2020-example-project/create-and-set-up-your-project.md"
+      - "Create and set up your Shot": "lighting/rec2020-example-project/create-and-set-up-your-shot.md"
+      - "Fix Jitter": "lighting/rec2020-example-project/fix-jitter.md"
+  - "🎮 Unreal Engine":
+    - "Overview": "unreal-engine/README.md"
+    - "Known Issues with Live FX <> Unreal": "unreal-engine/known-issues-with-live-fx-less-than-greater-than-unreal.md"
+    - "Set up Unreal Engine with Live FX": "unreal-engine/set-up-unreal-engine-with-live-fx.md"
+    - "Play your Unreal Engine scene as a Game": "unreal-engine/play-your-unreal-engine-scene-as-a-game.md"
+    - "How to Package an Unreal Engine Project for Live FX":
+      - "Overview": "unreal-engine/how-to-package-an-unreal-engine-project-for-live-fx/README.md"
+      - "Command Line Arguments": "unreal-engine/how-to-package-an-unreal-engine-project-for-live-fx/command-line-arguments.md"
+      - "Before You Package": "unreal-engine/how-to-package-an-unreal-engine-project-for-live-fx/before-you-package.md"
+    - "Unreal Web Remote Control (Optional)": "unreal-engine/unreal-web-remote-control-optional.md"
+    - "Control UE through OSC": "unreal-engine/control-ue-through-osc.md"
+    - "Take Recorder": "unreal-engine/take-recorder.md"
+    - "Working with Sequencer": "unreal-engine/working-with-sequencer.md"
+    - "Unreal Optimization":
+      - "Overview": "unreal-engine/unreal-optimization/README.md"
+      - "Console Commands / Command Line Arguments": "unreal-engine/unreal-optimization/console-commands-command-line-arguments.md"
+      - "List of all Console Variables and Commands":
+        - "Overview": "unreal-engine/unreal-optimization/list-of-all-console-variables-and-commands/README.md"
+        - "Scalability Groups Console Variables": "unreal-engine/unreal-optimization/list-of-all-console-variables-and-commands/scalability-groups-console-variables.md"
+        - "Renderer Console Variables": "unreal-engine/unreal-optimization/list-of-all-console-variables-and-commands/renderer-console-variables.md"
+      - "Baking Light": "unreal-engine/unreal-optimization/baking-light.md"
+      - "DLSS": "unreal-engine/unreal-optimization/dlss.md"
+  - "©️ Cuebric Workflow":
+    - "Overview": "cuebric-workflow/README.md"
+    - "Projection Mapping with Cuebric Files": "cuebric-workflow/projection-mapping-with-cuebric-files.md"
+    - "Non-Projection Mapping with Cuebric": "cuebric-workflow/non-projection-mapping-with-cuebric.md"
+  - "🧊 2.5d Workflow":
+    - "Overview": "2.5d-workflow/README.md"
+    - "Projection Mapping 2.5d Workflow": "2.5d-workflow/projection-mapping-2.5d-workflow.md"
+    - "Non-Projection Mapping 2.5d Workflow": "2.5d-workflow/non-projection-mapping-2.5d-workflow.md"
+  - "🖥️ Multi-Computer Workflows":
+    - "Overview": "multi-computer-workflows/README.md"
+    - "Sync Players": "multi-computer-workflows/sync-players.md"
+    - "Sync Projects across Multiple Nodes": "multi-computer-workflows/sync-projects-across-multiple-nodes.md"
+  - "🌅 Live Looks - Live Grade LED Walls":
+    - "Overview": "live-looks-live-grade-led-walls/README.md"
+    - "How to Purchase and Install Live Looks": "live-looks-live-grade-led-walls/how-to-purchase-and-install-live-looks.md"
+    - "How to set up Live Looks with Brompton": "live-looks-live-grade-led-walls/how-to-set-up-live-looks-with-brompton.md"
+    - "Live Grading with Live Looks": "live-looks-live-grade-led-walls/live-grading-with-live-looks.md"
+  - "🗃️ Compositing":
+    - "Overview": "compositing/README.md"
+    - "Working with the Alpha Channel": "compositing/working-with-the-alpha-channel.md"
+    - "Re-Map EXR channels": "compositing/re-map-exr-channels.md"
+    - "Working with Mattes": "compositing/working-with-mattes.md"
+    - "Opacity and Blend Modes": "compositing/opacity-and-blend-modes.md"
+  - "🆘 General Troubleshooting":
+    - "Overview": "general-troubleshooting/README.md"
+    - "📰 Licensing the Software": "general-troubleshooting/licensing-the-software.md"
+    - "🕙 Dealing with Delay": "general-troubleshooting/dealing-with-delay.md"
+    - "🖥️ Networking Tips": "general-troubleshooting/networking-tips.md"
+    - "❓ Frequently Asked Questions (FAQs)":
+      - "Overview": "general-troubleshooting/frequently-asked-questions-faqs/README.md"
+      - "Does Live FX support Unreal 5.3?": "general-troubleshooting/frequently-asked-questions-faqs/does-live-fx-support-unreal-5.3.md"
+      - "Why won't Live FX open when I have a second monitor hooked up?": "general-troubleshooting/frequently-asked-questions-faqs/why-wont-live-fx-open-when-i-have-a-second-monitor-hooked-up.md"
+      - "How do I switch the toolset from Live FX to Scratch?": "general-troubleshooting/frequently-asked-questions-faqs/how-do-i-switch-the-toolset-from-live-fx-to-scratch.md"
+      - "Where is the record button?": "general-troubleshooting/frequently-asked-questions-faqs/where-is-the-record-button.md"
+      - "Why is my image dark (or why are my colors wrong)?": "general-troubleshooting/frequently-asked-questions-faqs/why-is-my-image-dark-or-why-are-my-colors-wrong.md"
+      - "How do I close Live FX?": "general-troubleshooting/frequently-asked-questions-faqs/how-do-i-close-live-fx.md"
+      - "How do I minimize Live FX?": "general-troubleshooting/frequently-asked-questions-faqs/how-do-i-minimize-live-fx.md"
+      - "What is SCRATCH? What is Assimilate?  Are they the same thing as Live FX?": "general-troubleshooting/frequently-asked-questions-faqs/what-is-scratch-what-is-assimilate-are-they-the-same-thing-as-live-fx.md"
+      - "How do I change the mouse from moving in circles to left/right?": "general-troubleshooting/frequently-asked-questions-faqs/how-do-i-change-the-mouse-from-moving-in-circles-to-left-right.md"
+    - "Stuttering Playback": "general-troubleshooting/stuttering-playback.md"
+  - "📘 User Guide (Old)": "user-guide-old.md"
