@@ -1,5 +1,9 @@
 # Getting started with Image Based Lighting
 
+!!! info "Official reference"
+
+    For official DMX, fixture, and LED wall control terminology, see [DMX, Lighting, and LED Wall Control](../official-reference/dmx-lighting-and-led-wall-control.md).
+
 ### Overview
 
 From the **Stage Lights** module, you control the lights (fixtures) on set through the Digital Multiplexer (DMX) protocol or direct video output (video fixtures). You can dynamically set the color, tie the color to a region of a clip playing to an LED volume or serving as a green-screen background, or output (part of) a clip to a series of light (beams) – also referred to as image-based-lighting (IBL).

@@ -1,5 +1,9 @@
 # Set up Unreal Engine with Live FX
 
+!!! info "Official reference"
+
+    For the official Unreal Live Link context, see [Live Links and Camera Tracking](../official-reference/live-links-and-camera-tracking.md).
+
 ## Overview
 
 **Live FX works with Unreal Engine** in various ways, but here is the basic overview:

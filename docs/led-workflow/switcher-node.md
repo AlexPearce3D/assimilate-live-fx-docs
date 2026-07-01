@@ -1,5 +1,9 @@
 # Switcher Node
 
+!!! info "Official reference"
+
+    For the official role of Switcher, Projection, Stage Matte, and related nodes, see [Live FX Nodes](../official-reference/live-fx-nodes.md).
+
 If you need all walls to go out the DualHead via Nvidia Mosaic, then you need Stage Manager, even though you‘re not using any projection.
 
 If you want to send one wall via dual head, one via SDI, or 4 walls via individual SDI channels, then no need for Stage Manager.
@@ -33,4 +37,3 @@ After that, it‘s a similar workflow, where you wrap all shots into a switcher 
 !!! info
 
     The stage mosaic may require a unique switcher node that is only created through the Projection Setup Panel instead of a normal switcher node or it may need a project node (e.g. Frustum to Wall, etc.)
-

@@ -1,5 +1,9 @@
 # Working with the Alpha Channel
 
+!!! info "Official reference"
+
+    For official keyer and alpha output behavior, see [Keyers and Alpha Output](../official-reference/keyers-and-alpha-output.md).
+
 The main tab that you should think of when you are using a file with an alpha channel, is the Fill/Matte tab on the bottom left.
 
 <figure><img src="../../assets/image (61).png" alt=""><figcaption></figcaption></figure>

@@ -1,5 +1,9 @@
 # Camera and Lens Calibration
 
+!!! info "Official reference"
+
+    For the official virtual camera and calibration model, see [Virtual Camera and Calibration](../official-reference/virtual-camera-and-calibration.md).
+
 > Video/resource: [https://player.vimeo.com/video/727369885](https://player.vimeo.com/video/727369885)
 
 

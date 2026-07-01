@@ -1,5 +1,9 @@
 # 🗃️ Compositing
 
+!!! info "Official reference"
+
+    For official keyer and alpha output behavior, see [Keyers and Alpha Output](../official-reference/keyers-and-alpha-output.md).
+
 Live FX can be used as a live compositor or as an offline compositor.
 
 It is not as fully featured as many dedicated compositing programs are, but it is very fast and can handle large-resolution files very well.
@@ -12,4 +16,3 @@ Some general tips:
 Here is an Advanced Compositing Tutorial:<br>
 
 > Video/resource: [https://youtu.be/s--lSOgeNXQ](https://youtu.be/s--lSOgeNXQ)
-

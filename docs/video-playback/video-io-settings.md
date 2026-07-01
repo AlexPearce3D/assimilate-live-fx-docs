@@ -1,5 +1,9 @@
 # Video-IO Settings
 
+!!! info "Official reference"
+
+    For official capture node and signal-range context, see [Live FX Nodes](../official-reference/live-fx-nodes.md).
+
 The iron rule of thumb is that all YUV (or YCbCr) signals shall be legal range (and vice versa, RGB signals shall be full range ;-). So selecting a YUV output signal, but then choosing an RGB matrix cannot possibly work. selecting a YUV matrix gets you there halfway, but as you will find out, will clip certain parts of the signal at top and bottom (the green bars & green patch).
 
 <figure><img src="../../assets/Screenshot 2024-06-18 at 12.17.37 PM.png" alt=""><figcaption><p>Video-IO menu: The format an default YUV Matrix are chosen in the upper right corner of the menu. In the lower half, the Matrix can be overridden for any of the input / output channels.</p></figcaption></figure>

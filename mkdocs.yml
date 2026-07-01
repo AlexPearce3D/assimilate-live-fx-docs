@@ -84,6 +84,16 @@ nav:
     - "Helpful Links": "getting-started/helpful-links.md"
     - "First Time Start-Up": "getting-started/first-time-start-up.md"
     - "User Interface": "getting-started/user-interface.md"
+  - "📖 Official Reference":
+    - "Overview": "official-reference/README.md"
+    - "Live FX Interface": "official-reference/live-fx-interface.md"
+    - "Live Links and Camera Tracking": "official-reference/live-links-and-camera-tracking.md"
+    - "Virtual Camera and Calibration": "official-reference/virtual-camera-and-calibration.md"
+    - "LED Wall Projection and Stage Manager": "official-reference/led-wall-projection-and-stage-manager.md"
+    - "Live FX Nodes": "official-reference/live-fx-nodes.md"
+    - "Live Composition and Projection Setup": "official-reference/live-composition-and-projection-setup.md"
+    - "DMX, Lighting, and LED Wall Control": "official-reference/dmx-lighting-and-led-wall-control.md"
+    - "Keyers and Alpha Output": "official-reference/keyers-and-alpha-output.md"
   - "⚡ Quickstart Example Projects":
     - "Overview": "quickstart-example-projects/README.md"
     - "Simple Video Playback": "quickstart-example-projects/simple-video-playback.md"
@@ -239,4 +249,3 @@ nav:
       - "What is SCRATCH? What is Assimilate?  Are they the same thing as Live FX?": "general-troubleshooting/frequently-asked-questions-faqs/what-is-scratch-what-is-assimilate-are-they-the-same-thing-as-live-fx.md"
       - "How do I change the mouse from moving in circles to left/right?": "general-troubleshooting/frequently-asked-questions-faqs/how-do-i-change-the-mouse-from-moving-in-circles-to-left-right.md"
     - "Stuttering Playback": "general-troubleshooting/stuttering-playback.md"
-  - "📘 User Guide (Old)": "user-guide-old.md"
