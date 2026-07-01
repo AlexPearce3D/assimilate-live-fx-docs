@@ -2,7 +2,7 @@
 
 !!! info "Official reference"
 
-    For the official role of Switcher, Projection, Stage Matte, and related nodes, see [Live FX Nodes](../official-reference/live-fx-nodes.md).
+    For the official role of Switcher, Projection, Stage Matte, and related nodes, see [Live FX Nodes](../official-reference/live-fx-nodes.md) and the full guide section [Switcher Node](../official-reference/live-fx-user-guide-full.md#switcher-node).
 
 If you need all walls to go out the DualHead via Nvidia Mosaic, then you need Stage Manager, even though you‘re not using any projection.
 

@@ -2,7 +2,7 @@
 
 !!! info "Official reference"
 
-    For the official Unreal Live Link context, see [Live Links and Camera Tracking](../official-reference/live-links-and-camera-tracking.md).
+    For the official Unreal Live Link context, see [Live Links and Camera Tracking](../official-reference/live-links-and-camera-tracking.md) and the full guide section [Live Links - Unreal](../official-reference/live-fx-user-guide-full.md#live-links-unreal).
 
 ## Overview
 

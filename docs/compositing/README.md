@@ -2,7 +2,7 @@
 
 !!! info "Official reference"
 
-    For official keyer and alpha output behavior, see [Keyers and Alpha Output](../official-reference/keyers-and-alpha-output.md).
+    For official keyer and alpha output behavior, see [Keyers and Alpha Output](../official-reference/keyers-and-alpha-output.md) and the full guide section [Keyers and Alpha Output](../official-reference/live-fx-user-guide-full.md#keyers-and-alpha-output).
 
 Live FX can be used as a live compositor or as an offline compositor.
 

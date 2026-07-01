@@ -2,7 +2,7 @@
 
 !!! info "Official reference"
 
-    For official keyer and alpha output behavior, see [Keyers and Alpha Output](../official-reference/keyers-and-alpha-output.md).
+    For official keyer and alpha output behavior, see [Keyers and Alpha Output](../official-reference/keyers-and-alpha-output.md) and the full guide section [Alpha output over SDI / Dual head](../official-reference/live-fx-user-guide-full.md#alpha-output-over-sdi-dual-head).
 
 The main tab that you should think of when you are using a file with an alpha channel, is the Fill/Matte tab on the bottom left.
 

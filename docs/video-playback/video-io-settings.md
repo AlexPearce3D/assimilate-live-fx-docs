@@ -2,7 +2,7 @@
 
 !!! info "Official reference"
 
-    For official capture node and signal-range context, see [Live FX Nodes](../official-reference/live-fx-nodes.md).
+    For official capture node and signal-range context, see [Live FX Nodes](../official-reference/live-fx-nodes.md) and the full guide section [Video Capture Node](../official-reference/live-fx-user-guide-full.md#video-capture-node).
 
 The iron rule of thumb is that all YUV (or YCbCr) signals shall be legal range (and vice versa, RGB signals shall be full range ;-). So selecting a YUV output signal, but then choosing an RGB matrix cannot possibly work. selecting a YUV matrix gets you there halfway, but as you will find out, will clip certain parts of the signal at top and bottom (the green bars & green patch).
 

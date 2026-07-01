@@ -84,8 +84,11 @@ nav:
     - "Helpful Links": "getting-started/helpful-links.md"
     - "First Time Start-Up": "getting-started/first-time-start-up.md"
     - "User Interface": "getting-started/user-interface.md"
+  - "Training":
+    - "Intro to Live FX": "training/intro-to-live-fx/README.md"
   - "📖 Official Reference":
     - "Overview": "official-reference/README.md"
+    - "Full Official Live FX User Guide": "official-reference/live-fx-user-guide-full.md"
     - "Live FX Interface": "official-reference/live-fx-interface.md"
     - "Live Links and Camera Tracking": "official-reference/live-links-and-camera-tracking.md"
     - "Virtual Camera and Calibration": "official-reference/virtual-camera-and-calibration.md"

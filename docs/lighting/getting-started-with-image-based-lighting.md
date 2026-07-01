@@ -2,7 +2,7 @@
 
 !!! info "Official reference"
 
-    For official DMX, fixture, and LED wall control terminology, see [DMX, Lighting, and LED Wall Control](../official-reference/dmx-lighting-and-led-wall-control.md).
+    For official DMX, fixture, and LED wall control terminology, see [DMX, Lighting, and LED Wall Control](../official-reference/dmx-lighting-and-led-wall-control.md) and the full guide section [DMX](../official-reference/live-fx-user-guide-full.md#dmx-2).
 
 ### Overview
 

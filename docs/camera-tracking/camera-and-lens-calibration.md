@@ -2,7 +2,7 @@
 
 !!! info "Official reference"
 
-    For the official virtual camera and calibration model, see [Virtual Camera and Calibration](../official-reference/virtual-camera-and-calibration.md).
+    For the official virtual camera and calibration model, see [Virtual Camera and Calibration](../official-reference/virtual-camera-and-calibration.md) and the full guide section [Calibrate](../official-reference/live-fx-user-guide-full.md#calibrate-2).
 
 > Video/resource: [https://player.vimeo.com/video/727369885](https://player.vimeo.com/video/727369885)
 
