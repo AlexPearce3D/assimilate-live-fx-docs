@@ -50,14 +50,6 @@ plugins:
   - search
 
 nav:
-  - "Renderfarm":
-    - "Overview": "renderfarm/README.md"
-    - "User Guide": "renderfarm/user-guide.md"
-    - "Farm Machine Monitoring": "renderfarm/farm-machine-monitoring.md"
-    - "Video Tutorial Script": "renderfarm/tutorial.md"
-    - "Building Apps": "renderfarm/building-apps.md"
-    - "Screenshot Guide": "renderfarm/screenshots.md"
-    - "Legacy Workflows": "renderfarm/legacy-workflows.md"
   - "📚 Getting Started":
     - "Overview": "README.md"
     - "Introduction":
