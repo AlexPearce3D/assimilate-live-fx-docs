@@ -1,13 +1,10 @@
 # Part 3: Projection Mapping on multiple walls
 
-Here is the Youtube Video for this part, if you rather watch, than read  ;-) .
+Here is the Youtube Video for this part, if you rather watch, than read ;-) .
 
 > Video/resource: [https://www.youtube.com/watch?v=x4dT6S3MaiM](https://www.youtube.com/watch?v=x4dT6S3MaiM)
 
-
 In this part of the tutorial series, we discuss more complex stage setups with multiple LED walls and LED wall processors. To a certain extent this is just up-scaling of what we already covered in the first two videos of this tutorial series. However, it does also add some extra complexities of which you need to be aware.
-
-
 
 When dealing with multiple LED walls or with multiple LED wall processors that feed into a single big wall, Live FX Studio has to send multiple images through different outputs at the same time. The one item to do this in Live FX Studio is the so-called Switcher node. This node takes in multiple inputs and generates a specific image for each display output of the system.
 
@@ -39,11 +36,7 @@ For now, let conclude this explanation of the Switcher node by a quick look at t
 
 Lastly, the Label option determines the labels on the channel buttons on the first tab. When we set this to Reel-ID and switch to the channels tab then you can see the labels changed to the reelid metadata item of each of the input shots.
 
-
-
 Back to the main topic: LED wall projection and how to deal with multiple walls.
-
-<figure><img src="../../../assets/Switcher Node.png" alt=""><figcaption></figcaption></figure>
 
 Now that we have seen the Switcher node in action, let’s create a setup with multiple LED walls. Open the Projection setup panel and from there open the Stage Manager. For this tutorial we start with a single wall that is slightly curved, which makes it easier to distinguish from a new wall that we are going to add.
 
@@ -54,8 +47,6 @@ Now, the next thing to do is to map the wall to a specific output. For that we s
 Note that when using different types of outputs, like mixing GPU and SDI outputs, the individual walls will likely have different latency levels. For demonstration purposes we’ll continue with this setup. Further into this tutorial, we will discuss other types of mappings to use.
 
 For now, exit the stage manager and we’re back in the setup panel. Here we select the equirectangular shot that we loaded earlier which automatically gives us a Spherical projection. Let’s select our tracker, as well as enable the frustum highlighting. This gives us a similar projection as in the previous part of the tutorial, but now for two LED walls. Click Create and we are in the Player.
-
-
 
 Let’s first have a look at the node tree to view the composition shot that was created. Here we see our main top node with two branches below it. Each branch looks suspiciously like the projection setup that we created in the previous part of the tutorial series. We have a projection node, with the source shot going into that. And we have a layer for frustum matte. One difference is that the layers for the inner- and outer-frustum are up one level.
 
@@ -91,13 +82,7 @@ It is very important that the different walls use the same instance of the sourc
 
 On the other hand, in some cases you might want to use a different shot for a ceiling or side wall, and in some cases you might even not need a projection node for that as in most cases these walls are merely used for light reflection. So for instance in our current setup, we can decide that we want a completely different sky on the ceiling panel. We select the fetch option and navigate to the construct where we loaded the sky that we want to use. Select it and this time, rather than dropping it in the Input menu, you can also directly replace the shot in the node tree by hovering over the shot that we want to replace and select the replace option. In this case we want to actually replace the projection node with the new source node, just to keep things simple. There we go, now we have our new sky
 
-
-
-
-
 Ok, now it’s time to dive in a little deeper on alternative ways of mapping multiple led walls. As we said earlier mapping one wall to the dual head on the GPU and another through a video-io channel is not always wanted due to differences in latency. However sometimes, if the resolution of the wall is too high for a single led wall processor you need map the signal in such way that it feeds multiple processors – and with the same latency, of course. Consider the following case.
-
-
 
 Here we have an LED wall with a resolution of 4928 by 1936, driven by 2 LED wall processors. In addition, we have smaller side panel of 1056 x 1056, which is driven by one of the 2 processors.
 
@@ -113,7 +98,7 @@ Our first stop is again the stage manager, which we open from the projection set
 
 In the mapping tab we select the dual head display and because we want to map multiple walls onto that, we need to enable the mosaic option.
 
-Please note that even through this button is labelled Mosaic and is often used together with an nvidia  virtual mosaic display, it is not directly related. All this option says is that you want to map multiple walls onto the single display output. This can also just be a 4K Video-IO display onto which you map multiple HD-sized walls for instance.
+Please note that even through this button is labelled Mosaic and is often used together with an nvidia virtual mosaic display, it is not directly related. All this option says is that you want to map multiple walls onto the single display output. This can also just be a 4K Video-IO display onto which you map multiple HD-sized walls for instance.
 
 To actually map a wall, just select it and hit the Map option. Then, select the other wall and also click the Map option. So now both walls are mapped onto the display, however, both are mapped to the middle of the display. The next step is to offset the mapping to be in line with how each LED processor is outputting its input to the physical wall.
 

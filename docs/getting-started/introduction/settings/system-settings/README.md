@@ -2,7 +2,7 @@
 
 You can find the System Settings when you first open Assimilate, on the bottom left of the screen.
 
-<figure><img src="../../../../assets/image (296).png" alt="" width="293"><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (296).png" alt="" width="293"><figcaption></figcaption></figure>
 
 ## General
 
@@ -123,39 +123,34 @@ Note: The SDI Output only shows images from the Player. When you are in the Cons
 
 Tip: The\[DUAL YUV 422] option is used for stereoscopic output. The two outputs of the SDI card will be configured to show the left and right sides of the Live FX DUAL VIEW. Details on configuring Live FX for stereoscopic projects are covered in a separate support article.
 
-
-
-
-
 ## General
 
-<figure><img src="../../../../assets/image (306).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (306).png" alt=""><figcaption></figcaption></figure>
 
 ## Panel Setup
 
-<figure><img src="../../../../assets/image (305).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (305).png" alt=""><figcaption></figcaption></figure>
 
 ## Formats
 
-<figure><img src="../../../../assets/image (307).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
 
 ## Aspects
 
-<figure><img src="../../../../assets/image (308).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
 
 ## Metadata
 
-<figure><img src="../../../../assets/image (309).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
 
 ## Notes
 
-<figure><img src="../../../../assets/image (310).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
 
 ## Custom Commands
 
-<figure><img src="../../../../assets/image (311).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
 
 ## Advanced
 
-<figure><img src="../../../../assets/image (312).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../../../.gitbook/assets/image (312).png" alt=""><figcaption></figcaption></figure>

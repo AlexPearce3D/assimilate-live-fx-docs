@@ -2,8 +2,6 @@
 
 In this last part of the tutorial, we discuss how to create a set-extension and record the scene. A set-extension is mostly used to previsualize a scene that shoots at a wider angle than the led wall size allows. After recording the scene, you re-create the scene in the post-production phase, possibly using the recorded metadata of the camera and wall positions.
 
-<figure><img src="../../../assets/Tutorial_Diagrams_05_set-extensions.jpg" alt=""><figcaption></figcaption></figure>
-
 You can also use this technique in a live broadcast setting. This requires an even a more strict preparation to ensure that all settings are correct as there is no fixing in post.
 
 The elements involved in a correct and successful set-extension are: Correct position and tracking of the camera and led wall. Correct setting of the camera field of view. Correct estimate of the latency of the live camera capture. Color grading skills to ensure that the set-extension display matches the live camera capture.
@@ -19,10 +17,6 @@ We’re in the player with a live capture and in the camera menu. From here we c
 In the first tab, you enter the basics of the charuco or checkerboard that you use the for calibration. In the second tab you do a series of scans of a charuco or checkerboard to calculate the actual focal length of the camera as well as the lens distortion parameters. Note that it is important that the camera sensor aspect is the same as the aspect of the live capture that you get.
 
 Once you calculated the focal length and lens distortion, you can apply them to the current shot camera. It is recommended that you also create a camera profile of the outcome, so that you can easily reuse the camera settings for new projections, set-extensions or possible green-screen shoots.
-
-
-
-
 
 The Nodal point calibration uses a series of charuco scans. The outcome are transformation and rotation offsets that are applied to the tracking device. This is not a property of the camera. Please note that the calibration is rather sensitive.
 
@@ -100,7 +94,7 @@ Here we set the location to store recordings at, specify the file naming to use 
 
 Here on the right side there are various options for the recording – most of which speak for themselves. Let’s enable the option to load back any recording as well as creating a sidecar file with the metadata – in our case the camera tracker data.
 
-With the dropdown you specify whether we want to record the full shot, or do a source capture.  
+With the dropdown you specify whether we want to record the full shot, or do a source capture.\
 The source capture will record only the actual live capture node, without any grading or compositing elements burnt in, and store the entire composite setup as metadata. As soon as the recording stops, it will create what we call an Offline Composite – a perfect duplicate of your live composite, but with the live capture node replaced by the just recorded shot on disk. Alternatively, you can record the full shot which means that you burn in any grade and composition element into a single recording. We’ll go with that option.
 
 Also note the Auto-button next to the record button. If in the live capture node we tell Live FX Studio the correct camera brand, Live FX can listen to the record trigger of the camera, coming through the SDI signal and automatically start/stop recording whenever the corresponding button on the camera is pressed. To see which cameras and record triggers are supported with Blackmagic and AJA Video-io hardware, please take a look at our support site.
@@ -113,8 +107,6 @@ As you can see in the node-tree for this shot, it is just a single shot with all
 
 ... we can see the recorded file as well as the sidecar file. If we open that in a text editor, we see all the live link metadata as well as all camera settings. This is very useful for processing the shot at a later stage – particularly for VFX.
 
-
-
 One final word of caution regarding recording and especially about recording a set-extension. As with anything you do, recording does take computer resources. If your systems does not have the resources to do both the projection, set-extension and recording at the same time this will result in a slowdown of playback and hence might affect the led wall projection, which is usually the main purpose of our setup and can never be compromised.
 
 Always check playback and system performance. Do a number of trial runs to make sure recording does not affect led wall projection or playback performance. If the system cannot handle it all at the same time or is close to its maximum load then consider alternatives. One alternative is a more powerful system. Another option might be to do the recording on a second system – either a Live FX Studio system or potentially a Live Assist system, if set extensions are not required. This does add a little more complexity but you should at all times prevent sub-optimal playback on the LED wall.
@@ -123,7 +115,4 @@ This concludes our tutorial series on LED wall projection with Live FX Studio. W
 
 Also a reminder that we created a [**checklist** ](https://www.assimilatesupport.com/akb/KnowledgebaseArticle51054.aspx)for you to prepare for a job and to quickly diagnose any issues that you might run into.
 
-
-
 The checklist is however less useful if you have not mastered all the basics that were discussed in this tutorial series.
-

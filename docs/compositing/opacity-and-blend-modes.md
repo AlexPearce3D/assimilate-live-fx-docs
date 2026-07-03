@@ -2,11 +2,7 @@
 
 To change how much opacity a layer has, go to the fill tab on the top-left menu, and on the left, you can change the opacity from 100 (default) to something less to blend the images together.
 
-<figure><img src="../../assets/image (531).png" alt=""><figcaption></figcaption></figure>
-
 You can use any of the common blend styles as needed for your project. In this case I have the lighting pass of the Sunlight, and I'm able to subtract that from my scene, effectively re-lighting my scene after the initial render in compositing.
-
-<figure><img src="../../assets/image (534).png" alt=""><figcaption></figcaption></figure>
 
 ### General
 
@@ -52,8 +48,4 @@ When Recursive is active for a Layer it will use the results of the layers below
 
 **Recursive Activated**
 
-<figure><img src="../../assets/image (532).png" alt=""><figcaption></figcaption></figure>
-
 **Recursive Deactivated**
-
-<figure><img src="../../assets/image (533).png" alt=""><figcaption></figcaption></figure>

@@ -1,13 +1,10 @@
 # Part 2: : Projection Mapping - Media Types & Projection Models
 
-Here is the Youtube Video for this part, if you rather watch, than read  ;-) .
+Here is the Youtube Video for this part, if you rather watch, than read ;-) .
 
 > Video/resource: [https://www.youtube.com/watch?v=N5TQNidQ3sc](https://www.youtube.com/watch?v=N5TQNidQ3sc)
 
-
 In this part of the tutorial series, we are having a closer look at the different types of projections that are available and which one to use for various types of media.
-
-<figure><img src="../../../assets/Tutorial_Diagrams_06_table_types.jpg" alt=""><figcaption></figcaption></figure>
 
 From the table you can see that Live FX Studio provides 4 different projection types: Frustum, Planar, Spherical and Dome. Note that Dome is presented as a separate projection type but can also be viewed as a special case of a spherical projection. Effectively, Live FX Studio has 3 different so-called projection nodes that take in the actual media and generate the image for the LED wall, using the Stage Manager and the camera position.
 
@@ -15,31 +12,17 @@ Before we go into the details of the different projection nodes, let’s discuss
 
 First about 2D media. Effectively any 2D image can serve as a background for a scene. However, for the resulting image to look 100% correct, the recording camera will need to have the same field of view as the camera that originally recorded the 2D image and needs to be placed exactly perpendicular to the projection.
 
-<figure><img src="../../../assets/Tutorial_Diagrams_07_PM_01.jpg" alt=""><figcaption></figcaption></figure>
-
 When viewing a 2D image under an angle the resulting image will show distorted. The amount of noticeable distortion depends on the angle as well as the content of the 2D image. In an indoor scene with objects close to the camera the distortion will show up more than in a scene of a vast landscape with the horizon far away.
-
-<figure><img src="../../../assets/Tutorial_Diagrams_07_PM_02.jpg" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../assets/Tutorial_Diagrams_07_PM_03.jpg" alt=""><figcaption></figcaption></figure>
 
 Please note that the effect of the angle of the camera with the projection wall has nothing to do with the shape of the wall. You can project a 2D image perfectly fine on a curved wall. The Live FX Studio projection will compensate for the curvature. However, if the camera looks at the curved wall under an angle, the same limitations apply as for a straight wall.
 
-<figure><img src="../../../assets/Wall Projection900.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../assets/Projection Node.png" alt=""><figcaption></figcaption></figure>
-
 Live FX supports different types of 3D media: USD scenes using the Pixar Hydra renderer, Notch Blocks or integrating with Unreal Engine. In all cases a 2D image is rendered from the 3D scene by controlling a virtual camera inside the 3D scene. By ensuring that the virtual camera has the same properties as the physical camera, the 2D image can serve as a correct background on the LED wall to be captured by the physical camera.
-
-<figure><img src="../../../assets/3D Projection.png" alt=""><figcaption></figcaption></figure>
 
 As an example, here we loaded a USD scene in our project. When we open that in the player you can see the 2D rendered output. In the node menu of this shot you can on the first tab position the 3D model itself. On the second tab you can position the virtual camera in the 3D scene as well as set the field of view of the camera. On this tab you also have the option to Link to the Shot camera. When this is enabled, the virtual camera in the 3D scene uses the data which is set for the shot in the Camera menu. In a projection setup the shot camera again is usually live-linked to a camera tracker, tracking the physical camera. In that way all the cameras are in sync.
 
 Using a Notch block 3D scene or using an Unreal scene work in a similar way, as the USD scene. The result of each of the 3D scenes is a 2D image that is rendered based on the actual camera position, ready to be projected onto the LED wall.
 
 2.5D media is, as the name suggests, media that holds the middle ground between flat 2D media and a full 3D scene, in which one can move in any direction. 2.5D media comprises a scene that is segmented in into several 2D layers, based on the distance of objects. Each of those layers is then placed at different positions in Z-depth in a composition shot that uses a virtual camera with the same properties as the physical camera. Moving the camera will create parallax, perceived as 3D, even though the result is again a 2D image that is projected on the LED wall.
-
-<figure><img src="../../../assets/Tutorial_Diagrams_0x_2.5D.jpg" alt=""><figcaption></figcaption></figure>
 
 Let’s have a look at an example. \[move to the player with an example shot]. Here we have a composition shot with 3 layers. \[layer list] Each of the layers contains a segment of the complete shot. We can see that by deactivating all layers and then activating them one by one.
 
@@ -61,7 +44,7 @@ Strictly speaking is cylindrical media not 360 as it is missing the top and bott
 
 By adding the VR Transform node, the aspect of the shot is also set to 2 to 1 as we can see in the metadata list. We can also see that the shot has been tagged as Equirectangular. As such we can now use the globe button again to switch to 360 view and pan around in the sphere. Now all that is missing, is the projection node on top, that brings the now-equirectangular content onto the LED volume.
 
-The node is now ready to be used in a spherical LED wall projection.  
+The node is now ready to be used in a spherical LED wall projection.\
 Note, that the manual steps we just went through are not even necessary in most cases. When dropping the original source shot into the Projection Setup panel, we can tell Live FX Studio that the underlying media is cylindrical. Upon creating the setup, Live FX Studio will create the exact same node tree as before, with the projection node on top. It is however still good to know how to navigate the setup, in case we have to dial in any tilt, or overlap on the VR transformer node.
 
 Ok, so these are all the types of media that we can use for projecting on an LED wall. Let’s now take a close look at the actual projection setup.
@@ -98,7 +81,7 @@ In the camera menu of that node we also add the same factor. So now the output o
 
 We could also have this achieved by adjusting the focal length of the shot camera in the camera menu. However there are a few reasons why you would use the Field of view factor rather than adjusting the shot camera. First, the shot camera parameters might be used by other parts of your composition, that do not need the factor. Second, you might have live linked the shot camera, using dynamic tracker data. Third, when you for example record the scene and enable writing a side car file with camera metadata, then you would want the actual camera settings to be accurately recorded. Any dialed-in factor should be stored separately.
 
-Till so far, the inner frustum -  let’s take a look at the outer frustum. In the background tab of the projection node you set what to project in the outer frustum – or in other words: The background to the frustum.
+Till so far, the inner frustum - let’s take a look at the outer frustum. In the background tab of the projection node you set what to project in the outer frustum – or in other words: The background to the frustum.
 
 By default, it takes the image of the inner frustum and then fits that on the outer frustum. To distinguish between the inner and outer frustum, you can use the gain setting, with allows you to either dim down the outer frustum or highlight it. In many scenarios, the content inside the frustum can be easily distinguished from the background without changing its brightness, though.
 
@@ -156,7 +139,7 @@ Now, before we move on to the other projection types, let’s quickly show how e
 
 Next, we open the node-tree, where we can see the base shot.
 
-Then select the Fetch option and select a different plate from the series we loaded earlier by clicking  it in order to attach it to the cursor and then Close the Construct. If we now hover above the source shot, we can select the Replace option, which then just replaces the source shot in the composite and leaves the rest of the planar composition as is.
+Then select the Fetch option and select a different plate from the series we loaded earlier by clicking it in order to attach it to the cursor and then Close the Construct. If we now hover above the source shot, we can select the Replace option, which then just replaces the source shot in the composite and leaves the rest of the planar composition as is.
 
 In most cases though you will want to adjust the image plane a bit to get a different angle of the projection. But any grade – if we put that on the projection node – is maintained.
 
@@ -171,8 +154,6 @@ Click create and here we are in the player again.
 Let’s again first have a look at the menu of the Equirectangular to wall node. On the first tab, we see the familiar link to the stage manager. And on the second tab we have the link to the shot camera as well as Pan, Tilt and Roll controls that allow you to dial in the default orientation of the sphere that we are projecting onto the wall.
 
 In an equirectangular projection, the physical camera represents the center of the sphere, replacing the original physical camera that recorded the shot in the first place. The projection radiates out in all direction and hits the led wall under a certain angle.
-
-<div><figure><img src="../../../assets/Tutorial_Diagrams_08_SP_01 (1).jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../assets/Tutorial_Diagrams_08_SP_04.jpg" alt=""><figcaption></figcaption></figure></div>
 
 Let’s open the stage manager again to see the effect on the LED wall and open the camera menu. Remember that we did not tie the camera to a tracker so that we can easier demonstrate the effect of repositioning the camera. Because if we move the camera in XYZ then effectively we move the center of the sphere right with it. The image radiates out in all directions then hits our LED wall from a different angle as before.
 
@@ -200,8 +181,6 @@ The Dome projection is a variant of the spherical projection which is controlled
 
 As we already mentioned, in a spherical projection the center of the sphere moves with the camera. In a Dome projection however, you set the center of the sphere manually and the camera then moves inside the sphere – which in that case is cut in half to represent a dome.
 
-<div><figure><img src="../../../assets/Tutorial_Diagrams_08_SP_02.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../assets/Tutorial_Diagrams_09_DP_03.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../assets/Tutorial_Diagrams_09_DP_02.jpg" alt=""><figcaption></figcaption></figure></div>
-
 The reason for using a Dome is exactly because you do not want the center of the sphere to move with the camera. At the same time, moving inside the dome of pre-recorded media easily leads to a distorted view and parallax artifacts.
 
 Here we have a car shot with a spherical projection of a car in front of the wall and the camera looking through the car. Through the lens the road behind the car looks perfectly straight. If however, we now would move the camera to the left or right of the car, the center of the sphere changes and the road would no longer appear to be exactly straight behind the car.
@@ -211,7 +190,5 @@ To prevent this, we select the Dome projection. Then set the center of the spher
 Next to the XYZ position, we also need to indicate the size of the sphere by setting the radius. Internally, the sphere has just a radius of 1. However, the system needs to understand how much to offset when the camera moves, for instance 1 meter to the right. Note that this is always an estimate.
 
 The Floor setting determines where the sphere is cut in half and allows you to align the horizon of your scene. Note that this easily results in distortions of the image, especially on objects that appear close-by. In general, using a dome projection and adjusting the floor level works best for scenes of wide-open spaces with few objects close to the original recording cameras.
-
-<div><figure><img src="../../../assets/Tutorial_Diagrams_09_DP_04.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../../../assets/Tutorial_Diagrams_09_DP_05.jpg" alt=""><figcaption></figcaption></figure></div>
 
 This concludes the part of the tutorial about LED wall projection. In the next part we are going to take a closer look at more complex setups with multiple walls or walls that are controlled by multiple LED wall processors.

@@ -16,11 +16,7 @@ This revolutionary full spectrum LED image-based lighting solution enables laten
 
 To learn information about it, visit [https://kinoflo.com/mimik-120/](https://kinoflo.com/mimik-120/)
 
-
-
 ## Getting started with the Mimik 120
-
-
 
 The Mimik is between an LED tile and a Lighting Fixture, and Assimilate Live FX has a unique workflow for the Mimik in the Stage Lights tab, instead of a normal fixture, they are called "Video Fixtures".
 
@@ -28,25 +24,14 @@ The Mimik is between an LED tile and a Lighting Fixture, and Assimilate Live FX 
 
 For regular lighting fixtures, you can use the Color Transform tab to take the incoming signal and transform to the correct color space, but this is NOT how Video Fixtures work.
 
-<figure><img src="../../../../assets/image (526).png" alt=""><figcaption><p>Notice the Color Transform Controls are greyed out when using Video Fixtures</p></figcaption></figure>
-
 Instead, to do Color Space Transforms on Video Fixtures, we use the Settings>Monitor settings.
 
 Whatever the source is for your incoming signal, ensure it is set up properly in the Live FX menu, under Media.
 
 If someone else is giving you a feed, you may need to confirm with them what the source should be.
 
-<figure><img src="../../../../assets/image (528).png" alt=""><figcaption><p>In this case we are using an HDRi and it is sRGB Scene Linear. </p></figcaption></figure>
-
 If the source is different than the output to the LED processor, you set it correctly in the Settings>Monitors menu.
 
 For example, if your HELIOS processor is set to Rec2020, PQ, then you would go into the Settings>Monitors menu and set the feed that you sending the Mimik on to Rec2020, PQ.
 
-<figure><img src="../../../../assets/image (527).png" alt=""><figcaption></figcaption></figure>
-
 You should also check Settings>Video IO and ensure the video signal is set up properly.
-
-<figure><img src="../../../../assets/image (529).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../assets/image (530).png" alt=""><figcaption><p>Ensure you are sending the correct levels</p></figcaption></figure>
-

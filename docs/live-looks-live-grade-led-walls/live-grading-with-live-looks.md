@@ -8,19 +8,16 @@ You do not have a live image coming into your machine with this workflow, rather
 
 In the example below, the colorist is in the Curves window, and using Hue-Sat to desaturate all skin tones, and over-saturate the blues, and you can see the grade applied (left) vs unaffected reference image (right)
 
-<figure><img src="../../assets/image (355).png" alt=""><figcaption></figcaption></figure>
-
 !!! info
 
-    Most of the effects will not be applied to the wall.
-
+```
+Most of the effects will not be applied to the wall.
+```
 
 ### LUT-based to CDL-based
 
 !!! info
 
-    On the Project Tab, you can change the Color mode from LUT-based to CDL, if you using a Megapixel HELIOS processor which doesn't support 3D  LUTs as of this article.
-
-
-<figure><img src="../../assets/image (350).png" alt=""><figcaption></figcaption></figure>
-
+```
+On the Project Tab, you can change the Color mode from LUT-based to CDL, if you using a Megapixel HELIOS processor which doesn't support 3D  LUTs as of this article.
+```

@@ -2,8 +2,6 @@
 
 Selecting the **New** or **Project Settings** buttons from the Startup Screen opens the Project Settings dialog.
 
-<figure><img src="../../../assets/image (363).png" alt=""><figcaption></figcaption></figure>
-
 ![](http://www.assimilatesupport.com/akb/Uploads/Images/Manual/Startup/Project_settings/Project_settings_V08.png)
 
 #### PROJECT SETTINGS DIALOG
@@ -20,8 +18,6 @@ Click in this Text Slate to enter a name for a new project or change the name of
 
 **PROJECT PATHS**
 
-
-
 **Media Folder**
 
 The Media folder defines the root location that Live FX uses for resolving the path to source clips. Any clips loaded from a directory below this root have their location saved as a relative path from the Media folder. This method allows you to easily change the location if the media gets moved to a different drive or sub-folder. After changing the Media folder, Live FX will continue to link to the source clips. Use the **Set** button to browse for the Media Directory.
@@ -36,8 +32,8 @@ Note that the project media-, render- and cache folders are not stored in the pr
 
 The Render folder defines the default root location for rendering output from the current project. However, you can change the output path for any output in your project at any time. This folder is just the default and again acts as a virtual root for all output rendered to a location within this folder.
 
-Note: The Render Directory is set by default to the ../render/ sub folder in the Media directory.  
-  
+Note: The Render Directory is set by default to the ../render/ sub folder in the Media directory.
+
 Tip: In many cases, it might be more efficient to set the output to a different (physical drive) location than the media directory so that read and write operations do not interfere.
 
 **Cache Folder**
@@ -54,8 +50,8 @@ _Note:_ Because the Consolidate function has potentially far-reaching consequenc
 
 **AUTO-EXPORT OPTIONS**
 
-When setting the Auto-Export option, Live FX will on every project exit or project refresh export project data from the project database to an external file which can be used by third-party applications. In case the export is set to HTML, Live FX will ask before doing the export as this might potentially be a lengthy procedure. The exported data contains information about the content and setup of the Project and can be used by third-party systems for informational purposes or integration into a broader pipeline.  
-  
+When setting the Auto-Export option, Live FX will on every project exit or project refresh export project data from the project database to an external file which can be used by third-party applications. In case the export is set to HTML, Live FX will ask before doing the export as this might potentially be a lengthy procedure. The exported data contains information about the content and setup of the Project and can be used by third-party systems for informational purposes or integration into a broader pipeline.
+
 Project data can either be exported as XML or HTML. To generate HTML Live FX generates XML first and uses that in a (customizable) XSL transformation. In this process, Live FX will also create a proxy image file for each shot in the project. When selecting HTML as an export format, two additional options become available. The Overwrite option is enabled by default, meaning that on every export the proxy image of every shot is re-created. Disabling the option will only create an image proxy when no image file for the shot is present yet in the designated location. This will speed up the export process but does not ensure that the image is the most recent available. The second option available for the HTML export is to create a LUT per shot in the project. This LUT can be used in third-party systems. The LUT can either be 1D or 3D. The 3D LUT has by default size of 32 and a depth of 16. The creation of the LUT is also linked to the Overwrite option.
 
 When enabling Auto-Export the export is placed in the directory specified in the Text Slate. Use the **Set** button to browse for the Export Directory. For more information about the XML / HTML output and Live FX XML in general, refer to Appendix B of this guide.
@@ -102,8 +98,6 @@ Select the default bit-depth, file format, color channel setup, color space, and
 
 A timeline / Construct in a Live FX project can have multiple interdependent outputs defined with it: different resolutions and formats all defined in a single output tree. You can store such a tree in a template file. This setting allows you to select such a template file which in turn will automatically have the defined output tree with each new timeline / Construct you create within your project. This can save you time re-creating all your outputs manually every time.
 
-
-
 **ACES SETTINGS**
 
 This section of the Project Settings determines how Live FX handles clips that are flagged as ACES colorspace. First, you set the ACES Version to be used. ACES contains a series of CTL transformation scripts, published by the Academy. The scripts are used to convert images from and to various well-known color spaces (Rec709, sRGB, etc) and ACES. Over time the Academy has issued different versions of these scripts/transformations and most likely will issue new versions in the future. Here you determine with which version of the scripts you want to work in your project. That way, if a new version is issued, the old projects are not affected. Please also read Chapter - Customization, paragraph 8 about ACES - where the various scripts are located and options to customize the scripts if needed.
@@ -138,8 +132,8 @@ Store the current list of Default Metadata items to be the starting list for new
 
 #### CONSOLIDATE
 
-The Project Consolidate function allows you to move all used physical media to a new media folder and/or to just move any media external to the media folder into the project's media folder.  
-  
+The Project Consolidate function allows you to move all used physical media to a new media folder and/or to just move any media external to the media folder into the project's media folder.
+
 ![Project Consolidate Dialog](http://www.assimilatesupport.com/akb/Uploads/Images/Manual/Startup/Project_settings/LO_CONS_DLG_V03.png)
 
 **CURRENT PATH**
@@ -187,10 +181,10 @@ The Start button will begin the Consolidate process. About the Consolidate proce
 
 **INTERRUPTING THE CONSOLIDATE**
 
-A Consolidate process can be a very lengthy procedure which preferably should _not_ be interrupted. It is possible though to pause the process by clicking the **Stop** button; the process will finish the current copy/move action. After pausing the process you can exit the Consolidate dialog but you will however _not_ be able to enter the project that is being consolidated. Other projects are normally accessible.  
-  
-![Project Consolidate Interrupt](http://www.assimilatesupport.com/akb/Uploads/Images/Manual/Startup/Project_settings/LO_CONS_INT_V03.png)  
-  
+A Consolidate process can be a very lengthy procedure which preferably should _not_ be interrupted. It is possible though to pause the process by clicking the **Stop** button; the process will finish the current copy/move action. After pausing the process you can exit the Consolidate dialog but you will however _not_ be able to enter the project that is being consolidated. Other projects are normally accessible.
+
+![Project Consolidate Interrupt](http://www.assimilatesupport.com/akb/Uploads/Images/Manual/Startup/Project_settings/LO_CONS_INT_V03.png)
+
 A Consolidate that was paused can be resumed at any time, even after exiting Live FX and starting it up again; the **Resume** button will start the process where it left off. To completely abort a consolidate process, press the **Abort** button:
 
 * Live FX will ask for a confirmation to abort the consolidate as in potentially might result in losing media references. In addition, Live FX will ask whether to finish the consolidation for the current shot as to further minimize the chance of losing media references.

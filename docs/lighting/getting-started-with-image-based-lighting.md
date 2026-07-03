@@ -2,15 +2,15 @@
 
 !!! info "Official reference"
 
-    For official DMX, fixture, and LED wall control terminology, see [DMX, Lighting, and LED Wall Control](../official-reference/dmx-lighting-and-led-wall-control.md) and the full guide section [DMX](../official-reference/live-fx-user-guide-full.md#dmx-2).
+```
+For official DMX, fixture, and LED wall control terminology, see [DMX, Lighting, and LED Wall Control](../official-reference/dmx-lighting-and-led-wall-control.md) and the full guide section [DMX](../official-reference/live-fx-user-guide-full.md#dmx-2).
+```
 
 ### Overview
 
 From the **Stage Lights** module, you control the lights (fixtures) on set through the Digital Multiplexer (DMX) protocol or direct video output (video fixtures). You can dynamically set the color, tie the color to a region of a clip playing to an LED volume or serving as a green-screen background, or output (part of) a clip to a series of light (beams) – also referred to as image-based-lighting (IBL).
 
 The Stage Lights module is available with a Live FX and Live FX Studio license. With a license, the Stage Lights module shows as one of the **main tabs at the bottom of the screen**.
-
-<figure><img src="../../assets/image (344).png" alt=""><figcaption></figcaption></figure>
 
 A basic understanding of the **DMX** protocol is required to operate the module. This guide assumes that you are familiar with the concepts of DMX universes and channels as well as some basic network terminology.
 
@@ -172,11 +172,11 @@ The **Cross** button closes the Fixture List panel and with the **Gripper** sect
 The **Add** button in the Fixture List or in the Fixture menu, allows you to load a fixture template, either from:
 
 * The Open Fixture Library ([https://open-fixture-library.org/](https://open-fixture-library.org/)).
-* A .gdtf (General Device Type Format) file ([https://gdtf-share.com/](https://gdtf-share.com/)). <br>
+* A .gdtf (General Device Type Format) file ([https://gdtf-share.com/](https://gdtf-share.com/)).<br>
 
 **Open Fixture Library**
 
-When selecting the **Add** - > **Open Fixture Library** the first time, the software will attempt to download a complete library of available fixture templates to your local computer (c:\programData\assimilator\dmx\  folder). After the download it will show a panel from where you select a manufacturer, the fixture type and the mode it should operate in. This will then determine the DMX channel layout for the fixture. Click **Ok** to add the selected fixture to your setup.
+When selecting the **Add** - > **Open Fixture Library** the first time, the software will attempt to download a complete library of available fixture templates to your local computer (c:\programData\assimilator\dmx\ folder). After the download it will show a panel from where you select a manufacturer, the fixture type and the mode it should operate in. This will then determine the DMX channel layout for the fixture. Click **Ok** to add the selected fixture to your setup.
 
 ![](https://www.assimilatesupport.com/akb/Uploads/Images/Manual/Live_Fx/LFX_DMX_AddNew_v01.png)
 
@@ -392,7 +392,7 @@ The config menu harbors settings that define the behavior of the Stage Lights mo
 
 * Show overlays for all or for just the selected fixture. When dealing with a high number of fixtures, showing an overlay for each all the time can become a bit messy. Showing the basic overlay has some but relatively little impact on performance.
 * Show the name of the fixture with the overlay. The name makes it easy to identify a sample region but might make the view messy with a high number of fixtures. The same as for the overlay itself – showing the name has some but relatively little impact on performance.
-* Show the sample color. This option toggles showing the actual filtered and graded sample color inside the overlay. This is useful visual feedback, but keep in mind that when showing the sample color for all fixtures this might have a relatively high impact on playback performance. When playback performance is already pushed to the limit (high resolution media / complex composition / effects), then showing the overlays with the sample color might tip impact over the edge to lose real-time playback. In that case, consider switching this setting off or switch showing all overlays off. 
+* Show the sample color. This option toggles showing the actual filtered and graded sample color inside the overlay. This is useful visual feedback, but keep in mind that when showing the sample color for all fixtures this might have a relatively high impact on playback performance. When playback performance is already pushed to the limit (high resolution media / complex composition / effects), then showing the overlays with the sample color might tip impact over the edge to lose real-time playback. In that case, consider switching this setting off or switch showing all overlays off.
 
 #### Lighting Consoles
 

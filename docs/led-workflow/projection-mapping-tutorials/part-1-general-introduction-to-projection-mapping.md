@@ -1,9 +1,8 @@
 # Part 1: General Introduction to Projection Mapping
 
-Here is the Youtube Video for this part, if you rather watch, than read  ;-) .
+Here is the Youtube Video for this part, if you rather watch, than read ;-) .
 
 > Video/resource: [https://www.youtube.com/watch?v=7SurZbwKsYQ](https://www.youtube.com/watch?v=7SurZbwKsYQ)
-
 
 ***
 
@@ -15,39 +14,33 @@ But before we do that, we first want to go over lesson one in LED wall projectio
 
 Now obviously we do not mean that literally that you are not to allowed to ever look at the wall. But you do need to realize that what you see on the wall is not the end-result that we are attempting to create. The result that we are after is the camera recording the scene with the wall as background. Most of the time, you are not in the same physical position as the camera when looking at the wall, nor do you change positions in the same way, so your perspective is different. The projection on the wall is generated so that it is correct from the perspective of the camera. This is both in terms of geometry, e.g. in case of a curved wall, as well as in terms of color. If at any time you are confused on what you are seeing on a wall directly, have a look at what the camera is seeing. In fact, first and always look at what the camera is seeing to check your setup.
 
-<figure><img src="../../../assets/Tutorial_Diagrams_01_view.jpg" alt=""><figcaption></figcaption></figure>
-
 Now before we start with setting things up in Live FX Studio, let’s first cover some generic aspects of projection and related terminology. In a typical LED wall projection setup, you have a media server providing the content, in this case Live FX Studio, that feeds into one or more LED wall processors which in turn feeds the image into the actual LED wall. In front of the LED wall, we have a camera recording the scene – that is the actors in the foreground with the LED wall background.
-
-<figure><img src="../../../assets/Tutorial_Diagrams_04_setup.jpg" alt=""><figcaption></figcaption></figure>
 
 To get the best image and smooth playback, all the following elements need to be aligned.
 
-\[Framerate]  
+\[Framerate]\
 \[prevent stuttered playback] The media server and the LED processor need to operate at the same framerate. If not, this can result in stuttering and choppy playback. This also accounts for the framerate of pre-recorded plates that are used for projection. In certain situations, you should consider using re-timer functionality to convert source media to the desired framerate to avoid arbitrary repeating or skipping of frames.
 
-\[GenLock]  
+\[GenLock]\
 \[Sync wall and camera]. In a typical setup the LED processor and the recording camera are genlocked to ensure that the different walls refresh at exactly the same time and the camera records frames in exactly that same rhythm. In this setup it is not necessary to GenLock the media server – in our case Live FX. Not even if Live FX feeds multiple LED processors, either directly out of the GPU or through an SDI connection. If, however you need multiple Live FX systems to control a large volume, you should consider a frame-locking system like the Nvidia Quadro Sync. This ensures not just the sync of refresh moments but also ensures that all systems play the same frame at any moment. This is an absolute necessity when two Live FX systems each control part of the inner frustum. When the multiple systems control different walls which do not overlap then this becomes optional. In a lot of cases a one-frame difference between walls used for the outer frustum reflection is acceptable and does not warrant the extra cost and effort to set up the frame-sync mechanism.
 
-\[Latency]  
+\[Latency]\
 \[Delayed responses] Each element in the projection setup adds some amount of delay to the signal from source to actual display on the wall. This might appear in the image on the wall appearing to react delayed to any camera motion. You should be aware of latency caused by the various elements and investigate delays that lie out of the expected amount of latency.
 
-\[Resolution]  
+\[Resolution]\
 \[prevent unsharp image] In a lot of cases will the LED wall pixel resolution not exactly match the resolution of the source media, nor will it match the resolution of the signal that is sent from the media server to the LED processor. Although a certain amount of remapping and scaling is unavoidable, implicit scaling should be prevented as it can lead to a soft and unsharp image. When scaling is required, ensure that a proper high order filter is used to preserve the image quality as much as possible.
 
-\[Colorspace]  
+\[Colorspace]\
 \[prevent unexpected color output]\[full grading toolset to create the final pixel]\[Color calibration] The media server and the LED wall processors operate in a certain color space, which are not necessarily the same. You need to be able to fully manage the image pipeline and apply the correct color transforms where needed to prevent unexpected color output on the LED wall. Next to the technical colorspace and transfer curve adjustments, you require a full grading toolset to adjust the image in any way needed while on-set and be able to deliver the final pixel quality the director requires.
 
 Also related to this is calibrating the LED wall to the specific camera that is being used. This is a topic for a separate tutorial.
 
-\[Frustum]  
+\[Frustum]\
 \[Inner- and Outer-frustum. Manage independently]\[Set-extension]. The inner frustum is the part of the LED wall that the camera that is recording the scene is actually viewing. The outer frustum is everything on the wall outside the inner frustum. You should be able to manage each part independently. Even though the outer frustum is not seen by the camera, it is a light source that affects the light reflections on your scene. In some cases, it is a welcome extra light source to your stage lights, in other cases a light source that needs to be dimmed as it gets in the way of your stage lights.
 
 In case your camera has a wider view angle than the LED wall covers, you are recording outside of the wall. Usually, you want to avoid this but in some cases the size of the wall cannot cover the desired field of view and adding more wall is not easily achieved. This is not necessarily a problem, but it does mean that you do need to process the scene in post-production to extend the content of the wall. To pre-visualize the final shot on-set, you can create a so-called virtual set-extension where you capture the live feed from the camera and filter out the part where the LED wall ends and add the background content, similar to what you do in a green-screen context. You use the same media that you projected on the LED wall but now use it with a mask that is generated based on the position of the camera and the LED wall. The process for creating a set-extension with Live FX Studio is discussed in detail later in this tutorial series.
 
 On the Assimilate Support website there is a [**checklist** ](https://www.assimilatesupport.com/akb/KnowledgebaseArticle51054.aspx)available that covers possible issues with the various aspects discussed here and the possible solutions. We recommend that if you run into any problems or are not sure if your setup is correct that you take a look at this checklist.
-
-
 
 Ok, let’s now really start creating a setup. We want to start simple with a single LED wall, leaving out the hardware setup or camera tracking for now and using a basic 2D shot.
 
@@ -97,7 +90,7 @@ Next, let’s revisit the Monitor menu once more and this time have a look at th
 
 There are more in-depth tutorials available about color management in Assimilate software. We encourage you to view those to fully understand the color pipeline in the software.
 
-For now, let’s move on and take a look at the structure of the composition shot that we created, by opening the so-called node tree view. If not already visible swipe to the right to open the right side  menu panel. Then select the node tree option in the tab below. Here we see a representation of the fairly simple projection composition. At the bottom there is the source shot and on top of that is a projection node.
+For now, let’s move on and take a look at the structure of the composition shot that we created, by opening the so-called node tree view. If not already visible swipe to the right to open the right side menu panel. Then select the node tree option in the tab below. Here we see a representation of the fairly simple projection composition. At the bottom there is the source shot and on top of that is a projection node.
 
 Now you can navigate through the node tree by selecting the item in the tree and adjust any setting of that node. So, I can for example select the source node and add some grade directly on that node by dialing in for example some S-Curve in the Numeric menu. Now it is important to know that when you navigate inside the node tree, you also change the output of the application. When I select the source node then that is output directly to the display and the wall. The projection node is no longer included in the output. This has quite some consequences of how the image is displayed on the LED wall. To prevent the display from changing the view while you adjust the settings of an underlying element, you can lock the view. If you select the top node and then enable the lock on the toolbar, the view for the display will remain active, showing the top level node, while the menu controls apply to the selected node. This way, we can tweak the grade on the source node some more while keeping the projection intact.
 
@@ -109,26 +102,26 @@ The same accounts for the LED wall. By default, the projection node has the Link
 
 In the second tab of the projection node settings, labelled Background, you determine what should be shown on the portion of the LED wall, which the camera does not see. In other words, the outer frustum. Now, in this case the Frustum projection node takes the inner frustum image and basically fits that whole image over the whole outer frustum and applies a Gain to show the difference.
 
-Over here in the layer stack, we have two layers to put a color grade onto inner and outer frustum.  
+Over here in the layer stack, we have two layers to put a color grade onto inner and outer frustum.\
 For this we can use any of the grading tools, Live FX offers in the menus in the lower left corner of the UI. We can of course at any point create complete new layers to apply overall color grades either after, or before the inner and outer frustum layers.
 
 There are other options for filling the outer frustum, but we will discuss those when diving in deeper into the different projection types. For now, we covered the very basics of using Live FX Studio for projecting media on an LED wall. In summary:
 
-·       Define your LED walls in the Stage Manager.
+· Define your LED walls in the Stage Manager.
 
-·       Map the LED walls to the monitor output in the Stage Manager.
+· Map the LED walls to the monitor output in the Stage Manager.
 
-·       Load your media into the Construct.
+· Load your media into the Construct.
 
-·       Create a projection composition node.
+· Create a projection composition node.
 
-·       In the Player tweak your composition: inner- and outer-frustum, grading.
+· In the Player tweak your composition: inner- and outer-frustum, grading.
 
-·       Use the node tree to navigate the composition shot.
+· Use the node tree to navigate the composition shot.
 
-·       Use the Lock icon to keep the view on the LED wall consistent.
+· Use the Lock icon to keep the view on the LED wall consistent.
 
-·       Use a checklist to optimize the various aspects of the projection: framerate, latency, and resolution.
+· Use a checklist to optimize the various aspects of the projection: framerate, latency, and resolution.
 
 In the next part of this tutorial series about projection with Live FX Studio, we will go into more detail on the different projection types. Which projection type you should use with which kinds of media and how to deal with the outer frustum with the different kinds of projections.
 

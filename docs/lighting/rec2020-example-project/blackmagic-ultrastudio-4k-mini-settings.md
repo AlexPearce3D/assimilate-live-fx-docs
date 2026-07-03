@@ -2,10 +2,11 @@
 
 !!! warning
 
-    We have seen a bug with the UltraStudio 4k mini, that would cause color shifting in the Kino Flo Mimik.   
+```
+We have seen a bug with the UltraStudio 4k mini, that would cause color shifting in the Kino Flo Mimik.   
 
-    We were able to fix it by cycling from "Keep default color gamut", to "Convert to Rec. 2020" and then back to what it should be; "Keep default color gamut".
-
+We were able to fix it by cycling from "Keep default color gamut", to "Convert to Rec. 2020" and then back to what it should be; "Keep default color gamut".
+```
 
 The settings are in the screenshots below, here are the main ones to keep in mind.
 
@@ -17,8 +18,6 @@ During Capture: Video output displays input video
 
 During playback: Keep Default color gamut
 
-<figure><img src="../../../assets/image (48).png" alt=""><figcaption></figcaption></figure>
-
 ### SDI Output
 
 Color Space: Video is converted to Y, Cb, Cr, 4:2:2
@@ -27,10 +26,6 @@ Color Space: Video is converted to Y, Cb, Cr, 4:2:2
 
 SDI Connector: Single Link
 
-<figure><img src="../../../assets/image (49).png" alt=""><figcaption><p>Should actually be Single Link</p></figcaption></figure>
-
 ### HDMI Output
 
 Frame Packing
-
-<figure><img src="../../../assets/image (51).png" alt=""><figcaption></figcaption></figure>

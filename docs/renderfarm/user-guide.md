@@ -1,4 +1,4 @@
-# apOctane_RenderFarm User Guide
+# apOctane\_RenderFarm User Guide
 
 This guide is for artists/operators using the installed app. You do not need to run developer scripts or build the app.
 
@@ -11,11 +11,11 @@ This guide is for artists/operators using the installed app. You do not need to 
 
 Machine roles:
 
-- **Single Machine**: render only on this computer. Farm-control tools stay hidden.
-- **Controller**: edit projects, start queues, cancel renders, publish status, and send commands to other app machines. Controller-only machines do not need Octane CLI.
-- **Controller/Worker**: do everything a Controller can do and also render `.apo` jobs locally.
-- **Worker**: wait for controller commands and render `.apo` jobs without showing setup controls.
-- **Daemon**: manage the OTOY Octane Network Render Node daemon. This is separate from `.apo` worker rendering.
+* **Single Machine**: render only on this computer. Farm-control tools stay hidden.
+* **Controller**: edit projects, start queues, cancel renders, publish status, and send commands to other app machines. Controller-only machines do not need Octane CLI.
+* **Controller/Worker**: do everything a Controller can do and also render `.apo` jobs locally.
+* **Worker**: wait for controller commands and render `.apo` jobs without showing setup controls.
+* **Daemon**: manage the OTOY Octane Network Render Node daemon. This is separate from `.apo` worker rendering.
 
 You can change the role later in **Preferences > Workflow**.
 
@@ -23,11 +23,11 @@ You can change the role later in **Preferences > Workflow**.
 
 Projects are saved as `.apo` files. Use:
 
-- **File > New Project**
-- **File > Open Project**
-- **File > Open Recent**
-- **File > Save Project**
-- **File > Save Project As**
+* **File > New Project**
+* **File > Open Project**
+* **File > Open Recent**
+* **File > Save Project**
+* **File > Save Project As**
 
 Use `Ctrl+S` to save and `Ctrl+Shift+S` to Save As.
 
@@ -39,15 +39,15 @@ Machine settings are separate from `.apo` project files. Installed builds store 
 
 Use **Project Setup** to choose what should render.
 
-![Project setup screen](images/project-setup.png)
+![Project setup screen](../../.gitbook/assets/project-setup.png)
 
 Check these fields first:
 
-- **Octane CLI**: should point to `octane-cli.exe` on Single Machine, Controller/Worker, and Worker machines. Controller-only machines do not need it.
-- **Scene File**: the OCS or ORBX scene you want to render.
-- **Exports Folder**: where frames, locks, and done markers will be written.
-- **Render Target(s)**: scene target names, if you are not using scene-enabled targets.
-- **Frame range**: Start/End frame for simple renders, or per-target In/Out rows when targets need different ranges.
+* **Octane CLI**: should point to `octane-cli.exe` on Single Machine, Controller/Worker, and Worker machines. Controller-only machines do not need it.
+* **Scene File**: the OCS or ORBX scene you want to render.
+* **Exports Folder**: where frames, locks, and done markers will be written.
+* **Render Target(s)**: scene target names, if you are not using scene-enabled targets.
+* **Frame range**: Start/End frame for simple renders, or per-target In/Out rows when targets need different ranges.
 
 The project queue can hold multiple scenes. Use the **Render** checkbox beside each scene to keep scenes loaded while rendering only selected scenes.
 
@@ -61,24 +61,24 @@ Use **Tools > Test This Machine** before unattended rendering. It checks importa
 
 The render target table can include:
 
-- Target name.
-- Keep checkbox.
-- In/Out range.
-- Custom range.
-- Samples.
-- Width.
-- Height.
-- Color space.
+* Target name.
+* Keep checkbox.
+* In/Out range.
+* Custom range.
+* Samples.
+* Width.
+* Height.
+* Color space.
 
 For OCS files, target metadata is read directly from the scene where possible. ORBX inspection can be slower and depends on Octane's scene API, so confirm target samples/resolution/color values after import.
 
 Use overrides only when you intentionally want to change scene settings:
 
-- Samples.
-- Width.
-- Height.
-- Color space.
-- Overwrite completed frames.
+* Samples.
+* Width.
+* Height.
+* Color space.
+* Overwrite completed frames.
 
 Before rendering, the app shows a **What will happen** confirmation. If risky settings are active, it lists them so you can cancel before launching Octane.
 
@@ -88,18 +88,18 @@ In **Multiple Machines** mode, active overrides get an extra warning because eve
 
 The rule is simple:
 
-```text
+```
 Checked = keep
 Unchecked = delete
 ```
 
 Keepable outputs:
 
-- Beauty.
-- Denoise.
-- Sunlight.
-- Ambient light.
-- Light IDs 1 through 20.
+* Beauty.
+* Denoise.
+* Sunlight.
+* Ambient light.
+* Light IDs 1 through 20.
 
 Unchecked passes are deleted by the Lua render script after each rendered frame. If cleanup is disabled, the app does not ask the renderer to delete optional passes.
 
@@ -107,14 +107,14 @@ Unchecked passes are deleted by the Lua render script after each rendered frame.
 
 Use **Dry Run** before launching a real render. It prints what will happen without starting Octane:
 
-- Project queue.
-- Active project count.
-- Frame ranges.
-- Targets.
-- Output folder.
-- Overrides.
-- Delete-pass choices.
-- Octane command and environment.
+* Project queue.
+* Active project count.
+* Frame ranges.
+* Targets.
+* Output folder.
+* Overrides.
+* Delete-pass choices.
+* Octane command and environment.
 
 Use **Tools > Copy Diagnostics** for a broader support report. It includes app state, machine settings, project state, dry-run summary, command/environment info, and recent log details.
 
@@ -124,25 +124,25 @@ Use **Tools > Export Support Bundle** when sending a bug report. The ZIP include
 
 Use **Render Monitor** while `.apo` controller/worker rendering is running.
 
-![Render monitor screen](images/render-monitor.png)
+![Render monitor screen](../../.gitbook/assets/render-monitor.png)
 
 This page shows:
 
-- Current project.
-- Current frame.
-- Progress.
-- Frames remaining.
-- Last frame render time.
-- ETA summary.
-- Project queue.
-- Last frame preview.
-- Farm machine status.
+* Current project.
+* Current frame.
+* Progress.
+* Frames remaining.
+* Last frame render time.
+* ETA summary.
+* Project queue.
+* Last frame preview.
+* Farm machine status.
 
 Status colors:
 
-- Green: rendering.
-- Yellow: ready/available.
-- Red: offline, stale, canceled, failed, or needs attention.
+* Green: rendering.
+* Yellow: ready/available.
+* Red: offline, stale, canceled, failed, or needs attention.
 
 ## Preview
 
@@ -150,23 +150,23 @@ Use **Preview** to inspect rendered output without leaving the app.
 
 The preview has three modes:
 
-- **Live Render**: shows the latest rendered frame the app can find. This follows the last completed frame, so backward or smart-pick renders show the most recently finished frame rather than the numerically highest frame.
-- **Frame Playback**: scrubs and plays cached preview images.
-- **Video Playback**: plays generated proxy or full-res preview videos.
+* **Live Render**: shows the latest rendered frame the app can find. This follows the last completed frame, so backward or smart-pick renders show the most recently finished frame rather than the numerically highest frame.
+* **Frame Playback**: scrubs and plays cached preview images.
+* **Video Playback**: plays generated proxy or full-res preview videos.
 
 EXR frames are converted into preview cache images in `_preview_cache`. JPEG at quality 92 is the default because it is much smaller than PNG and is usually enough for playback and inspection. PNG can be selected in Preferences when lossless cache frames are needed. Cache conversion uses automatic parallelism tuned by machine role so high-core controllers stay fast without exposing a manual thread count.
 
 Useful controls:
 
-- **Reveal Cache** opens the image cache in Live Render or Frame Playback, and opens the video cache in Video Playback.
-- **Clear Cache** deletes image preview cache files after confirmation.
-- **Clear Video Cache** deletes generated preview videos after confirmation.
-- **Fullscreen** opens a larger playback window with the same play, loop, navigation, and zoom controls.
-- **Space** plays or pauses.
-- **Left/Right Arrow** steps through frames.
-- **Command/Ctrl `=`** zooms in.
-- **Command/Ctrl `-`** zooms out.
-- Trackpad pinch zoom works where Qt reports a real pinch gesture.
+* **Reveal Cache** opens the image cache in Live Render or Frame Playback, and opens the video cache in Video Playback.
+* **Clear Cache** deletes image preview cache files after confirmation.
+* **Clear Video Cache** deletes generated preview videos after confirmation.
+* **Fullscreen** opens a larger playback window with the same play, loop, navigation, and zoom controls.
+* **Space** plays or pauses.
+* **Left/Right Arrow** steps through frames.
+* **Command/Ctrl `=`** zooms in.
+* **Command/Ctrl `-`** zooms out.
+* Trackpad pinch zoom works where Qt reports a real pinch gesture.
 
 The preferred preview pass is set in **Preferences > Preview > Preferred Pass**. If you enter a pass name such as `Output AOV 5`, `AOV 6`, `Emission`, or `Light ID 18`, the app uses only that pass when it exists. If it does not exist yet, the app waits instead of using a different pass.
 
@@ -178,42 +178,42 @@ Preview is hidden for **Daemon** machines because Octane Network Render Node dae
 
 Use **Logs** for:
 
-- Live Octane output.
-- Missing-frame reports.
-- ETA reports.
-- Diagnostics.
+* Live Octane output.
+* Missing-frame reports.
+* ETA reports.
+* Diagnostics.
 
 Useful tools:
 
-- **Dry Run**: validates settings and prints the render plan without launching Octane.
-- **Missing Frames**: scans output folders for gaps.
-- **Estimate ETA**: estimates remaining render time from completed frames.
-- **Copy Diagnostics**: copies support info to the clipboard.
-- **Export Support Bundle**: creates a ZIP with logs, diagnostics, config, and current settings.
-- **Reveal App Data Folder**: opens the folder containing machine settings, logs, and support output.
-- **Reveal Project**: opens the current `.apo` project location.
-- **Reveal Release Folder**: opens the local staged release folder when available.
+* **Dry Run**: validates settings and prints the render plan without launching Octane.
+* **Missing Frames**: scans output folders for gaps.
+* **Estimate ETA**: estimates remaining render time from completed frames.
+* **Copy Diagnostics**: copies support info to the clipboard.
+* **Export Support Bundle**: creates a ZIP with logs, diagnostics, config, and current settings.
+* **Reveal App Data Folder**: opens the folder containing machine settings, logs, and support output.
+* **Reveal Project**: opens the current `.apo` project location.
+* **Reveal Release Folder**: opens the local staged release folder when available.
 
 ## Farm Machines
 
 Farm machine status appears in the monitor.
 
-![Farm machines list](images/farm-machines.png)
+![Farm machines list](../../.gitbook/assets/farm-machines.png)
 
 Roles:
 
-- **Controller**: a running app that can start queues and send/receive farm commands.
-- **Controller/Worker**: a running app that can start farm jobs and render project frames.
-- **Worker**: a running app waiting for controller commands.
-- **Daemon**: a running app managing an OTOY Octane Network Render Node daemon.
+* **Controller**: a running app that can start queues and send/receive farm commands.
+* **Controller/Worker**: a running app that can start farm jobs and render project frames.
+* **Worker**: a running app waiting for controller commands.
+* **Daemon**: a running app managing an OTOY Octane Network Render Node daemon.
 
 Common states:
 
-- **Ready**: available.
-- **Rendering**: actively rendering or connected.
-- **Idle**: app is running but not rendering.
-- **Offline**: no daemon process found or machine is not reporting.
-- **Stale**: status has not updated recently. This usually means the app is closed, the shared folder is not syncing, or the machine has not written a heartbeat within the stale timeout.
+* **Ready**: available.
+* **Rendering**: actively rendering or connected.
+* **Idle**: app is running but not rendering.
+* **Offline**: no daemon process found or machine is not reporting.
+* **Stale**: status has not updated recently. This usually means the app is closed, the shared folder is not syncing, or the machine has not written a heartbeat within the stale timeout.
 
 ## Controller
 
@@ -241,7 +241,7 @@ Use **Preferences > Mobile / Public Status** to publish a condensed farm status 
 
 For the Sim-Plates Cloudflare Worker setup:
 
-```text
+```
 Publish URL: https://sim-plates-farm-status.alex-6ab.workers.dev
 Token secret name: FARM_STATUS_WRITE_TOKEN
 Public page: https://docs.sim-plates.com/farm-status/
@@ -285,13 +285,13 @@ Daemon setup:
 
 The app scans:
 
-```text
+```
 C:\Program Files\OTOY
 ```
 
 for folders like:
 
-```text
+```
 OctaneRender Studio+ Network Render Node 2025.1
 OctaneRender Studio+ Network Render Node 2025.2
 OctaneRender Studio+ Network Render Node 2026.1
@@ -301,12 +301,12 @@ If multiple installable daemon versions are found, the app asks which one to ins
 
 Daemon controls:
 
-- **Start Daemon**: launch the installed daemon.
-- **Kill Daemon**: stop Octane node daemon processes after confirmation.
-- **Install Daemon**: run the selected OTOY daemon installer script.
-- **Uninstall Daemon**: run the selected OTOY daemon uninstall script.
-- **Reveal OTOY Folder**: open `C:\Program Files\OTOY`.
-- **OTOY Downloads**: open the OTOY downloads page.
+* **Start Daemon**: launch the installed daemon.
+* **Kill Daemon**: stop Octane node daemon processes after confirmation.
+* **Install Daemon**: run the selected OTOY daemon installer script.
+* **Uninstall Daemon**: run the selected OTOY daemon uninstall script.
+* **Reveal OTOY Folder**: open `C:\Program Files\OTOY`.
+* **OTOY Downloads**: open the OTOY downloads page.
 
 When closing the app while a daemon is running, the app asks whether to close the daemon or leave it running in the background.
 
@@ -316,19 +316,19 @@ When the machine role is **Daemon**, the monitor becomes **Daemon Monitor**.
 
 It intentionally hides `.apo` render cards such as ETA, Last Frame, and Project Queue. It shows:
 
-- Daemon status.
-- PID.
-- Executable path.
-- Installed OTOY folders.
-- Detected daemon commands.
-- Start-on-launch preference.
-- Farm Machines.
+* Daemon status.
+* PID.
+* Executable path.
+* Installed OTOY folders.
+* Detected daemon commands.
+* Start-on-launch preference.
+* Farm Machines.
 
 Daemon status colors:
 
-- Yellow: ready.
-- Green: rendering/connected.
-- Red: offline or needs attention.
+* Yellow: ready.
+* Green: rendering/connected.
+* Red: offline or needs attention.
 
 The app can briefly see `octane_node.exe` while the daemon gathers information. It waits before treating that as real rendering so the monitor does not flash green during normal startup.
 
@@ -336,16 +336,16 @@ The app can briefly see `octane_node.exe` while the daemon gathers information. 
 
 The Farm Control Folder is a shared directory used for controller/worker commands. It is normally auto-derived near the shared exports/status folders:
 
-```text
+```
 ...\20_MASTERS\_farm_control
 ```
 
 It contains:
 
-- `commands`: new commands from controllers.
-- `claims`: machine claim files.
-- `results`: machine command results.
-- `archive`: reserved for later cleanup.
+* `commands`: new commands from controllers.
+* `claims`: machine claim files.
+* `results`: machine command results.
+* `archive`: reserved for later cleanup.
 
 In Preferences, leave this field on **Auto** unless you need a custom shared path. Use **Reveal** to open the resolved folder for debugging.
 
@@ -353,7 +353,7 @@ In Preferences, leave this field on **Auto** unless you need a custom shared pat
 
 The Farm Directory is the stable shared folder that contains:
 
-```text
+```
 _farm_status
 _farm_control
 ```
@@ -373,7 +373,7 @@ In **Preferences > Mobile / Public Status**:
 
 For the Sim-Plates Cloudflare Worker:
 
-```text
+```
 Publish URL: https://sim-plates-farm-status.alex-6ab.workers.dev
 Token secret name in Cloudflare: FARM_STATUS_WRITE_TOKEN
 Public page: https://docs.sim-plates.com/farm-status/

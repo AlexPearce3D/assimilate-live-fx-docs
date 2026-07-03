@@ -25,8 +25,6 @@ Select the type of Custom Command. Depending on the type additional options are 
 
 ## APPLICATION / SCRIPT
 
-<figure><img src="../../../../../assets/image (324).png" alt=""><figcaption></figcaption></figure>
-
 ### **File**
 
 The Path and Filename to the application or script to execute.
@@ -57,21 +55,15 @@ By default any xml is stored in the temp folder of the current project folder; C
 
 Option to store the grade of the shots included in the XML in the form of a LUT: 1D, 3D or XML LUT.
 
-
-
 ### **Proxy Export**
 
 Option to store a proxy image of each shot included in the XML as a jpeg file.
-
-
 
 ### Require Shot Selection
 
 If set, the command button will be greyed out if no shot is selected in the Construct. This way you can force a selection before executing a script.
 
 ## Plugins
-
-<figure><img src="../../../../../assets/image (319).png" alt=""><figcaption></figcaption></figure>
 
 ### **Plugin**
 
@@ -91,15 +83,11 @@ With this option enabled Live FX will after creating the plug-in automatically o
 
 ## POST RENDER
 
-<figure><img src="../../../../../assets/image (320).png" alt=""><figcaption></figcaption></figure>
-
 The Post Render - custom command type has similar parameters as the Application/Script type. Also, similar to the Application custom command, the Post Render command is passed (as command line parameter) a file reference to an XML file with details on the render. Also, the actual XML is also stored in the temp folder with a project. The structure of the the XML of a render is discussed in detail in Appendix B - Database, XML, XSLT and HTML.
 
 Also note that even though the external script / application has access to the rendered files - these might be in use and as such it can not freely move or rename them (this applies to most container formats (MXF, Quicktime, etc.). In general is is not advisable to try to move or rename rendered files in this way as Live FX would still try and maintain a link to the rendered files. Rather you should make a copy if needed.
 
 ## SYSTEM EVENT
-
-<figure><img src="../../../../../assets/image (321).png" alt=""><figcaption></figcaption></figure>
 
 The System Even - custom command type has similar parameters as the Application/Script type. Also, similar to the Application custom command, the System Event command is passed (as command line parameter) a file reference to an XML file with details on the render. Also, the actual XML is also stored in the temp folder with a project. The structure of the the XML of a render is discussed in detail in Appendix B - Database, XML, XSLT and HTML.
 
@@ -114,8 +102,6 @@ There are currently 6 system Events that can be used to trigger an external scri
 
 ## XSL TRANSFORM
 
-<figure><img src="../../../../../assets/image (322).png" alt=""><figcaption></figcaption></figure>
-
 ### **File**
 
 The full path and filename of the XSLT script.
@@ -126,31 +112,29 @@ The extension for the result file of the XSL Transformation.
 
 ## WEBPAGE
 
-<figure><img src="../../../../../assets/image (323).png" alt=""><figcaption></figcaption></figure>
-
 ### **URL**
 
-The full web address, including the http:// protocol prefix. Rather than creating an xml file with information on the current selection -the URL is extended with the following fields:  
-  
-SCRATCH\_WATCH\_FOLDER - if set the system watch-folder.  
-SCRATCH\_PROJECT\_FOLDER - the project folder of the current project.  
-SCRATCH\_MEDIA\_FOLDER - the default media folder of the current project.  
-SCRATCH\_RENDER\_FOLDER - the default render folder of the current project.  
-SCRATCH\_EXPORT\_FOLDER - if set the auto-export folder for the project.  
-SCRATCH\_PROJECT - the name of the current project.  
-SCRATCH\_GROUP - the name of the current selected group.  
-SCRATCH\_CONSTRUCT - the name of the current selected Construct.  
-  
-If a shot is selected:  
-  
-SCRATCH\_SLOTNAME - the name of the slot selected shot resides.  
-SCRATCH\_SLOTNR - the index of the slot in the selected shot resides.  
-SCRATCH\_SHOT\_UUID - the unique identifier of the shot.  
-SCRATCH\_SHOT\_FILENAME - the filename (of the first frame) of the shot.  
-SCRATCH\_SHOT\_IN - the in-point as set by the user.  
-SCRATCH\_SHOT\_OUT - the length of the shot.  
-SCRATCH\_SHOT\_CURRENT - the current frame of the selected shot.  
-  
-The fields are added as parameters in this format:  
-  
- http://www.website.com?SCRATCH\_PROJECT=projectname\&SCRATCH\_GROUP=groupname&.......
+The full web address, including the http:// protocol prefix. Rather than creating an xml file with information on the current selection -the URL is extended with the following fields:
+
+SCRATCH\_WATCH\_FOLDER - if set the system watch-folder.\
+SCRATCH\_PROJECT\_FOLDER - the project folder of the current project.\
+SCRATCH\_MEDIA\_FOLDER - the default media folder of the current project.\
+SCRATCH\_RENDER\_FOLDER - the default render folder of the current project.\
+SCRATCH\_EXPORT\_FOLDER - if set the auto-export folder for the project.\
+SCRATCH\_PROJECT - the name of the current project.\
+SCRATCH\_GROUP - the name of the current selected group.\
+SCRATCH\_CONSTRUCT - the name of the current selected Construct.
+
+If a shot is selected:
+
+SCRATCH\_SLOTNAME - the name of the slot selected shot resides.\
+SCRATCH\_SLOTNR - the index of the slot in the selected shot resides.\
+SCRATCH\_SHOT\_UUID - the unique identifier of the shot.\
+SCRATCH\_SHOT\_FILENAME - the filename (of the first frame) of the shot.\
+SCRATCH\_SHOT\_IN - the in-point as set by the user.\
+SCRATCH\_SHOT\_OUT - the length of the shot.\
+SCRATCH\_SHOT\_CURRENT - the current frame of the selected shot.
+
+The fields are added as parameters in this format:
+
+http://www.website.com?SCRATCH\_PROJECT=projectname\&SCRATCH\_GROUP=groupname&.......

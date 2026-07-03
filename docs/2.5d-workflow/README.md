@@ -1,6 +1,6 @@
 # 🧊 2.5d Workflow
 
-<figure><img src="../assets/image (122).png" alt=""><figcaption><p>Graphic showing the basic concept of 2.5d. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (122).png" alt=""><figcaption><p>Graphic showing the basic concept of 2.5d.</p></figcaption></figure>
 
 The concepts for 2.5d are very similar to Cuebric, with a little more manual work involved. See the section on Cuebric for more.
 
@@ -12,10 +12,12 @@ You can even combine some 3d elements with 2d elements as well, but this section
 
 !!! info
 
-    Make sure to check the section on [Defocus and Color Grading layers.](../cuebric-workflow/README.md#defocus-and-color-grade-layers)
-
+```
+Make sure to check the section on [Defocus and Color Grading layers.](../cuebric-workflow/README.md#defocus-and-color-grade-layers)
+```
 
 !!! info
 
-    Make sure to see the section about [Defocus and Color Grading the layers](../cuebric-workflow/README.md#defocus-and-color-grade-layers).
-
+```
+Make sure to see the section about [Defocus and Color Grading the layers](../cuebric-workflow/README.md#defocus-and-color-grade-layers).
+```

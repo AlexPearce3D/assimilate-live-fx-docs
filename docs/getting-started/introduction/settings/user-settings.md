@@ -2,11 +2,7 @@
 
 To change your user settings, when you first open Assimilate, at the bottom left, click on "User Settings".
 
-<figure><img src="../../../../assets/image (313).png" alt="" width="309"><figcaption></figcaption></figure>
-
 ***
-
-<figure><img src="../../../../assets/image (292).png" alt=""><figcaption><p>User Settings Menu</p></figcaption></figure>
 
 ## General
 
@@ -31,7 +27,7 @@ Use the **Remove Profile** button in the lower left corner to delete a User Prof
 
 ## Appearance Settings
 
-![](<../../../assets/image (315).png>)
+![](<../../../../.gitbook/assets/image (315).png>)
 
 **Scheme**
 
@@ -77,7 +73,7 @@ This set the amount of mirror effect on shots at the bottom of the slots in a Co
 
 ## Control Gearing
 
-![](<../../../assets/image (316).png>)
+![](<../../../../.gitbook/assets/image (316).png>)
 
 The next section of the User Menu determines how the Control Gearing behaves in Normal Mode and Shift Mode. These two values determine the sensitivity of the Control Gearing throughout the UI.
 
@@ -101,14 +97,14 @@ Set the sensitivity for swipe gestures to toggle UI elements on/off. The sensiti
 
 **Vector Mode**
 
-This specifies the orientation of the Tracker Balls in the COLOR MODULE.  
-  
+This specifies the orientation of the Tracker Balls in the COLOR MODULE.
+
 Normally the order is:
 
 ![](http://www.assimilatesupport.com/akb/Uploads/Images/UserGuide/rgb.png)
 
-When Using Vector Mode, this becomes:  
-  
+When Using Vector Mode, this becomes:
+
 ![](http://www.assimilatesupport.com/akb/Uploads/Images/UserGuide/rbg.png)
 
 **Angle**
@@ -119,7 +115,7 @@ This control enables you to change the _angle_ of the orientation of the Tracker
 
 ## Preferences
 
-![](<../../../assets/image (317).png>)
+![](<../../../../.gitbook/assets/image (317).png>)
 
 **Proxy size**
 
@@ -144,9 +140,8 @@ There are two options for saving: Automatic and Manual. When set to Automatic, L
 
 Both when set to Automatic or Manual, you can manually initiate a save at any time by using the Save All button or the Quick Key: Ctrl S.
 
-When set to Manual, Live FX will ask if changes should be saved or not when exiting a Project by displaying a dialog panel:  
-  
-  
+When set to Manual, Live FX will ask if changes should be saved or not when exiting a Project by displaying a dialog panel:
+
 ![Save Confirmation Panel](http://www.assimilatesupport.com/akb/Uploads/Images/Manual/Startup/User_Settings/LO_CONFIRM_V03.png)
 
 **Audio Set Sync**
@@ -171,7 +166,7 @@ Note: Because the ALLOW BIN SHOT option is so potentially destructive, it is not
 
 ## Snap Shot Settings
 
-![](<../../../assets/image (318).png>)
+![](<../../../../.gitbook/assets/image (318).png>)
 
 **Destination Folder**
 
@@ -193,7 +188,7 @@ Click the **Sync** button to start the synchronization process. Make sure you en
 
 **ADVANCED**
 
-![](<../../../assets/image (314).png>)
+![](<../../../../.gitbook/assets/image (314).png>)
 
 The **Advanced** option shows additional options for the synchronization process.
 
@@ -206,6 +201,3 @@ When enabled the Sync process will only download items to the local profile but 
 Remove all local gallery items. The online version remains untouched.
 
 ####
-
-
-

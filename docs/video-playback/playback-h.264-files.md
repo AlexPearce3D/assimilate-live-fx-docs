@@ -8,6 +8,3 @@ By default, h.264 files may have issues when playing back in Assimilate, but the
 4. Select h.264: Number of GPU decoders
 5. Make sure it is turned on and enter 0 as the maximum number of decoders.
 6. Restart Assimilate
-
-<figure><img src="../../assets/image (52).png" alt=""><figcaption></figcaption></figure>
-

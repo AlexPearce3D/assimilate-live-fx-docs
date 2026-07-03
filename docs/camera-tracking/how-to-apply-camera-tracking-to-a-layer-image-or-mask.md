@@ -7,20 +7,14 @@
 
 !!! warning
 
-    Notice in the screenshot below the scale is almost 1000x.   
+```
+Notice in the screenshot below the scale is almost 1000x.   
 
-    You may need to exaggerate the scale and move the layer in Z depth for it to work properly with your camera tracking.
-
-
-<figure><img src="../../assets/image (231).png" alt=""><figcaption></figcaption></figure>
+You may need to exaggerate the scale and move the layer in Z depth for it to work properly with your camera tracking.
+```
 
 It helps to enter **Dual View** (Shortcut D) and enter **Perspective View** (shortcut P) to see what's happening and to adjust.
 
 To navigate around Perspective view, use Left Click + drag to orbit around the scene origin and the middle mouse wheel to zoom in and out.
 
 In the example below, the orange Square shows where it is overlaid in the Perspective View (left) and how it looks in the composite (right)
-
-<figure><img src="../../assets/image (230).png" alt=""><figcaption></figcaption></figure>
-
-
-
